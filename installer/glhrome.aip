@@ -42,124 +42,177 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="APPDIR" ComponentId="{8D726569-3994-45F5-9887-42A9B884027F}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="D3DCompiler_47.dll" ComponentId="{7AED6695-C328-4FEF-AE19-05D8487F96D7}" Directory_="glhrome_Dir" Attributes="0" KeyPath="D3DCompiler_47.dll"/>
+    <ROW Component="D3DCompiler_47.dll" ComponentId="{4E477F0A-4529-4DCB-985A-3255C2206084}" Directory_="glhrome_Dir" Attributes="0" KeyPath="D3DCompiler_47.dll"/>
     <ROW Component="ProductInformation" ComponentId="{66CDDD0B-E79C-40EA-B7CD-1E8A1CA1208B}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
-    <ROW Component="SHORTCUTDIR" ComponentId="{A24A70EB-4741-45B9-ACFA-4D7AC9FC0D13}" Directory_="SHORTCUTDIR" Attributes="0"/>
-    <ROW Component="_STARTGLHROME.bat" ComponentId="{C5D2FAB5-76A7-4303-9EEB-7ED8B337ACE8}" Directory_="glhrome_Dir" Attributes="0" KeyPath="_STARTGLHROME.bat" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{E036AFAA-D82F-48BB-BB1B-4DAA6D715D93}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="_STARTGLHROME.bat" ComponentId="{1118BEFD-828C-43D7-A872-A0E3069D6DAB}" Directory_="glhrome_Dir" Attributes="0" KeyPath="_STARTGLHROME.bat" Type="0"/>
     <ROW Component="a.ico" ComponentId="{0FECBBA9-86EE-4429-923D-41CAA0E60C97}" Directory_="webassets_Dir" Attributes="0" KeyPath="a.ico" Type="0"/>
     <ROW Component="ar.pak" ComponentId="{A8DB2AEB-28C3-42A1-9B31-42FA4B4CF610}" Directory_="locales_Dir" Attributes="0" KeyPath="ar.pak" Type="0"/>
-    <ROW Component="chrome.dll" ComponentId="{902EAB46-5736-412D-AA4D-6F4F311F2F47}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome.dll"/>
-    <ROW Component="chrome_child.dll" ComponentId="{84D2DDF6-8F27-4F06-8F16-0B579EC9095C}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_child.dll"/>
-    <ROW Component="chrome_elf.dll" ComponentId="{D03AAE67-A5EC-463B-816C-A7B9BA87361A}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_elf.dll"/>
-    <ROW Component="chrome_watcher.dll" ComponentId="{F8E340E3-3F2B-453E-9FFD-842D5FDCE3ED}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_watcher.dll"/>
-    <ROW Component="crash_service.exe" ComponentId="{D8BB0FF7-B954-426F-B6D5-9FC2ED411294}" Directory_="glhrome_Dir" Attributes="0" KeyPath="crash_service.exe"/>
-    <ROW Component="crash_service64.exe" ComponentId="{C20DC0BE-23E7-4458-A369-7A4890161A87}" Directory_="glhrome_Dir" Attributes="256" KeyPath="crash_service64.exe"/>
-    <ROW Component="ffmpeg.exe" ComponentId="{54228D17-2BD7-44AD-9CE8-9032D7635473}" Directory_="glhrome_Dir" Attributes="256" KeyPath="ffmpeg.exe"/>
-    <ROW Component="ffmpegsumo.dll" ComponentId="{4BB37CF1-E96B-43BA-B518-1775296F131E}" Directory_="glhrome_Dir" Attributes="0" KeyPath="ffmpegsumo.dll"/>
-    <ROW Component="gcapi_dll.dll" ComponentId="{5D1D0657-BD24-4C72-BEAF-376C29A1EDB6}" Directory_="glhrome_Dir" Attributes="0" KeyPath="gcapi_dll.dll"/>
-    <ROW Component="glhrome.exe" ComponentId="{85B6E049-4911-4986-9934-59988556668A}" Directory_="glhrome_Dir" Attributes="0" KeyPath="glhrome.exe"/>
-    <ROW Component="interactive_ui_tests.exe" ComponentId="{77B6E510-B643-414C-934D-B6D0CD016C7A}" Directory_="glhrome_Dir" Attributes="0" KeyPath="interactive_ui_tests.exe"/>
-    <ROW Component="libEGL.dll" ComponentId="{F341A24A-1494-424C-96A1-2C802422D0AC}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libEGL.dll"/>
-    <ROW Component="libGLESv2.dll" ComponentId="{D3C85061-3CD7-4253-B517-FFD76262A430}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libGLESv2.dll"/>
-    <ROW Component="libexif.dll" ComponentId="{3922B8C8-D70E-4D59-8E1B-33E35302C928}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libexif.dll"/>
-    <ROW Component="nacl64.exe" ComponentId="{E1E13577-61A7-4BF6-AB63-AD8F5D5DDAC2}" Directory_="glhrome_Dir" Attributes="256" KeyPath="nacl64.exe"/>
-    <ROW Component="wow_helper.exe" ComponentId="{918B51E6-4E46-4B4D-9B17-97C5F837F4B4}" Directory_="glhrome_Dir" Attributes="256" KeyPath="wow_helper.exe"/>
-    <ROW Component="xinput1_3.dll" ComponentId="{A854308E-FEBA-483B-9CE4-6582217C5F63}" Directory_="glhrome_Dir" Attributes="0" KeyPath="xinput1_3.dll"/>
+    <ROW Component="chrome.dll" ComponentId="{E7F3411E-088C-452B-9E25-5F07B0975F46}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome.dll"/>
+    <ROW Component="chrome_child.dll" ComponentId="{A95721AD-1A28-46E2-BDD5-9D42486817C5}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_child.dll"/>
+    <ROW Component="chrome_elf.dll" ComponentId="{F58B7D92-7C5B-4291-977B-181CDF470C10}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_elf.dll"/>
+    <ROW Component="chrome_watcher.dll" ComponentId="{551C1EA3-A2C0-4378-BA9A-CC9043913ADF}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_watcher.dll"/>
+    <ROW Component="crash_service.exe" ComponentId="{181DC6AA-C3F2-4388-8A87-AB01A3E6CA6A}" Directory_="glhrome_Dir" Attributes="0" KeyPath="crash_service.exe"/>
+    <ROW Component="crash_service64.exe" ComponentId="{6F1EE836-4677-4DC9-B03D-D023D9A2BF89}" Directory_="glhrome_Dir" Attributes="256" KeyPath="crash_service64.exe"/>
+    <ROW Component="ffmpegsumo.dll" ComponentId="{80E557AA-2485-4B73-BE7C-6028DADC44D4}" Directory_="glhrome_Dir" Attributes="0" KeyPath="ffmpegsumo.dll"/>
+    <ROW Component="gcapi_dll.dll" ComponentId="{0B1234F7-33BB-4156-B3AD-47ABF46B0CFA}" Directory_="glhrome_Dir" Attributes="0" KeyPath="gcapi_dll.dll"/>
+    <ROW Component="glhrome.exe" ComponentId="{82C96258-D461-456C-A523-E353DEEBBA7F}" Directory_="glhrome_Dir" Attributes="0" KeyPath="glhrome.exe"/>
+    <ROW Component="interactive_ui_tests.exe" ComponentId="{FF9BE3C6-7602-428A-BDEA-E9DA0A1DD6D3}" Directory_="glhrome_Dir" Attributes="0" KeyPath="interactive_ui_tests.exe"/>
+    <ROW Component="libEGL.dll" ComponentId="{E8EEB6B4-B385-4DF7-971B-4D8AAF097486}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libEGL.dll"/>
+    <ROW Component="libGLESv2.dll" ComponentId="{268C6125-33EE-48AE-A7A1-0084BA5DD36C}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libGLESv2.dll"/>
+    <ROW Component="libexif.dll" ComponentId="{76D636D7-138B-4AF4-968B-40733DF9676A}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libexif.dll"/>
+    <ROW Component="nacl64.exe" ComponentId="{698E087E-FCBB-4710-8D1F-DF8D0BCF10AB}" Directory_="glhrome_Dir" Attributes="256" KeyPath="nacl64.exe"/>
+    <ROW Component="wow_helper.exe" ComponentId="{34AFBAAA-22C5-4684-84BF-BBC122AA2BC7}" Directory_="glhrome_Dir" Attributes="256" KeyPath="wow_helper.exe"/>
+    <ROW Component="xinput1_3.dll" ComponentId="{3C1E0EA2-000A-45B3-A05E-8D75E2995AF6}" Directory_="glhrome_Dir" Attributes="0" KeyPath="xinput1_3.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="a.ico" Component_="a.ico" FileName="a.ico" Attributes="0" SourcePath="..\webassets\a.ico" SelfReg="false"/>
+    <ROW File="a.png" Component_="a.ico" FileName="a.png" Attributes="0" SourcePath="..\webassets\a.png" SelfReg="false"/>
+    <ROW File="glhrome.ico" Component_="a.ico" FileName="glhrome.ico" Attributes="0" SourcePath="..\webassets\glhrome.ico" SelfReg="false"/>
+    <ROW File="glhrome.png" Component_="a.ico" FileName="glhrome.png" Attributes="0" SourcePath="..\webassets\glhrome.png" SelfReg="false"/>
+    <ROW File="ar.pak" Component_="ar.pak" FileName="ar.pak" Attributes="0" SourcePath="..\locales\ar.pak" SelfReg="false"/>
+    <ROW File="bg.pak" Component_="ar.pak" FileName="bg.pak" Attributes="0" SourcePath="..\locales\bg.pak" SelfReg="false"/>
+    <ROW File="bn.pak" Component_="ar.pak" FileName="bn.pak" Attributes="0" SourcePath="..\locales\bn.pak" SelfReg="false"/>
+    <ROW File="ca.pak" Component_="ar.pak" FileName="ca.pak" Attributes="0" SourcePath="..\locales\ca.pak" SelfReg="false"/>
+    <ROW File="cs.pak" Component_="ar.pak" FileName="cs.pak" Attributes="0" SourcePath="..\locales\cs.pak" SelfReg="false"/>
+    <ROW File="da.pak" Component_="ar.pak" FileName="da.pak" Attributes="0" SourcePath="..\locales\da.pak" SelfReg="false"/>
+    <ROW File="de.pak" Component_="ar.pak" FileName="de.pak" Attributes="0" SourcePath="..\locales\de.pak" SelfReg="false"/>
+    <ROW File="el.pak" Component_="ar.pak" FileName="el.pak" Attributes="0" SourcePath="..\locales\el.pak" SelfReg="false"/>
+    <ROW File="enGB.pak" Component_="ar.pak" FileName="en-GB.pak" Attributes="0" SourcePath="..\locales\en-GB.pak" SelfReg="false"/>
+    <ROW File="enUS.pak" Component_="ar.pak" FileName="en-US.pak" Attributes="0" SourcePath="..\locales\en-US.pak" SelfReg="false"/>
+    <ROW File="es419.pak" Component_="ar.pak" FileName="es-419.pak" Attributes="0" SourcePath="..\locales\es-419.pak" SelfReg="false"/>
+    <ROW File="es.pak" Component_="ar.pak" FileName="es.pak" Attributes="0" SourcePath="..\locales\es.pak" SelfReg="false"/>
+    <ROW File="et.pak" Component_="ar.pak" FileName="et.pak" Attributes="0" SourcePath="..\locales\et.pak" SelfReg="false"/>
+    <ROW File="fi.pak" Component_="ar.pak" FileName="fi.pak" Attributes="0" SourcePath="..\locales\fi.pak" SelfReg="false"/>
+    <ROW File="fil.pak" Component_="ar.pak" FileName="fil.pak" Attributes="0" SourcePath="..\locales\fil.pak" SelfReg="false"/>
+    <ROW File="fr.pak" Component_="ar.pak" FileName="fr.pak" Attributes="0" SourcePath="..\locales\fr.pak" SelfReg="false"/>
+    <ROW File="gu.pak" Component_="ar.pak" FileName="gu.pak" Attributes="0" SourcePath="..\locales\gu.pak" SelfReg="false"/>
+    <ROW File="he.pak" Component_="ar.pak" FileName="he.pak" Attributes="0" SourcePath="..\locales\he.pak" SelfReg="false"/>
+    <ROW File="hi.pak" Component_="ar.pak" FileName="hi.pak" Attributes="0" SourcePath="..\locales\hi.pak" SelfReg="false"/>
+    <ROW File="hr.pak" Component_="ar.pak" FileName="hr.pak" Attributes="0" SourcePath="..\locales\hr.pak" SelfReg="false"/>
+    <ROW File="hu.pak" Component_="ar.pak" FileName="hu.pak" Attributes="0" SourcePath="..\locales\hu.pak" SelfReg="false"/>
+    <ROW File="id.pak" Component_="ar.pak" FileName="id.pak" Attributes="0" SourcePath="..\locales\id.pak" SelfReg="false"/>
+    <ROW File="it.pak" Component_="ar.pak" FileName="it.pak" Attributes="0" SourcePath="..\locales\it.pak" SelfReg="false"/>
+    <ROW File="ja.pak" Component_="ar.pak" FileName="ja.pak" Attributes="0" SourcePath="..\locales\ja.pak" SelfReg="false"/>
+    <ROW File="kn.pak" Component_="ar.pak" FileName="kn.pak" Attributes="0" SourcePath="..\locales\kn.pak" SelfReg="false"/>
+    <ROW File="ko.pak" Component_="ar.pak" FileName="ko.pak" Attributes="0" SourcePath="..\locales\ko.pak" SelfReg="false"/>
+    <ROW File="lt.pak" Component_="ar.pak" FileName="lt.pak" Attributes="0" SourcePath="..\locales\lt.pak" SelfReg="false"/>
+    <ROW File="lv.pak" Component_="ar.pak" FileName="lv.pak" Attributes="0" SourcePath="..\locales\lv.pak" SelfReg="false"/>
+    <ROW File="ml.pak" Component_="ar.pak" FileName="ml.pak" Attributes="0" SourcePath="..\locales\ml.pak" SelfReg="false"/>
+    <ROW File="mr.pak" Component_="ar.pak" FileName="mr.pak" Attributes="0" SourcePath="..\locales\mr.pak" SelfReg="false"/>
+    <ROW File="ms.pak" Component_="ar.pak" FileName="ms.pak" Attributes="0" SourcePath="..\locales\ms.pak" SelfReg="false"/>
+    <ROW File="nb.pak" Component_="ar.pak" FileName="nb.pak" Attributes="0" SourcePath="..\locales\nb.pak" SelfReg="false"/>
+    <ROW File="nl.pak" Component_="ar.pak" FileName="nl.pak" Attributes="0" SourcePath="..\locales\nl.pak" SelfReg="false"/>
+    <ROW File="pl.pak" Component_="ar.pak" FileName="pl.pak" Attributes="0" SourcePath="..\locales\pl.pak" SelfReg="false"/>
+    <ROW File="ptBR.pak" Component_="ar.pak" FileName="pt-BR.pak" Attributes="0" SourcePath="..\locales\pt-BR.pak" SelfReg="false"/>
+    <ROW File="ptPT.pak" Component_="ar.pak" FileName="pt-PT.pak" Attributes="0" SourcePath="..\locales\pt-PT.pak" SelfReg="false"/>
+    <ROW File="ro.pak" Component_="ar.pak" FileName="ro.pak" Attributes="0" SourcePath="..\locales\ro.pak" SelfReg="false"/>
+    <ROW File="ru.pak" Component_="ar.pak" FileName="ru.pak" Attributes="0" SourcePath="..\locales\ru.pak" SelfReg="false"/>
+    <ROW File="sk.pak" Component_="ar.pak" FileName="sk.pak" Attributes="0" SourcePath="..\locales\sk.pak" SelfReg="false"/>
+    <ROW File="sl.pak" Component_="ar.pak" FileName="sl.pak" Attributes="0" SourcePath="..\locales\sl.pak" SelfReg="false"/>
+    <ROW File="sr.pak" Component_="ar.pak" FileName="sr.pak" Attributes="0" SourcePath="..\locales\sr.pak" SelfReg="false"/>
+    <ROW File="sv.pak" Component_="ar.pak" FileName="sv.pak" Attributes="0" SourcePath="..\locales\sv.pak" SelfReg="false"/>
+    <ROW File="ta.pak" Component_="ar.pak" FileName="ta.pak" Attributes="0" SourcePath="..\locales\ta.pak" SelfReg="false"/>
+    <ROW File="te.pak" Component_="ar.pak" FileName="te.pak" Attributes="0" SourcePath="..\locales\te.pak" SelfReg="false"/>
+    <ROW File="th.pak" Component_="ar.pak" FileName="th.pak" Attributes="0" SourcePath="..\locales\th.pak" SelfReg="false"/>
+    <ROW File="tr.pak" Component_="ar.pak" FileName="tr.pak" Attributes="0" SourcePath="..\locales\tr.pak" SelfReg="false"/>
+    <ROW File="uk.pak" Component_="ar.pak" FileName="uk.pak" Attributes="0" SourcePath="..\locales\uk.pak" SelfReg="false"/>
+    <ROW File="vi.pak" Component_="ar.pak" FileName="vi.pak" Attributes="0" SourcePath="..\locales\vi.pak" SelfReg="false"/>
+    <ROW File="zhCN.pak" Component_="ar.pak" FileName="zh-CN.pak" Attributes="0" SourcePath="..\locales\zh-CN.pak" SelfReg="false"/>
+    <ROW File="zhTW.pak" Component_="ar.pak" FileName="zh-TW.pak" Attributes="0" SourcePath="..\locales\zh-TW.pak" SelfReg="false"/>
     <ROW File="_STARTGLHROME.bat" Component_="_STARTGLHROME.bat" FileName="_START~1.BAT|_STARTGLHROME.bat" Attributes="0" SourcePath="..\_STARTGLHROME.bat" SelfReg="false"/>
     <ROW File="manifest" Component_="_STARTGLHROME.bat" FileName="430231~1.MAN|43.0.2316.0.manifest" Attributes="0" SourcePath="..\43.0.2316.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_88" Component_="_STARTGLHROME.bat" FileName="430231~2.MAN|43.0.2317.0.manifest" Attributes="0" SourcePath="..\43.0.2317.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_89" Component_="_STARTGLHROME.bat" FileName="430231~3.MAN|43.0.2318.0.manifest" Attributes="0" SourcePath="..\43.0.2318.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_90" Component_="_STARTGLHROME.bat" FileName="430231~4.MAN|43.0.2319.0.manifest" Attributes="0" SourcePath="..\43.0.2319.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_91" Component_="_STARTGLHROME.bat" FileName="430232~1.MAN|43.0.2320.0.manifest" Attributes="0" SourcePath="..\43.0.2320.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_92" Component_="_STARTGLHROME.bat" FileName="430232~2.MAN|43.0.2321.0.manifest" Attributes="0" SourcePath="..\43.0.2321.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_93" Component_="_STARTGLHROME.bat" FileName="430232~3.MAN|43.0.2322.0.manifest" Attributes="0" SourcePath="..\43.0.2322.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_94" Component_="_STARTGLHROME.bat" FileName="430232~4.MAN|43.0.2323.0.manifest" Attributes="0" SourcePath="..\43.0.2323.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_95" Component_="_STARTGLHROME.bat" FileName="430232~5.MAN|43.0.2324.0.manifest" Attributes="0" SourcePath="..\43.0.2324.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_96" Component_="_STARTGLHROME.bat" FileName="430232~6.MAN|43.0.2325.0.manifest" Attributes="0" SourcePath="..\43.0.2325.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_97" Component_="_STARTGLHROME.bat" FileName="430232~7.MAN|43.0.2326.0.manifest" Attributes="0" SourcePath="..\43.0.2326.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_98" Component_="_STARTGLHROME.bat" FileName="430232~8.MAN|43.0.2327.0.manifest" Attributes="0" SourcePath="..\43.0.2327.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_99" Component_="_STARTGLHROME.bat" FileName="430232~9.MAN|43.0.2328.0.manifest" Attributes="0" SourcePath="..\43.0.2328.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_100" Component_="_STARTGLHROME.bat" FileName="43023~10.MAN|43.0.2329.0.manifest" Attributes="0" SourcePath="..\43.0.2329.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_101" Component_="_STARTGLHROME.bat" FileName="430233~1.MAN|43.0.2330.0.manifest" Attributes="0" SourcePath="..\43.0.2330.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_102" Component_="_STARTGLHROME.bat" FileName="430233~2.MAN|43.0.2331.0.manifest" Attributes="0" SourcePath="..\43.0.2331.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_103" Component_="_STARTGLHROME.bat" FileName="430233~3.MAN|43.0.2332.0.manifest" Attributes="0" SourcePath="..\43.0.2332.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_104" Component_="_STARTGLHROME.bat" FileName="430233~4.MAN|43.0.2333.0.manifest" Attributes="0" SourcePath="..\43.0.2333.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_105" Component_="_STARTGLHROME.bat" FileName="430233~5.MAN|43.0.2334.0.manifest" Attributes="0" SourcePath="..\43.0.2334.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_106" Component_="_STARTGLHROME.bat" FileName="430233~6.MAN|43.0.2335.0.manifest" Attributes="0" SourcePath="..\43.0.2335.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_107" Component_="_STARTGLHROME.bat" FileName="430233~7.MAN|43.0.2336.0.manifest" Attributes="0" SourcePath="..\43.0.2336.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_108" Component_="_STARTGLHROME.bat" FileName="430233~8.MAN|43.0.2337.0.manifest" Attributes="0" SourcePath="..\43.0.2337.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_109" Component_="_STARTGLHROME.bat" FileName="430233~9.MAN|43.0.2338.0.manifest" Attributes="0" SourcePath="..\43.0.2338.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_110" Component_="_STARTGLHROME.bat" FileName="43023~11.MAN|43.0.2339.0.manifest" Attributes="0" SourcePath="..\43.0.2339.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_111" Component_="_STARTGLHROME.bat" FileName="430234~1.MAN|43.0.2340.0.manifest" Attributes="0" SourcePath="..\43.0.2340.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_112" Component_="_STARTGLHROME.bat" FileName="430234~2.MAN|43.0.2341.0.manifest" Attributes="0" SourcePath="..\43.0.2341.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_113" Component_="_STARTGLHROME.bat" FileName="430234~3.MAN|43.0.2342.0.manifest" Attributes="0" SourcePath="..\43.0.2342.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_114" Component_="_STARTGLHROME.bat" FileName="430234~4.MAN|43.0.2343.0.manifest" Attributes="0" SourcePath="..\43.0.2343.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_115" Component_="_STARTGLHROME.bat" FileName="430234~5.MAN|43.0.2344.0.manifest" Attributes="0" SourcePath="..\43.0.2344.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_116" Component_="_STARTGLHROME.bat" FileName="430234~6.MAN|43.0.2345.0.manifest" Attributes="0" SourcePath="..\43.0.2345.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_117" Component_="_STARTGLHROME.bat" FileName="430234~7.MAN|43.0.2346.0.manifest" Attributes="0" SourcePath="..\43.0.2346.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_118" Component_="_STARTGLHROME.bat" FileName="430234~8.MAN|43.0.2347.0.manifest" Attributes="0" SourcePath="..\43.0.2347.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_119" Component_="_STARTGLHROME.bat" FileName="430234~9.MAN|43.0.2348.0.manifest" Attributes="0" SourcePath="..\43.0.2348.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_120" Component_="_STARTGLHROME.bat" FileName="43023~12.MAN|43.0.2349.0.manifest" Attributes="0" SourcePath="..\43.0.2349.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_121" Component_="_STARTGLHROME.bat" FileName="430235~1.MAN|43.0.2350.0.manifest" Attributes="0" SourcePath="..\43.0.2350.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_122" Component_="_STARTGLHROME.bat" FileName="430235~2.MAN|43.0.2351.0.manifest" Attributes="0" SourcePath="..\43.0.2351.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_123" Component_="_STARTGLHROME.bat" FileName="430235~3.MAN|43.0.2352.0.manifest" Attributes="0" SourcePath="..\43.0.2352.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_124" Component_="_STARTGLHROME.bat" FileName="430235~4.MAN|43.0.2353.0.manifest" Attributes="0" SourcePath="..\43.0.2353.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_125" Component_="_STARTGLHROME.bat" FileName="430235~5.MAN|43.0.2354.0.manifest" Attributes="0" SourcePath="..\43.0.2354.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_126" Component_="_STARTGLHROME.bat" FileName="430235~6.MAN|43.0.2355.0.manifest" Attributes="0" SourcePath="..\43.0.2355.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_127" Component_="_STARTGLHROME.bat" FileName="430235~7.MAN|43.0.2356.0.manifest" Attributes="0" SourcePath="..\43.0.2356.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_128" Component_="_STARTGLHROME.bat" FileName="430235~8.MAN|43.0.2357.0.manifest" Attributes="0" SourcePath="..\43.0.2357.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_129" Component_="_STARTGLHROME.bat" FileName="440235~1.MAN|44.0.2358.0.manifest" Attributes="0" SourcePath="..\44.0.2358.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_130" Component_="_STARTGLHROME.bat" FileName="440235~2.MAN|44.0.2359.0.manifest" Attributes="0" SourcePath="..\44.0.2359.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_131" Component_="_STARTGLHROME.bat" FileName="440236~1.MAN|44.0.2360.0.manifest" Attributes="0" SourcePath="..\44.0.2360.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_132" Component_="_STARTGLHROME.bat" FileName="440236~2.MAN|44.0.2361.0.manifest" Attributes="0" SourcePath="..\44.0.2361.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_133" Component_="_STARTGLHROME.bat" FileName="440236~3.MAN|44.0.2362.0.manifest" Attributes="0" SourcePath="..\44.0.2362.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_134" Component_="_STARTGLHROME.bat" FileName="440236~4.MAN|44.0.2363.0.manifest" Attributes="0" SourcePath="..\44.0.2363.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_135" Component_="_STARTGLHROME.bat" FileName="440236~5.MAN|44.0.2364.0.manifest" Attributes="0" SourcePath="..\44.0.2364.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_136" Component_="_STARTGLHROME.bat" FileName="440236~6.MAN|44.0.2365.0.manifest" Attributes="0" SourcePath="..\44.0.2365.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_137" Component_="_STARTGLHROME.bat" FileName="440236~7.MAN|44.0.2366.0.manifest" Attributes="0" SourcePath="..\44.0.2366.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_138" Component_="_STARTGLHROME.bat" FileName="440236~8.MAN|44.0.2367.0.manifest" Attributes="0" SourcePath="..\44.0.2367.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_139" Component_="_STARTGLHROME.bat" FileName="440236~9.MAN|44.0.2368.0.manifest" Attributes="0" SourcePath="..\44.0.2368.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_140" Component_="_STARTGLHROME.bat" FileName="44023~10.MAN|44.0.2369.0.manifest" Attributes="0" SourcePath="..\44.0.2369.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_141" Component_="_STARTGLHROME.bat" FileName="440237~1.MAN|44.0.2370.0.manifest" Attributes="0" SourcePath="..\44.0.2370.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_142" Component_="_STARTGLHROME.bat" FileName="440237~2.MAN|44.0.2371.0.manifest" Attributes="0" SourcePath="..\44.0.2371.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_143" Component_="_STARTGLHROME.bat" FileName="440237~3.MAN|44.0.2372.0.manifest" Attributes="0" SourcePath="..\44.0.2372.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_144" Component_="_STARTGLHROME.bat" FileName="440237~4.MAN|44.0.2373.0.manifest" Attributes="0" SourcePath="..\44.0.2373.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_145" Component_="_STARTGLHROME.bat" FileName="440237~5.MAN|44.0.2374.0.manifest" Attributes="0" SourcePath="..\44.0.2374.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_146" Component_="_STARTGLHROME.bat" FileName="440237~6.MAN|44.0.2375.0.manifest" Attributes="0" SourcePath="..\44.0.2375.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_147" Component_="_STARTGLHROME.bat" FileName="440237~7.MAN|44.0.2376.0.manifest" Attributes="0" SourcePath="..\44.0.2376.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_148" Component_="_STARTGLHROME.bat" FileName="440237~8.MAN|44.0.2377.0.manifest" Attributes="0" SourcePath="..\44.0.2377.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_149" Component_="_STARTGLHROME.bat" FileName="440237~9.MAN|44.0.2378.0.manifest" Attributes="0" SourcePath="..\44.0.2378.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_150" Component_="_STARTGLHROME.bat" FileName="44023~11.MAN|44.0.2379.0.manifest" Attributes="0" SourcePath="..\44.0.2379.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_151" Component_="_STARTGLHROME.bat" FileName="440238~1.MAN|44.0.2380.0.manifest" Attributes="0" SourcePath="..\44.0.2380.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_152" Component_="_STARTGLHROME.bat" FileName="440238~2.MAN|44.0.2381.0.manifest" Attributes="0" SourcePath="..\44.0.2381.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_153" Component_="_STARTGLHROME.bat" FileName="440238~3.MAN|44.0.2382.0.manifest" Attributes="0" SourcePath="..\44.0.2382.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_154" Component_="_STARTGLHROME.bat" FileName="440238~4.MAN|44.0.2383.0.manifest" Attributes="0" SourcePath="..\44.0.2383.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_155" Component_="_STARTGLHROME.bat" FileName="440238~5.MAN|44.0.2384.0.manifest" Attributes="0" SourcePath="..\44.0.2384.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_156" Component_="_STARTGLHROME.bat" FileName="440238~6.MAN|44.0.2385.0.manifest" Attributes="0" SourcePath="..\44.0.2385.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_157" Component_="_STARTGLHROME.bat" FileName="440238~7.MAN|44.0.2386.0.manifest" Attributes="0" SourcePath="..\44.0.2386.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_158" Component_="_STARTGLHROME.bat" FileName="440238~8.MAN|44.0.2387.0.manifest" Attributes="0" SourcePath="..\44.0.2387.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_159" Component_="_STARTGLHROME.bat" FileName="440238~9.MAN|44.0.2388.0.manifest" Attributes="0" SourcePath="..\44.0.2388.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_160" Component_="_STARTGLHROME.bat" FileName="44023~12.MAN|44.0.2389.0.manifest" Attributes="0" SourcePath="..\44.0.2389.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_161" Component_="_STARTGLHROME.bat" FileName="440239~1.MAN|44.0.2390.0.manifest" Attributes="0" SourcePath="..\44.0.2390.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_162" Component_="_STARTGLHROME.bat" FileName="440239~2.MAN|44.0.2391.0.manifest" Attributes="0" SourcePath="..\44.0.2391.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_163" Component_="_STARTGLHROME.bat" FileName="440239~3.MAN|44.0.2392.0.manifest" Attributes="0" SourcePath="..\44.0.2392.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_164" Component_="_STARTGLHROME.bat" FileName="440239~4.MAN|44.0.2393.0.manifest" Attributes="0" SourcePath="..\44.0.2393.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_165" Component_="_STARTGLHROME.bat" FileName="440239~5.MAN|44.0.2394.0.manifest" Attributes="0" SourcePath="..\44.0.2394.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_166" Component_="_STARTGLHROME.bat" FileName="440239~6.MAN|44.0.2395.0.manifest" Attributes="0" SourcePath="..\44.0.2395.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_167" Component_="_STARTGLHROME.bat" FileName="440239~7.MAN|44.0.2396.0.manifest" Attributes="0" SourcePath="..\44.0.2396.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_168" Component_="_STARTGLHROME.bat" FileName="440239~8.MAN|44.0.2397.0.manifest" Attributes="0" SourcePath="..\44.0.2397.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_169" Component_="_STARTGLHROME.bat" FileName="440239~9.MAN|44.0.2398.0.manifest" Attributes="0" SourcePath="..\44.0.2398.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_170" Component_="_STARTGLHROME.bat" FileName="44023~13.MAN|44.0.2399.0.manifest" Attributes="0" SourcePath="..\44.0.2399.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_171" Component_="_STARTGLHROME.bat" FileName="440240~1.MAN|44.0.2400.0.manifest" Attributes="0" SourcePath="..\44.0.2400.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_172" Component_="_STARTGLHROME.bat" FileName="440240~2.MAN|44.0.2401.0.manifest" Attributes="0" SourcePath="..\44.0.2401.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_173" Component_="_STARTGLHROME.bat" FileName="440240~3.MAN|44.0.2402.0.manifest" Attributes="0" SourcePath="..\44.0.2402.0.manifest" SelfReg="false"/>
-    <ROW File="manifest_174" Component_="_STARTGLHROME.bat" FileName="440240~4.MAN|44.0.2403.0.manifest" Attributes="0" SourcePath="..\44.0.2403.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_1" Component_="_STARTGLHROME.bat" FileName="430231~2.MAN|43.0.2317.0.manifest" Attributes="0" SourcePath="..\43.0.2317.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_2" Component_="_STARTGLHROME.bat" FileName="430231~3.MAN|43.0.2318.0.manifest" Attributes="0" SourcePath="..\43.0.2318.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_3" Component_="_STARTGLHROME.bat" FileName="430231~4.MAN|43.0.2319.0.manifest" Attributes="0" SourcePath="..\43.0.2319.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_4" Component_="_STARTGLHROME.bat" FileName="430232~1.MAN|43.0.2320.0.manifest" Attributes="0" SourcePath="..\43.0.2320.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_5" Component_="_STARTGLHROME.bat" FileName="430232~2.MAN|43.0.2321.0.manifest" Attributes="0" SourcePath="..\43.0.2321.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_6" Component_="_STARTGLHROME.bat" FileName="430232~3.MAN|43.0.2322.0.manifest" Attributes="0" SourcePath="..\43.0.2322.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_7" Component_="_STARTGLHROME.bat" FileName="430232~4.MAN|43.0.2323.0.manifest" Attributes="0" SourcePath="..\43.0.2323.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_8" Component_="_STARTGLHROME.bat" FileName="430232~5.MAN|43.0.2324.0.manifest" Attributes="0" SourcePath="..\43.0.2324.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_9" Component_="_STARTGLHROME.bat" FileName="430232~6.MAN|43.0.2325.0.manifest" Attributes="0" SourcePath="..\43.0.2325.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_10" Component_="_STARTGLHROME.bat" FileName="430232~7.MAN|43.0.2326.0.manifest" Attributes="0" SourcePath="..\43.0.2326.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_11" Component_="_STARTGLHROME.bat" FileName="430232~8.MAN|43.0.2327.0.manifest" Attributes="0" SourcePath="..\43.0.2327.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_12" Component_="_STARTGLHROME.bat" FileName="430232~9.MAN|43.0.2328.0.manifest" Attributes="0" SourcePath="..\43.0.2328.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_13" Component_="_STARTGLHROME.bat" FileName="43023~10.MAN|43.0.2329.0.manifest" Attributes="0" SourcePath="..\43.0.2329.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_14" Component_="_STARTGLHROME.bat" FileName="430233~1.MAN|43.0.2330.0.manifest" Attributes="0" SourcePath="..\43.0.2330.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_15" Component_="_STARTGLHROME.bat" FileName="430233~2.MAN|43.0.2331.0.manifest" Attributes="0" SourcePath="..\43.0.2331.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_16" Component_="_STARTGLHROME.bat" FileName="430233~3.MAN|43.0.2332.0.manifest" Attributes="0" SourcePath="..\43.0.2332.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_17" Component_="_STARTGLHROME.bat" FileName="430233~4.MAN|43.0.2333.0.manifest" Attributes="0" SourcePath="..\43.0.2333.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_18" Component_="_STARTGLHROME.bat" FileName="430233~5.MAN|43.0.2334.0.manifest" Attributes="0" SourcePath="..\43.0.2334.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_19" Component_="_STARTGLHROME.bat" FileName="430233~6.MAN|43.0.2335.0.manifest" Attributes="0" SourcePath="..\43.0.2335.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_20" Component_="_STARTGLHROME.bat" FileName="430233~7.MAN|43.0.2336.0.manifest" Attributes="0" SourcePath="..\43.0.2336.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_21" Component_="_STARTGLHROME.bat" FileName="430233~8.MAN|43.0.2337.0.manifest" Attributes="0" SourcePath="..\43.0.2337.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_22" Component_="_STARTGLHROME.bat" FileName="430233~9.MAN|43.0.2338.0.manifest" Attributes="0" SourcePath="..\43.0.2338.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_23" Component_="_STARTGLHROME.bat" FileName="43023~11.MAN|43.0.2339.0.manifest" Attributes="0" SourcePath="..\43.0.2339.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_24" Component_="_STARTGLHROME.bat" FileName="430234~1.MAN|43.0.2340.0.manifest" Attributes="0" SourcePath="..\43.0.2340.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_25" Component_="_STARTGLHROME.bat" FileName="430234~2.MAN|43.0.2341.0.manifest" Attributes="0" SourcePath="..\43.0.2341.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_26" Component_="_STARTGLHROME.bat" FileName="430234~3.MAN|43.0.2342.0.manifest" Attributes="0" SourcePath="..\43.0.2342.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_27" Component_="_STARTGLHROME.bat" FileName="430234~4.MAN|43.0.2343.0.manifest" Attributes="0" SourcePath="..\43.0.2343.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_28" Component_="_STARTGLHROME.bat" FileName="430234~5.MAN|43.0.2344.0.manifest" Attributes="0" SourcePath="..\43.0.2344.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_29" Component_="_STARTGLHROME.bat" FileName="430234~6.MAN|43.0.2345.0.manifest" Attributes="0" SourcePath="..\43.0.2345.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_30" Component_="_STARTGLHROME.bat" FileName="430234~7.MAN|43.0.2346.0.manifest" Attributes="0" SourcePath="..\43.0.2346.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_31" Component_="_STARTGLHROME.bat" FileName="430234~8.MAN|43.0.2347.0.manifest" Attributes="0" SourcePath="..\43.0.2347.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_32" Component_="_STARTGLHROME.bat" FileName="430234~9.MAN|43.0.2348.0.manifest" Attributes="0" SourcePath="..\43.0.2348.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_33" Component_="_STARTGLHROME.bat" FileName="43023~12.MAN|43.0.2349.0.manifest" Attributes="0" SourcePath="..\43.0.2349.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_34" Component_="_STARTGLHROME.bat" FileName="430235~1.MAN|43.0.2350.0.manifest" Attributes="0" SourcePath="..\43.0.2350.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_35" Component_="_STARTGLHROME.bat" FileName="430235~2.MAN|43.0.2351.0.manifest" Attributes="0" SourcePath="..\43.0.2351.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_36" Component_="_STARTGLHROME.bat" FileName="430235~3.MAN|43.0.2352.0.manifest" Attributes="0" SourcePath="..\43.0.2352.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_37" Component_="_STARTGLHROME.bat" FileName="430235~4.MAN|43.0.2353.0.manifest" Attributes="0" SourcePath="..\43.0.2353.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_38" Component_="_STARTGLHROME.bat" FileName="430235~5.MAN|43.0.2354.0.manifest" Attributes="0" SourcePath="..\43.0.2354.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_39" Component_="_STARTGLHROME.bat" FileName="430235~6.MAN|43.0.2355.0.manifest" Attributes="0" SourcePath="..\43.0.2355.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_40" Component_="_STARTGLHROME.bat" FileName="430235~7.MAN|43.0.2356.0.manifest" Attributes="0" SourcePath="..\43.0.2356.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_41" Component_="_STARTGLHROME.bat" FileName="430235~8.MAN|43.0.2357.0.manifest" Attributes="0" SourcePath="..\43.0.2357.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_42" Component_="_STARTGLHROME.bat" FileName="440235~1.MAN|44.0.2358.0.manifest" Attributes="0" SourcePath="..\44.0.2358.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_43" Component_="_STARTGLHROME.bat" FileName="440235~2.MAN|44.0.2359.0.manifest" Attributes="0" SourcePath="..\44.0.2359.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_44" Component_="_STARTGLHROME.bat" FileName="440236~1.MAN|44.0.2360.0.manifest" Attributes="0" SourcePath="..\44.0.2360.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_45" Component_="_STARTGLHROME.bat" FileName="440236~2.MAN|44.0.2361.0.manifest" Attributes="0" SourcePath="..\44.0.2361.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_46" Component_="_STARTGLHROME.bat" FileName="440236~3.MAN|44.0.2362.0.manifest" Attributes="0" SourcePath="..\44.0.2362.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_47" Component_="_STARTGLHROME.bat" FileName="440236~4.MAN|44.0.2363.0.manifest" Attributes="0" SourcePath="..\44.0.2363.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_48" Component_="_STARTGLHROME.bat" FileName="440236~5.MAN|44.0.2364.0.manifest" Attributes="0" SourcePath="..\44.0.2364.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_49" Component_="_STARTGLHROME.bat" FileName="440236~6.MAN|44.0.2365.0.manifest" Attributes="0" SourcePath="..\44.0.2365.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_50" Component_="_STARTGLHROME.bat" FileName="440236~7.MAN|44.0.2366.0.manifest" Attributes="0" SourcePath="..\44.0.2366.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_51" Component_="_STARTGLHROME.bat" FileName="440236~8.MAN|44.0.2367.0.manifest" Attributes="0" SourcePath="..\44.0.2367.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_52" Component_="_STARTGLHROME.bat" FileName="440236~9.MAN|44.0.2368.0.manifest" Attributes="0" SourcePath="..\44.0.2368.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_53" Component_="_STARTGLHROME.bat" FileName="44023~10.MAN|44.0.2369.0.manifest" Attributes="0" SourcePath="..\44.0.2369.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_54" Component_="_STARTGLHROME.bat" FileName="440237~1.MAN|44.0.2370.0.manifest" Attributes="0" SourcePath="..\44.0.2370.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_55" Component_="_STARTGLHROME.bat" FileName="440237~2.MAN|44.0.2371.0.manifest" Attributes="0" SourcePath="..\44.0.2371.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_56" Component_="_STARTGLHROME.bat" FileName="440237~3.MAN|44.0.2372.0.manifest" Attributes="0" SourcePath="..\44.0.2372.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_57" Component_="_STARTGLHROME.bat" FileName="440237~4.MAN|44.0.2373.0.manifest" Attributes="0" SourcePath="..\44.0.2373.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_58" Component_="_STARTGLHROME.bat" FileName="440237~5.MAN|44.0.2374.0.manifest" Attributes="0" SourcePath="..\44.0.2374.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_59" Component_="_STARTGLHROME.bat" FileName="440237~6.MAN|44.0.2375.0.manifest" Attributes="0" SourcePath="..\44.0.2375.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_60" Component_="_STARTGLHROME.bat" FileName="440237~7.MAN|44.0.2376.0.manifest" Attributes="0" SourcePath="..\44.0.2376.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_61" Component_="_STARTGLHROME.bat" FileName="440237~8.MAN|44.0.2377.0.manifest" Attributes="0" SourcePath="..\44.0.2377.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_62" Component_="_STARTGLHROME.bat" FileName="440237~9.MAN|44.0.2378.0.manifest" Attributes="0" SourcePath="..\44.0.2378.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_63" Component_="_STARTGLHROME.bat" FileName="44023~11.MAN|44.0.2379.0.manifest" Attributes="0" SourcePath="..\44.0.2379.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_64" Component_="_STARTGLHROME.bat" FileName="440238~1.MAN|44.0.2380.0.manifest" Attributes="0" SourcePath="..\44.0.2380.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_65" Component_="_STARTGLHROME.bat" FileName="440238~2.MAN|44.0.2381.0.manifest" Attributes="0" SourcePath="..\44.0.2381.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_66" Component_="_STARTGLHROME.bat" FileName="440238~3.MAN|44.0.2382.0.manifest" Attributes="0" SourcePath="..\44.0.2382.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_67" Component_="_STARTGLHROME.bat" FileName="440238~4.MAN|44.0.2383.0.manifest" Attributes="0" SourcePath="..\44.0.2383.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_68" Component_="_STARTGLHROME.bat" FileName="440238~5.MAN|44.0.2384.0.manifest" Attributes="0" SourcePath="..\44.0.2384.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_69" Component_="_STARTGLHROME.bat" FileName="440238~6.MAN|44.0.2385.0.manifest" Attributes="0" SourcePath="..\44.0.2385.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_70" Component_="_STARTGLHROME.bat" FileName="440238~7.MAN|44.0.2386.0.manifest" Attributes="0" SourcePath="..\44.0.2386.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_71" Component_="_STARTGLHROME.bat" FileName="440238~8.MAN|44.0.2387.0.manifest" Attributes="0" SourcePath="..\44.0.2387.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_72" Component_="_STARTGLHROME.bat" FileName="440238~9.MAN|44.0.2388.0.manifest" Attributes="0" SourcePath="..\44.0.2388.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_73" Component_="_STARTGLHROME.bat" FileName="44023~12.MAN|44.0.2389.0.manifest" Attributes="0" SourcePath="..\44.0.2389.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_74" Component_="_STARTGLHROME.bat" FileName="440239~1.MAN|44.0.2390.0.manifest" Attributes="0" SourcePath="..\44.0.2390.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_75" Component_="_STARTGLHROME.bat" FileName="440239~2.MAN|44.0.2391.0.manifest" Attributes="0" SourcePath="..\44.0.2391.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_76" Component_="_STARTGLHROME.bat" FileName="440239~3.MAN|44.0.2392.0.manifest" Attributes="0" SourcePath="..\44.0.2392.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_77" Component_="_STARTGLHROME.bat" FileName="440239~4.MAN|44.0.2393.0.manifest" Attributes="0" SourcePath="..\44.0.2393.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_78" Component_="_STARTGLHROME.bat" FileName="440239~5.MAN|44.0.2394.0.manifest" Attributes="0" SourcePath="..\44.0.2394.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_79" Component_="_STARTGLHROME.bat" FileName="440239~6.MAN|44.0.2395.0.manifest" Attributes="0" SourcePath="..\44.0.2395.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_80" Component_="_STARTGLHROME.bat" FileName="440239~7.MAN|44.0.2396.0.manifest" Attributes="0" SourcePath="..\44.0.2396.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_81" Component_="_STARTGLHROME.bat" FileName="440239~8.MAN|44.0.2397.0.manifest" Attributes="0" SourcePath="..\44.0.2397.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_82" Component_="_STARTGLHROME.bat" FileName="440239~9.MAN|44.0.2398.0.manifest" Attributes="0" SourcePath="..\44.0.2398.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_83" Component_="_STARTGLHROME.bat" FileName="44023~13.MAN|44.0.2399.0.manifest" Attributes="0" SourcePath="..\44.0.2399.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_84" Component_="_STARTGLHROME.bat" FileName="440240~1.MAN|44.0.2400.0.manifest" Attributes="0" SourcePath="..\44.0.2400.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_85" Component_="_STARTGLHROME.bat" FileName="440240~2.MAN|44.0.2401.0.manifest" Attributes="0" SourcePath="..\44.0.2401.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_86" Component_="_STARTGLHROME.bat" FileName="440240~3.MAN|44.0.2402.0.manifest" Attributes="0" SourcePath="..\44.0.2402.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_87" Component_="_STARTGLHROME.bat" FileName="440240~4.MAN|44.0.2403.0.manifest" Attributes="0" SourcePath="..\44.0.2403.0.manifest" SelfReg="false"/>
     <ROW File="accessibility_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ACCESS~1.MAN|accessibility_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\accessibility_unittests.exe.assert.manifest" SelfReg="false"/>
     <ROW File="accessibility_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ACCESS~2.MAN|accessibility_unittests.exe.manifest" Attributes="0" SourcePath="..\accessibility_unittests.exe.manifest" SelfReg="false"/>
     <ROW File="allocator_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ALLOCA~1.MAN|allocator_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\allocator_unittests.exe.assert.manifest" SelfReg="false"/>
@@ -419,7 +472,6 @@
     <ROW File="extensions_browsertests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="EXTENS~2.MAN|extensions_browsertests.exe.manifest" Attributes="0" SourcePath="..\extensions_browsertests.exe.manifest" SelfReg="false"/>
     <ROW File="extensions_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="EXTENS~3.MAN|extensions_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\extensions_unittests.exe.assert.manifest" SelfReg="false"/>
     <ROW File="extensions_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="EXTENS~4.MAN|extensions_unittests.exe.manifest" Attributes="0" SourcePath="..\extensions_unittests.exe.manifest" SelfReg="false"/>
-    <ROW File="ffmpeg.exe" Component_="ffmpeg.exe" FileName="ffmpeg.exe" Attributes="0" SourcePath="..\ffmpeg.exe" SelfReg="false" DigSign="true"/>
     <ROW File="ffmpeg_regression_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="FFMPEG~1.MAN|ffmpeg_regression_tests.exe.assert.manifest" Attributes="0" SourcePath="..\ffmpeg_regression_tests.exe.assert.manifest" SelfReg="false"/>
     <ROW File="ffmpeg_regression_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="FFMPEG~2.MAN|ffmpeg_regression_tests.exe.manifest" Attributes="0" SourcePath="..\ffmpeg_regression_tests.exe.manifest" SelfReg="false"/>
     <ROW File="ffmpegsumo.dll" Component_="ffmpegsumo.dll" FileName="FFMPEG~1.DLL|ffmpegsumo.dll" Attributes="0" SourcePath="..\ffmpegsumo.dll" SelfReg="false"/>
@@ -587,6 +639,7 @@
     <ROW File="mojo_test_support.dll.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_T~2.MAN|mojo_test_support.dll.manifest" Attributes="0" SourcePath="..\mojo_test_support.dll.manifest" SelfReg="false"/>
     <ROW File="monacl_shell.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MONACL~1.MAN|monacl_shell.exe.assert.manifest" Attributes="0" SourcePath="..\monacl_shell.exe.assert.manifest" SelfReg="false"/>
     <ROW File="monacl_shell.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MONACL~2.MAN|monacl_shell.exe.manifest" Attributes="0" SourcePath="..\monacl_shell.exe.manifest" SelfReg="false"/>
+    <ROW File="mrow.txt" Component_="_STARTGLHROME.bat" FileName="mrow.txt" Attributes="0" SourcePath="..\mrow.txt" SelfReg="false"/>
     <ROW File="msdump2symdb.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MSDUMP~1.MAN|msdump2symdb.exe.assert.manifest" Attributes="0" SourcePath="..\msdump2symdb.exe.assert.manifest" SelfReg="false"/>
     <ROW File="msdump2symdb.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MSDUMP~2.MAN|msdump2symdb.exe.manifest" Attributes="0" SourcePath="..\msdump2symdb.exe.manifest" SelfReg="false"/>
     <ROW File="msmap2tsv.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MSMAP2~1.MAN|msmap2tsv.exe.assert.manifest" Attributes="0" SourcePath="..\msmap2tsv.exe.assert.manifest" SelfReg="false"/>
@@ -823,61 +876,6 @@
     <ROW File="xinput1_3.dll" Component_="xinput1_3.dll" FileName="XINPUT~1.DLL|xinput1_3.dll" Attributes="0" SourcePath="..\xinput1_3.dll" SelfReg="false"/>
     <ROW File="yasm.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="YASMEX~1.MAN|yasm.exe.assert.manifest" Attributes="0" SourcePath="..\yasm.exe.assert.manifest" SelfReg="false"/>
     <ROW File="yasm.exe.manifest" Component_="_STARTGLHROME.bat" FileName="YASMEX~2.MAN|yasm.exe.manifest" Attributes="0" SourcePath="..\yasm.exe.manifest" SelfReg="false"/>
-    <ROW File="a.ico" Component_="a.ico" FileName="a.ico" Attributes="0" SourcePath="..\webassets\a.ico" SelfReg="false"/>
-    <ROW File="a.png" Component_="a.ico" FileName="a.png" Attributes="0" SourcePath="..\webassets\a.png" SelfReg="false"/>
-    <ROW File="glhrome.ico" Component_="a.ico" FileName="glhrome.ico" Attributes="0" SourcePath="..\webassets\glhrome.ico" SelfReg="false"/>
-    <ROW File="glhrome.png" Component_="a.ico" FileName="glhrome.png" Attributes="0" SourcePath="..\webassets\glhrome.png" SelfReg="false"/>
-    <ROW File="ar.pak" Component_="ar.pak" FileName="ar.pak" Attributes="0" SourcePath="..\locales\ar.pak" SelfReg="false"/>
-    <ROW File="bg.pak" Component_="ar.pak" FileName="bg.pak" Attributes="0" SourcePath="..\locales\bg.pak" SelfReg="false"/>
-    <ROW File="bn.pak" Component_="ar.pak" FileName="bn.pak" Attributes="0" SourcePath="..\locales\bn.pak" SelfReg="false"/>
-    <ROW File="ca.pak" Component_="ar.pak" FileName="ca.pak" Attributes="0" SourcePath="..\locales\ca.pak" SelfReg="false"/>
-    <ROW File="cs.pak" Component_="ar.pak" FileName="cs.pak" Attributes="0" SourcePath="..\locales\cs.pak" SelfReg="false"/>
-    <ROW File="da.pak" Component_="ar.pak" FileName="da.pak" Attributes="0" SourcePath="..\locales\da.pak" SelfReg="false"/>
-    <ROW File="de.pak" Component_="ar.pak" FileName="de.pak" Attributes="0" SourcePath="..\locales\de.pak" SelfReg="false"/>
-    <ROW File="el.pak" Component_="ar.pak" FileName="el.pak" Attributes="0" SourcePath="..\locales\el.pak" SelfReg="false"/>
-    <ROW File="enGB.pak" Component_="ar.pak" FileName="en-GB.pak" Attributes="0" SourcePath="..\locales\en-GB.pak" SelfReg="false"/>
-    <ROW File="enUS.pak" Component_="ar.pak" FileName="en-US.pak" Attributes="0" SourcePath="..\locales\en-US.pak" SelfReg="false"/>
-    <ROW File="es419.pak" Component_="ar.pak" FileName="es-419.pak" Attributes="0" SourcePath="..\locales\es-419.pak" SelfReg="false"/>
-    <ROW File="es.pak" Component_="ar.pak" FileName="es.pak" Attributes="0" SourcePath="..\locales\es.pak" SelfReg="false"/>
-    <ROW File="et.pak" Component_="ar.pak" FileName="et.pak" Attributes="0" SourcePath="..\locales\et.pak" SelfReg="false"/>
-    <ROW File="fi.pak" Component_="ar.pak" FileName="fi.pak" Attributes="0" SourcePath="..\locales\fi.pak" SelfReg="false"/>
-    <ROW File="fil.pak" Component_="ar.pak" FileName="fil.pak" Attributes="0" SourcePath="..\locales\fil.pak" SelfReg="false"/>
-    <ROW File="fr.pak" Component_="ar.pak" FileName="fr.pak" Attributes="0" SourcePath="..\locales\fr.pak" SelfReg="false"/>
-    <ROW File="gu.pak" Component_="ar.pak" FileName="gu.pak" Attributes="0" SourcePath="..\locales\gu.pak" SelfReg="false"/>
-    <ROW File="he.pak" Component_="ar.pak" FileName="he.pak" Attributes="0" SourcePath="..\locales\he.pak" SelfReg="false"/>
-    <ROW File="hi.pak" Component_="ar.pak" FileName="hi.pak" Attributes="0" SourcePath="..\locales\hi.pak" SelfReg="false"/>
-    <ROW File="hr.pak" Component_="ar.pak" FileName="hr.pak" Attributes="0" SourcePath="..\locales\hr.pak" SelfReg="false"/>
-    <ROW File="hu.pak" Component_="ar.pak" FileName="hu.pak" Attributes="0" SourcePath="..\locales\hu.pak" SelfReg="false"/>
-    <ROW File="id.pak" Component_="ar.pak" FileName="id.pak" Attributes="0" SourcePath="..\locales\id.pak" SelfReg="false"/>
-    <ROW File="it.pak" Component_="ar.pak" FileName="it.pak" Attributes="0" SourcePath="..\locales\it.pak" SelfReg="false"/>
-    <ROW File="ja.pak" Component_="ar.pak" FileName="ja.pak" Attributes="0" SourcePath="..\locales\ja.pak" SelfReg="false"/>
-    <ROW File="kn.pak" Component_="ar.pak" FileName="kn.pak" Attributes="0" SourcePath="..\locales\kn.pak" SelfReg="false"/>
-    <ROW File="ko.pak" Component_="ar.pak" FileName="ko.pak" Attributes="0" SourcePath="..\locales\ko.pak" SelfReg="false"/>
-    <ROW File="lt.pak" Component_="ar.pak" FileName="lt.pak" Attributes="0" SourcePath="..\locales\lt.pak" SelfReg="false"/>
-    <ROW File="lv.pak" Component_="ar.pak" FileName="lv.pak" Attributes="0" SourcePath="..\locales\lv.pak" SelfReg="false"/>
-    <ROW File="ml.pak" Component_="ar.pak" FileName="ml.pak" Attributes="0" SourcePath="..\locales\ml.pak" SelfReg="false"/>
-    <ROW File="mr.pak" Component_="ar.pak" FileName="mr.pak" Attributes="0" SourcePath="..\locales\mr.pak" SelfReg="false"/>
-    <ROW File="ms.pak" Component_="ar.pak" FileName="ms.pak" Attributes="0" SourcePath="..\locales\ms.pak" SelfReg="false"/>
-    <ROW File="nb.pak" Component_="ar.pak" FileName="nb.pak" Attributes="0" SourcePath="..\locales\nb.pak" SelfReg="false"/>
-    <ROW File="nl.pak" Component_="ar.pak" FileName="nl.pak" Attributes="0" SourcePath="..\locales\nl.pak" SelfReg="false"/>
-    <ROW File="pl.pak" Component_="ar.pak" FileName="pl.pak" Attributes="0" SourcePath="..\locales\pl.pak" SelfReg="false"/>
-    <ROW File="ptBR.pak" Component_="ar.pak" FileName="pt-BR.pak" Attributes="0" SourcePath="..\locales\pt-BR.pak" SelfReg="false"/>
-    <ROW File="ptPT.pak" Component_="ar.pak" FileName="pt-PT.pak" Attributes="0" SourcePath="..\locales\pt-PT.pak" SelfReg="false"/>
-    <ROW File="ro.pak" Component_="ar.pak" FileName="ro.pak" Attributes="0" SourcePath="..\locales\ro.pak" SelfReg="false"/>
-    <ROW File="ru.pak" Component_="ar.pak" FileName="ru.pak" Attributes="0" SourcePath="..\locales\ru.pak" SelfReg="false"/>
-    <ROW File="sk.pak" Component_="ar.pak" FileName="sk.pak" Attributes="0" SourcePath="..\locales\sk.pak" SelfReg="false"/>
-    <ROW File="sl.pak" Component_="ar.pak" FileName="sl.pak" Attributes="0" SourcePath="..\locales\sl.pak" SelfReg="false"/>
-    <ROW File="sr.pak" Component_="ar.pak" FileName="sr.pak" Attributes="0" SourcePath="..\locales\sr.pak" SelfReg="false"/>
-    <ROW File="sv.pak" Component_="ar.pak" FileName="sv.pak" Attributes="0" SourcePath="..\locales\sv.pak" SelfReg="false"/>
-    <ROW File="ta.pak" Component_="ar.pak" FileName="ta.pak" Attributes="0" SourcePath="..\locales\ta.pak" SelfReg="false"/>
-    <ROW File="te.pak" Component_="ar.pak" FileName="te.pak" Attributes="0" SourcePath="..\locales\te.pak" SelfReg="false"/>
-    <ROW File="th.pak" Component_="ar.pak" FileName="th.pak" Attributes="0" SourcePath="..\locales\th.pak" SelfReg="false"/>
-    <ROW File="tr.pak" Component_="ar.pak" FileName="tr.pak" Attributes="0" SourcePath="..\locales\tr.pak" SelfReg="false"/>
-    <ROW File="uk.pak" Component_="ar.pak" FileName="uk.pak" Attributes="0" SourcePath="..\locales\uk.pak" SelfReg="false"/>
-    <ROW File="vi.pak" Component_="ar.pak" FileName="vi.pak" Attributes="0" SourcePath="..\locales\vi.pak" SelfReg="false"/>
-    <ROW File="zhCN.pak" Component_="ar.pak" FileName="zh-CN.pak" Attributes="0" SourcePath="..\locales\zh-CN.pak" SelfReg="false"/>
-    <ROW File="zhTW.pak" Component_="ar.pak" FileName="zh-TW.pak" Attributes="0" SourcePath="..\locales\zh-TW.pak" SelfReg="false"/>
-    <ROW File="mrow.txt" Component_="_STARTGLHROME.bat" FileName="mrow.txt" Attributes="0" SourcePath="..\mrow.txt" SelfReg="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
     <ROW Action="AI_DetectSoftware" Sequence="151"/>
@@ -963,7 +961,6 @@
     <ROW Feature_="MainFeature" Component_="crash_service.exe"/>
     <ROW Feature_="MainFeature" Component_="crash_service64.exe"/>
     <ROW Feature_="MainFeature" Component_="D3DCompiler_47.dll"/>
-    <ROW Feature_="MainFeature" Component_="ffmpeg.exe"/>
     <ROW Feature_="MainFeature" Component_="ffmpegsumo.dll"/>
     <ROW Feature_="MainFeature" Component_="gcapi_dll.dll"/>
     <ROW Feature_="MainFeature" Component_="glhrome.exe"/>
@@ -973,10 +970,10 @@
     <ROW Feature_="MainFeature" Component_="libGLESv2.dll"/>
     <ROW Feature_="MainFeature" Component_="nacl64.exe"/>
     <ROW Feature_="MainFeature" Component_="wow_helper.exe"/>
-    <ROW Feature_="MainFeature" Component_="xinput1_3.dll"/>
-    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
     <ROW Feature_="MainFeature" Component_="a.ico"/>
     <ROW Feature_="MainFeature" Component_="ar.pak"/>
+    <ROW Feature_="MainFeature" Component_="xinput1_3.dll"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="glhrome_1.exe" SourcePath="..\..\gab644site\goog\glhrome.ico" Index="0"/>
@@ -1014,7 +1011,7 @@
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
-    <ROW Shortcut="glhrome" Directory_="SHORTCUTDIR" Name="glhrome" Component_="glhrome.exe" Target="[#glhrome.exe]" Arguments="--ignore-certificate-errors --allow-insecure-localhost --test-type" Description="Access the Internet" Hotkey="0" Icon_="glhrome_1.exe" IconIndex="0" ShowCmd="1" WkDir="glhrome_Dir"/>
+    <ROW Shortcut="glhrome" Directory_="SHORTCUTDIR" Name="glhrome" Component_="glhrome.exe" Target="[#glhrome.exe]" Arguments="--ignore-certificate-errors --allow-insecure-localhost --test-type --disable-gpu --disable-gpu-compositing" Description="Access the Internet!" Hotkey="0" Icon_="glhrome_1.exe" IconIndex="0" ShowCmd="1" WkDir="glhrome_Dir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>
