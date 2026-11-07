@@ -16,7 +16,7 @@
     <ROW Property="ProductCode" Value="1033:{C72A7201-DEEE-4D59-BE86-22D6A6093CD1} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Goog Glhrome"/>
-    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="ProductVersion" Value="1.0.1" Options="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{C288DC5C-D8D7-45E6-9AE0-07982B950056}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
