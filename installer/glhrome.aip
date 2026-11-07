@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="24.1" version="24.1" Modules="simple" RootPath="." Language="en" Id="{183BB773-E3D7-4AEC-B362-0BE16114A1D2}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="BackUpAipBeforeSave" Value="1"/>
+    <ROW Name="BackUpFolderPath" Value="[|AI_AIP_FOLDER][|AI_AIP_FILENAME]-backups\[|Date]_[|Time].aip_backup" ValueType="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_INTERNET_CONNECTION"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="[|ProductName] is a fork of chromium from around 2014-2015" ValueLocId="*"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="glhrome_1.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://gab644.github.io/GAB644/goog/glhrome.html"/>
+    <ROW Property="Manufacturer" Value="The Goog Company"/>
+    <ROW Property="ProductCode" Value="1033:{C72A7201-DEEE-4D59-BE86-22D6A6093CD1} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Goog Glhrome"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{C288DC5C-D8D7-45E6-9AE0-07982B950056}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="ProgramFilesFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramFilesFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="glhrome_Dir" Directory_Parent="goog_Dir" DefaultDir="glhrome"/>
+    <ROW Directory="goog_Dir" Directory_Parent="ProgramFilesFolder" DefaultDir="goog"/>
+    <ROW Directory="locales_Dir" Directory_Parent="glhrome_Dir" DefaultDir="locales"/>
+    <ROW Directory="webassets_Dir" Directory_Parent="glhrome_Dir" DefaultDir="WEBASS~1|webassets"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{8D726569-3994-45F5-9887-42A9B884027F}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="D3DCompiler_47.dll" ComponentId="{7AED6695-C328-4FEF-AE19-05D8487F96D7}" Directory_="glhrome_Dir" Attributes="0" KeyPath="D3DCompiler_47.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{66CDDD0B-E79C-40EA-B7CD-1E8A1CA1208B}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{A24A70EB-4741-45B9-ACFA-4D7AC9FC0D13}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="_STARTGLHROME.bat" ComponentId="{C5D2FAB5-76A7-4303-9EEB-7ED8B337ACE8}" Directory_="glhrome_Dir" Attributes="0" KeyPath="_STARTGLHROME.bat" Type="0"/>
+    <ROW Component="a.ico" ComponentId="{0FECBBA9-86EE-4429-923D-41CAA0E60C97}" Directory_="webassets_Dir" Attributes="0" KeyPath="a.ico" Type="0"/>
+    <ROW Component="ar.pak" ComponentId="{A8DB2AEB-28C3-42A1-9B31-42FA4B4CF610}" Directory_="locales_Dir" Attributes="0" KeyPath="ar.pak" Type="0"/>
+    <ROW Component="chrome.dll" ComponentId="{902EAB46-5736-412D-AA4D-6F4F311F2F47}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome.dll"/>
+    <ROW Component="chrome_child.dll" ComponentId="{84D2DDF6-8F27-4F06-8F16-0B579EC9095C}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_child.dll"/>
+    <ROW Component="chrome_elf.dll" ComponentId="{D03AAE67-A5EC-463B-816C-A7B9BA87361A}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_elf.dll"/>
+    <ROW Component="chrome_watcher.dll" ComponentId="{F8E340E3-3F2B-453E-9FFD-842D5FDCE3ED}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_watcher.dll"/>
+    <ROW Component="crash_service.exe" ComponentId="{D8BB0FF7-B954-426F-B6D5-9FC2ED411294}" Directory_="glhrome_Dir" Attributes="0" KeyPath="crash_service.exe"/>
+    <ROW Component="crash_service64.exe" ComponentId="{C20DC0BE-23E7-4458-A369-7A4890161A87}" Directory_="glhrome_Dir" Attributes="256" KeyPath="crash_service64.exe"/>
+    <ROW Component="ffmpeg.exe" ComponentId="{54228D17-2BD7-44AD-9CE8-9032D7635473}" Directory_="glhrome_Dir" Attributes="256" KeyPath="ffmpeg.exe"/>
+    <ROW Component="ffmpegsumo.dll" ComponentId="{4BB37CF1-E96B-43BA-B518-1775296F131E}" Directory_="glhrome_Dir" Attributes="0" KeyPath="ffmpegsumo.dll"/>
+    <ROW Component="gcapi_dll.dll" ComponentId="{5D1D0657-BD24-4C72-BEAF-376C29A1EDB6}" Directory_="glhrome_Dir" Attributes="0" KeyPath="gcapi_dll.dll"/>
+    <ROW Component="glhrome.exe" ComponentId="{85B6E049-4911-4986-9934-59988556668A}" Directory_="glhrome_Dir" Attributes="0" KeyPath="glhrome.exe"/>
+    <ROW Component="interactive_ui_tests.exe" ComponentId="{77B6E510-B643-414C-934D-B6D0CD016C7A}" Directory_="glhrome_Dir" Attributes="0" KeyPath="interactive_ui_tests.exe"/>
+    <ROW Component="libEGL.dll" ComponentId="{F341A24A-1494-424C-96A1-2C802422D0AC}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libEGL.dll"/>
+    <ROW Component="libGLESv2.dll" ComponentId="{D3C85061-3CD7-4253-B517-FFD76262A430}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libGLESv2.dll"/>
+    <ROW Component="libexif.dll" ComponentId="{3922B8C8-D70E-4D59-8E1B-33E35302C928}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libexif.dll"/>
+    <ROW Component="nacl64.exe" ComponentId="{E1E13577-61A7-4BF6-AB63-AD8F5D5DDAC2}" Directory_="glhrome_Dir" Attributes="256" KeyPath="nacl64.exe"/>
+    <ROW Component="wow_helper.exe" ComponentId="{918B51E6-4E46-4B4D-9B17-97C5F837F4B4}" Directory_="glhrome_Dir" Attributes="256" KeyPath="wow_helper.exe"/>
+    <ROW Component="xinput1_3.dll" ComponentId="{A854308E-FEBA-483B-9CE4-6582217C5F63}" Directory_="glhrome_Dir" Attributes="0" KeyPath="xinput1_3.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="_STARTGLHROME.bat" Component_="_STARTGLHROME.bat" FileName="_START~1.BAT|_STARTGLHROME.bat" Attributes="0" SourcePath="..\_STARTGLHROME.bat" SelfReg="false"/>
+    <ROW File="manifest" Component_="_STARTGLHROME.bat" FileName="430231~1.MAN|43.0.2316.0.manifest" Attributes="0" SourcePath="..\43.0.2316.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_88" Component_="_STARTGLHROME.bat" FileName="430231~2.MAN|43.0.2317.0.manifest" Attributes="0" SourcePath="..\43.0.2317.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_89" Component_="_STARTGLHROME.bat" FileName="430231~3.MAN|43.0.2318.0.manifest" Attributes="0" SourcePath="..\43.0.2318.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_90" Component_="_STARTGLHROME.bat" FileName="430231~4.MAN|43.0.2319.0.manifest" Attributes="0" SourcePath="..\43.0.2319.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_91" Component_="_STARTGLHROME.bat" FileName="430232~1.MAN|43.0.2320.0.manifest" Attributes="0" SourcePath="..\43.0.2320.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_92" Component_="_STARTGLHROME.bat" FileName="430232~2.MAN|43.0.2321.0.manifest" Attributes="0" SourcePath="..\43.0.2321.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_93" Component_="_STARTGLHROME.bat" FileName="430232~3.MAN|43.0.2322.0.manifest" Attributes="0" SourcePath="..\43.0.2322.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_94" Component_="_STARTGLHROME.bat" FileName="430232~4.MAN|43.0.2323.0.manifest" Attributes="0" SourcePath="..\43.0.2323.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_95" Component_="_STARTGLHROME.bat" FileName="430232~5.MAN|43.0.2324.0.manifest" Attributes="0" SourcePath="..\43.0.2324.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_96" Component_="_STARTGLHROME.bat" FileName="430232~6.MAN|43.0.2325.0.manifest" Attributes="0" SourcePath="..\43.0.2325.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_97" Component_="_STARTGLHROME.bat" FileName="430232~7.MAN|43.0.2326.0.manifest" Attributes="0" SourcePath="..\43.0.2326.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_98" Component_="_STARTGLHROME.bat" FileName="430232~8.MAN|43.0.2327.0.manifest" Attributes="0" SourcePath="..\43.0.2327.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_99" Component_="_STARTGLHROME.bat" FileName="430232~9.MAN|43.0.2328.0.manifest" Attributes="0" SourcePath="..\43.0.2328.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_100" Component_="_STARTGLHROME.bat" FileName="43023~10.MAN|43.0.2329.0.manifest" Attributes="0" SourcePath="..\43.0.2329.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_101" Component_="_STARTGLHROME.bat" FileName="430233~1.MAN|43.0.2330.0.manifest" Attributes="0" SourcePath="..\43.0.2330.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_102" Component_="_STARTGLHROME.bat" FileName="430233~2.MAN|43.0.2331.0.manifest" Attributes="0" SourcePath="..\43.0.2331.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_103" Component_="_STARTGLHROME.bat" FileName="430233~3.MAN|43.0.2332.0.manifest" Attributes="0" SourcePath="..\43.0.2332.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_104" Component_="_STARTGLHROME.bat" FileName="430233~4.MAN|43.0.2333.0.manifest" Attributes="0" SourcePath="..\43.0.2333.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_105" Component_="_STARTGLHROME.bat" FileName="430233~5.MAN|43.0.2334.0.manifest" Attributes="0" SourcePath="..\43.0.2334.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_106" Component_="_STARTGLHROME.bat" FileName="430233~6.MAN|43.0.2335.0.manifest" Attributes="0" SourcePath="..\43.0.2335.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_107" Component_="_STARTGLHROME.bat" FileName="430233~7.MAN|43.0.2336.0.manifest" Attributes="0" SourcePath="..\43.0.2336.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_108" Component_="_STARTGLHROME.bat" FileName="430233~8.MAN|43.0.2337.0.manifest" Attributes="0" SourcePath="..\43.0.2337.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_109" Component_="_STARTGLHROME.bat" FileName="430233~9.MAN|43.0.2338.0.manifest" Attributes="0" SourcePath="..\43.0.2338.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_110" Component_="_STARTGLHROME.bat" FileName="43023~11.MAN|43.0.2339.0.manifest" Attributes="0" SourcePath="..\43.0.2339.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_111" Component_="_STARTGLHROME.bat" FileName="430234~1.MAN|43.0.2340.0.manifest" Attributes="0" SourcePath="..\43.0.2340.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_112" Component_="_STARTGLHROME.bat" FileName="430234~2.MAN|43.0.2341.0.manifest" Attributes="0" SourcePath="..\43.0.2341.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_113" Component_="_STARTGLHROME.bat" FileName="430234~3.MAN|43.0.2342.0.manifest" Attributes="0" SourcePath="..\43.0.2342.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_114" Component_="_STARTGLHROME.bat" FileName="430234~4.MAN|43.0.2343.0.manifest" Attributes="0" SourcePath="..\43.0.2343.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_115" Component_="_STARTGLHROME.bat" FileName="430234~5.MAN|43.0.2344.0.manifest" Attributes="0" SourcePath="..\43.0.2344.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_116" Component_="_STARTGLHROME.bat" FileName="430234~6.MAN|43.0.2345.0.manifest" Attributes="0" SourcePath="..\43.0.2345.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_117" Component_="_STARTGLHROME.bat" FileName="430234~7.MAN|43.0.2346.0.manifest" Attributes="0" SourcePath="..\43.0.2346.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_118" Component_="_STARTGLHROME.bat" FileName="430234~8.MAN|43.0.2347.0.manifest" Attributes="0" SourcePath="..\43.0.2347.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_119" Component_="_STARTGLHROME.bat" FileName="430234~9.MAN|43.0.2348.0.manifest" Attributes="0" SourcePath="..\43.0.2348.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_120" Component_="_STARTGLHROME.bat" FileName="43023~12.MAN|43.0.2349.0.manifest" Attributes="0" SourcePath="..\43.0.2349.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_121" Component_="_STARTGLHROME.bat" FileName="430235~1.MAN|43.0.2350.0.manifest" Attributes="0" SourcePath="..\43.0.2350.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_122" Component_="_STARTGLHROME.bat" FileName="430235~2.MAN|43.0.2351.0.manifest" Attributes="0" SourcePath="..\43.0.2351.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_123" Component_="_STARTGLHROME.bat" FileName="430235~3.MAN|43.0.2352.0.manifest" Attributes="0" SourcePath="..\43.0.2352.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_124" Component_="_STARTGLHROME.bat" FileName="430235~4.MAN|43.0.2353.0.manifest" Attributes="0" SourcePath="..\43.0.2353.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_125" Component_="_STARTGLHROME.bat" FileName="430235~5.MAN|43.0.2354.0.manifest" Attributes="0" SourcePath="..\43.0.2354.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_126" Component_="_STARTGLHROME.bat" FileName="430235~6.MAN|43.0.2355.0.manifest" Attributes="0" SourcePath="..\43.0.2355.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_127" Component_="_STARTGLHROME.bat" FileName="430235~7.MAN|43.0.2356.0.manifest" Attributes="0" SourcePath="..\43.0.2356.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_128" Component_="_STARTGLHROME.bat" FileName="430235~8.MAN|43.0.2357.0.manifest" Attributes="0" SourcePath="..\43.0.2357.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_129" Component_="_STARTGLHROME.bat" FileName="440235~1.MAN|44.0.2358.0.manifest" Attributes="0" SourcePath="..\44.0.2358.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_130" Component_="_STARTGLHROME.bat" FileName="440235~2.MAN|44.0.2359.0.manifest" Attributes="0" SourcePath="..\44.0.2359.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_131" Component_="_STARTGLHROME.bat" FileName="440236~1.MAN|44.0.2360.0.manifest" Attributes="0" SourcePath="..\44.0.2360.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_132" Component_="_STARTGLHROME.bat" FileName="440236~2.MAN|44.0.2361.0.manifest" Attributes="0" SourcePath="..\44.0.2361.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_133" Component_="_STARTGLHROME.bat" FileName="440236~3.MAN|44.0.2362.0.manifest" Attributes="0" SourcePath="..\44.0.2362.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_134" Component_="_STARTGLHROME.bat" FileName="440236~4.MAN|44.0.2363.0.manifest" Attributes="0" SourcePath="..\44.0.2363.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_135" Component_="_STARTGLHROME.bat" FileName="440236~5.MAN|44.0.2364.0.manifest" Attributes="0" SourcePath="..\44.0.2364.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_136" Component_="_STARTGLHROME.bat" FileName="440236~6.MAN|44.0.2365.0.manifest" Attributes="0" SourcePath="..\44.0.2365.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_137" Component_="_STARTGLHROME.bat" FileName="440236~7.MAN|44.0.2366.0.manifest" Attributes="0" SourcePath="..\44.0.2366.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_138" Component_="_STARTGLHROME.bat" FileName="440236~8.MAN|44.0.2367.0.manifest" Attributes="0" SourcePath="..\44.0.2367.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_139" Component_="_STARTGLHROME.bat" FileName="440236~9.MAN|44.0.2368.0.manifest" Attributes="0" SourcePath="..\44.0.2368.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_140" Component_="_STARTGLHROME.bat" FileName="44023~10.MAN|44.0.2369.0.manifest" Attributes="0" SourcePath="..\44.0.2369.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_141" Component_="_STARTGLHROME.bat" FileName="440237~1.MAN|44.0.2370.0.manifest" Attributes="0" SourcePath="..\44.0.2370.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_142" Component_="_STARTGLHROME.bat" FileName="440237~2.MAN|44.0.2371.0.manifest" Attributes="0" SourcePath="..\44.0.2371.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_143" Component_="_STARTGLHROME.bat" FileName="440237~3.MAN|44.0.2372.0.manifest" Attributes="0" SourcePath="..\44.0.2372.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_144" Component_="_STARTGLHROME.bat" FileName="440237~4.MAN|44.0.2373.0.manifest" Attributes="0" SourcePath="..\44.0.2373.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_145" Component_="_STARTGLHROME.bat" FileName="440237~5.MAN|44.0.2374.0.manifest" Attributes="0" SourcePath="..\44.0.2374.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_146" Component_="_STARTGLHROME.bat" FileName="440237~6.MAN|44.0.2375.0.manifest" Attributes="0" SourcePath="..\44.0.2375.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_147" Component_="_STARTGLHROME.bat" FileName="440237~7.MAN|44.0.2376.0.manifest" Attributes="0" SourcePath="..\44.0.2376.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_148" Component_="_STARTGLHROME.bat" FileName="440237~8.MAN|44.0.2377.0.manifest" Attributes="0" SourcePath="..\44.0.2377.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_149" Component_="_STARTGLHROME.bat" FileName="440237~9.MAN|44.0.2378.0.manifest" Attributes="0" SourcePath="..\44.0.2378.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_150" Component_="_STARTGLHROME.bat" FileName="44023~11.MAN|44.0.2379.0.manifest" Attributes="0" SourcePath="..\44.0.2379.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_151" Component_="_STARTGLHROME.bat" FileName="440238~1.MAN|44.0.2380.0.manifest" Attributes="0" SourcePath="..\44.0.2380.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_152" Component_="_STARTGLHROME.bat" FileName="440238~2.MAN|44.0.2381.0.manifest" Attributes="0" SourcePath="..\44.0.2381.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_153" Component_="_STARTGLHROME.bat" FileName="440238~3.MAN|44.0.2382.0.manifest" Attributes="0" SourcePath="..\44.0.2382.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_154" Component_="_STARTGLHROME.bat" FileName="440238~4.MAN|44.0.2383.0.manifest" Attributes="0" SourcePath="..\44.0.2383.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_155" Component_="_STARTGLHROME.bat" FileName="440238~5.MAN|44.0.2384.0.manifest" Attributes="0" SourcePath="..\44.0.2384.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_156" Component_="_STARTGLHROME.bat" FileName="440238~6.MAN|44.0.2385.0.manifest" Attributes="0" SourcePath="..\44.0.2385.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_157" Component_="_STARTGLHROME.bat" FileName="440238~7.MAN|44.0.2386.0.manifest" Attributes="0" SourcePath="..\44.0.2386.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_158" Component_="_STARTGLHROME.bat" FileName="440238~8.MAN|44.0.2387.0.manifest" Attributes="0" SourcePath="..\44.0.2387.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_159" Component_="_STARTGLHROME.bat" FileName="440238~9.MAN|44.0.2388.0.manifest" Attributes="0" SourcePath="..\44.0.2388.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_160" Component_="_STARTGLHROME.bat" FileName="44023~12.MAN|44.0.2389.0.manifest" Attributes="0" SourcePath="..\44.0.2389.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_161" Component_="_STARTGLHROME.bat" FileName="440239~1.MAN|44.0.2390.0.manifest" Attributes="0" SourcePath="..\44.0.2390.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_162" Component_="_STARTGLHROME.bat" FileName="440239~2.MAN|44.0.2391.0.manifest" Attributes="0" SourcePath="..\44.0.2391.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_163" Component_="_STARTGLHROME.bat" FileName="440239~3.MAN|44.0.2392.0.manifest" Attributes="0" SourcePath="..\44.0.2392.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_164" Component_="_STARTGLHROME.bat" FileName="440239~4.MAN|44.0.2393.0.manifest" Attributes="0" SourcePath="..\44.0.2393.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_165" Component_="_STARTGLHROME.bat" FileName="440239~5.MAN|44.0.2394.0.manifest" Attributes="0" SourcePath="..\44.0.2394.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_166" Component_="_STARTGLHROME.bat" FileName="440239~6.MAN|44.0.2395.0.manifest" Attributes="0" SourcePath="..\44.0.2395.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_167" Component_="_STARTGLHROME.bat" FileName="440239~7.MAN|44.0.2396.0.manifest" Attributes="0" SourcePath="..\44.0.2396.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_168" Component_="_STARTGLHROME.bat" FileName="440239~8.MAN|44.0.2397.0.manifest" Attributes="0" SourcePath="..\44.0.2397.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_169" Component_="_STARTGLHROME.bat" FileName="440239~9.MAN|44.0.2398.0.manifest" Attributes="0" SourcePath="..\44.0.2398.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_170" Component_="_STARTGLHROME.bat" FileName="44023~13.MAN|44.0.2399.0.manifest" Attributes="0" SourcePath="..\44.0.2399.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_171" Component_="_STARTGLHROME.bat" FileName="440240~1.MAN|44.0.2400.0.manifest" Attributes="0" SourcePath="..\44.0.2400.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_172" Component_="_STARTGLHROME.bat" FileName="440240~2.MAN|44.0.2401.0.manifest" Attributes="0" SourcePath="..\44.0.2401.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_173" Component_="_STARTGLHROME.bat" FileName="440240~3.MAN|44.0.2402.0.manifest" Attributes="0" SourcePath="..\44.0.2402.0.manifest" SelfReg="false"/>
+    <ROW File="manifest_174" Component_="_STARTGLHROME.bat" FileName="440240~4.MAN|44.0.2403.0.manifest" Attributes="0" SourcePath="..\44.0.2403.0.manifest" SelfReg="false"/>
+    <ROW File="accessibility_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ACCESS~1.MAN|accessibility_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\accessibility_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="accessibility_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ACCESS~2.MAN|accessibility_unittests.exe.manifest" Attributes="0" SourcePath="..\accessibility_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="allocator_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ALLOCA~1.MAN|allocator_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\allocator_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="allocator_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ALLOCA~2.MAN|allocator_unittests.exe.manifest" Attributes="0" SourcePath="..\allocator_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="angle_end2end_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ANGLE_~1.MAN|angle_end2end_tests.exe.assert.manifest" Attributes="0" SourcePath="..\angle_end2end_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="angle_end2end_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ANGLE_~2.MAN|angle_end2end_tests.exe.manifest" Attributes="0" SourcePath="..\angle_end2end_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="angle_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ANGLE_~3.MAN|angle_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\angle_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="angle_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ANGLE_~4.MAN|angle_perftests.exe.manifest" Attributes="0" SourcePath="..\angle_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="angle_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ANGLE_~5.MAN|angle_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\angle_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="angle_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ANGLE_~6.MAN|angle_unittests.exe.manifest" Attributes="0" SourcePath="..\angle_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="app_installer.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="APP_IN~1.MAN|app_installer.exe.assert.manifest" Attributes="0" SourcePath="..\app_installer.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="app_installer.exe.manifest" Component_="_STARTGLHROME.bat" FileName="APP_IN~2.MAN|app_installer.exe.manifest" Attributes="0" SourcePath="..\app_installer.exe.manifest" SelfReg="false"/>
+    <ROW File="app_installer_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="APP_IN~3.MAN|app_installer_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\app_installer_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="app_installer_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="APP_IN~4.MAN|app_installer_unittests.exe.manifest" Attributes="0" SourcePath="..\app_installer_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="app_list_demo.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="APP_LI~1.MAN|app_list_demo.exe.assert.manifest" Attributes="0" SourcePath="..\app_list_demo.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="app_list_demo.exe.manifest" Component_="_STARTGLHROME.bat" FileName="APP_LI~2.MAN|app_list_demo.exe.manifest" Attributes="0" SourcePath="..\app_list_demo.exe.manifest" SelfReg="false"/>
+    <ROW File="app_list_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="APP_LI~3.MAN|app_list_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\app_list_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="app_list_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="APP_LI~4.MAN|app_list_unittests.exe.manifest" Attributes="0" SourcePath="..\app_list_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="app_shell.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="APP_SH~1.MAN|app_shell.exe.assert.manifest" Attributes="0" SourcePath="..\app_shell.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="app_shell.exe.manifest" Component_="_STARTGLHROME.bat" FileName="APP_SH~2.MAN|app_shell.exe.manifest" Attributes="0" SourcePath="..\app_shell.exe.manifest" SelfReg="false"/>
+    <ROW File="app_shell_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="APP_SH~3.MAN|app_shell_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\app_shell_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="app_shell_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="APP_SH~4.MAN|app_shell_unittests.exe.manifest" Attributes="0" SourcePath="..\app_shell_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="app_shim.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="APP_SH~5.MAN|app_shim.exe.assert.manifest" Attributes="0" SourcePath="..\app_shim.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="app_shim.exe.manifest" Component_="_STARTGLHROME.bat" FileName="APP_SH~6.MAN|app_shim.exe.manifest" Attributes="0" SourcePath="..\app_shim.exe.manifest" SelfReg="false"/>
+    <ROW File="ar_sample_test_driver.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="AR_SAM~1.MAN|ar_sample_test_driver.exe.assert.manifest" Attributes="0" SourcePath="..\ar_sample_test_driver.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ar_sample_test_driver.exe.manifest" Component_="_STARTGLHROME.bat" FileName="AR_SAM~2.MAN|ar_sample_test_driver.exe.manifest" Attributes="0" SourcePath="..\ar_sample_test_driver.exe.manifest" SelfReg="false"/>
+    <ROW File="ash_shell.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ASH_SH~1.MAN|ash_shell.exe.assert.manifest" Attributes="0" SourcePath="..\ash_shell.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ash_shell.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ASH_SH~2.MAN|ash_shell.exe.manifest" Attributes="0" SourcePath="..\ash_shell.exe.manifest" SelfReg="false"/>
+    <ROW File="ash_shell_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ASH_SH~3.MAN|ash_shell_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\ash_shell_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ash_shell_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ASH_SH~4.MAN|ash_shell_unittests.exe.manifest" Attributes="0" SourcePath="..\ash_shell_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="ash_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ASH_UN~1.MAN|ash_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\ash_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ash_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ASH_UN~2.MAN|ash_unittests.exe.manifest" Attributes="0" SourcePath="..\ash_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="audio_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="AUDIO_~1.MAN|audio_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\audio_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="audio_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="AUDIO_~2.MAN|audio_unittests.exe.manifest" Attributes="0" SourcePath="..\audio_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="aura_bench.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="AURA_B~1.MAN|aura_bench.exe.assert.manifest" Attributes="0" SourcePath="..\aura_bench.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="aura_bench.exe.manifest" Component_="_STARTGLHROME.bat" FileName="AURA_B~2.MAN|aura_bench.exe.manifest" Attributes="0" SourcePath="..\aura_bench.exe.manifest" SelfReg="false"/>
+    <ROW File="aura_demo.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="AURA_D~1.MAN|aura_demo.exe.assert.manifest" Attributes="0" SourcePath="..\aura_demo.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="aura_demo.exe.manifest" Component_="_STARTGLHROME.bat" FileName="AURA_D~2.MAN|aura_demo.exe.manifest" Attributes="0" SourcePath="..\aura_demo.exe.manifest" SelfReg="false"/>
+    <ROW File="aura_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="AURA_U~1.MAN|aura_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\aura_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="aura_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="AURA_U~2.MAN|aura_unittests.exe.manifest" Attributes="0" SourcePath="..\aura_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="base_i18n_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BASE_I~1.MAN|base_i18n_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\base_i18n_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="base_i18n_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BASE_I~2.MAN|base_i18n_perftests.exe.manifest" Attributes="0" SourcePath="..\base_i18n_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="base_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BASE_P~1.MAN|base_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\base_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="base_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BASE_P~2.MAN|base_perftests.exe.manifest" Attributes="0" SourcePath="..\base_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="base_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BASE_U~1.MAN|base_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\base_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="base_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BASE_U~2.MAN|base_unittests.exe.manifest" Attributes="0" SourcePath="..\base_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="bitmaptools.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BITMAP~1.MAN|bitmaptools.exe.assert.manifest" Attributes="0" SourcePath="..\bitmaptools.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="bitmaptools.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BITMAP~2.MAN|bitmaptools.exe.manifest" Attributes="0" SourcePath="..\bitmaptools.exe.manifest" SelfReg="false"/>
+    <ROW File="blacklist_test_dll_1.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BLACKL~1.MAN|blacklist_test_dll_1.dll.assert.manifest" Attributes="0" SourcePath="..\blacklist_test_dll_1.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="blacklist_test_dll_1.dll.manifest" Component_="_STARTGLHROME.bat" FileName="BLACKL~2.MAN|blacklist_test_dll_1.dll.manifest" Attributes="0" SourcePath="..\blacklist_test_dll_1.dll.manifest" SelfReg="false"/>
+    <ROW File="blacklist_test_dll_2.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BLACKL~3.MAN|blacklist_test_dll_2.dll.assert.manifest" Attributes="0" SourcePath="..\blacklist_test_dll_2.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="blacklist_test_dll_2.dll.manifest" Component_="_STARTGLHROME.bat" FileName="BLACKL~4.MAN|blacklist_test_dll_2.dll.manifest" Attributes="0" SourcePath="..\blacklist_test_dll_2.dll.manifest" SelfReg="false"/>
+    <ROW File="blacklist_test_dll_3.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BLACKL~5.MAN|blacklist_test_dll_3.dll.assert.manifest" Attributes="0" SourcePath="..\blacklist_test_dll_3.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="blacklist_test_dll_3.dll.manifest" Component_="_STARTGLHROME.bat" FileName="BLACKL~6.MAN|blacklist_test_dll_3.dll.manifest" Attributes="0" SourcePath="..\blacklist_test_dll_3.dll.manifest" SelfReg="false"/>
+    <ROW File="blacklist_test_main_dll.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BLACKL~7.MAN|blacklist_test_main_dll.dll.assert.manifest" Attributes="0" SourcePath="..\blacklist_test_main_dll.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="blacklist_test_main_dll.dll.manifest" Component_="_STARTGLHROME.bat" FileName="BLACKL~8.MAN|blacklist_test_main_dll.dll.manifest" Attributes="0" SourcePath="..\blacklist_test_main_dll.dll.manifest" SelfReg="false"/>
+    <ROW File="blink_heap_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BLINK_~1.MAN|blink_heap_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\blink_heap_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="blink_heap_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BLINK_~2.MAN|blink_heap_unittests.exe.manifest" Attributes="0" SourcePath="..\blink_heap_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="blink_platform_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BLINK_~3.MAN|blink_platform_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\blink_platform_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="blink_platform_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BLINK_~4.MAN|blink_platform_unittests.exe.manifest" Attributes="0" SourcePath="..\blink_platform_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_aead_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~1.MAN|boringssl_aead_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_aead_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_aead_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~2.MAN|boringssl_aead_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_aead_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_base64_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~3.MAN|boringssl_base64_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_base64_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_base64_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~4.MAN|boringssl_base64_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_base64_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_bio_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~5.MAN|boringssl_bio_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_bio_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_bio_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~6.MAN|boringssl_bio_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_bio_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_bn_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~7.MAN|boringssl_bn_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_bn_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_bn_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~8.MAN|boringssl_bn_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_bn_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_bytestring_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORING~9.MAN|boringssl_bytestring_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_bytestring_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_bytestring_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~10.MAN|boringssl_bytestring_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_bytestring_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_cipher_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~11.MAN|boringssl_cipher_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_cipher_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_cipher_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~12.MAN|boringssl_cipher_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_cipher_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_cmac_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~13.MAN|boringssl_cmac_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_cmac_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_cmac_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~14.MAN|boringssl_cmac_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_cmac_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_constant_time_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~15.MAN|boringssl_constant_time_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_constant_time_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_constant_time_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~16.MAN|boringssl_constant_time_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_constant_time_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_dh_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~17.MAN|boringssl_dh_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_dh_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_dh_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~18.MAN|boringssl_dh_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_dh_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_digest_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~19.MAN|boringssl_digest_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_digest_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_digest_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~20.MAN|boringssl_digest_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_digest_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_dsa_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~21.MAN|boringssl_dsa_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_dsa_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_dsa_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~22.MAN|boringssl_dsa_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_dsa_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_ec_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~23.MAN|boringssl_ec_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_ec_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_ec_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~24.MAN|boringssl_ec_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_ec_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_ecdsa_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~25.MAN|boringssl_ecdsa_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_ecdsa_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_ecdsa_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~26.MAN|boringssl_ecdsa_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_ecdsa_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_err_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~27.MAN|boringssl_err_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_err_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_err_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~28.MAN|boringssl_err_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_err_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_evp_extra_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~29.MAN|boringssl_evp_extra_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_evp_extra_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_evp_extra_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~30.MAN|boringssl_evp_extra_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_evp_extra_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_evp_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~31.MAN|boringssl_evp_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_evp_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_evp_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~32.MAN|boringssl_evp_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_evp_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_example_mul.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~33.MAN|boringssl_example_mul.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_example_mul.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_example_mul.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~34.MAN|boringssl_example_mul.exe.manifest" Attributes="0" SourcePath="..\boringssl_example_mul.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_gcm_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~35.MAN|boringssl_gcm_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_gcm_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_gcm_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~36.MAN|boringssl_gcm_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_gcm_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_hkdf_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~37.MAN|boringssl_hkdf_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_hkdf_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_hkdf_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~38.MAN|boringssl_hkdf_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_hkdf_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_hmac_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~39.MAN|boringssl_hmac_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_hmac_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_hmac_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~40.MAN|boringssl_hmac_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_hmac_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_lhash_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~41.MAN|boringssl_lhash_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_lhash_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_lhash_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~42.MAN|boringssl_lhash_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_lhash_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_pbkdf_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~43.MAN|boringssl_pbkdf_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_pbkdf_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_pbkdf_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~44.MAN|boringssl_pbkdf_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_pbkdf_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_pkcs7_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~45.MAN|boringssl_pkcs7_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_pkcs7_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_pkcs7_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~46.MAN|boringssl_pkcs7_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_pkcs7_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_pkcs12_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~47.MAN|boringssl_pkcs12_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_pkcs12_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_pkcs12_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~48.MAN|boringssl_pkcs12_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_pkcs12_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_pqueue_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~49.MAN|boringssl_pqueue_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_pqueue_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_pqueue_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~50.MAN|boringssl_pqueue_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_pqueue_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_rsa_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~51.MAN|boringssl_rsa_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_rsa_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_rsa_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~52.MAN|boringssl_rsa_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_rsa_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_ssl_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~53.MAN|boringssl_ssl_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_ssl_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_ssl_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~54.MAN|boringssl_ssl_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_ssl_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_thread_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~55.MAN|boringssl_thread_test.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_thread_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_thread_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~56.MAN|boringssl_thread_test.exe.manifest" Attributes="0" SourcePath="..\boringssl_thread_test.exe.manifest" SelfReg="false"/>
+    <ROW File="boringssl_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~57.MAN|boringssl_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\boringssl_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="boringssl_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BORIN~58.MAN|boringssl_unittests.exe.manifest" Attributes="0" SourcePath="..\boringssl_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="browser_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BROWSE~1.MAN|browser_tests.exe.assert.manifest" Attributes="0" SourcePath="..\browser_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="browser_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BROWSE~2.MAN|browser_tests.exe.manifest" Attributes="0" SourcePath="..\browser_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="build_utf8_validator_tables.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="BUILD_~1.MAN|build_utf8_validator_tables.exe.assert.manifest" Attributes="0" SourcePath="..\build_utf8_validator_tables.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="build_utf8_validator_tables.exe.manifest" Component_="_STARTGLHROME.bat" FileName="BUILD_~2.MAN|build_utf8_validator_tables.exe.manifest" Attributes="0" SourcePath="..\build_utf8_validator_tables.exe.manifest" SelfReg="false"/>
+    <ROW File="cacheinvalidation_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CACHEI~1.MAN|cacheinvalidation_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\cacheinvalidation_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cacheinvalidation_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CACHEI~2.MAN|cacheinvalidation_unittests.exe.manifest" Attributes="0" SourcePath="..\cacheinvalidation_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="caps.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CAPSEX~1.MAN|caps.exe.assert.manifest" Attributes="0" SourcePath="..\caps.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="caps.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CAPSEX~2.MAN|caps.exe.manifest" Attributes="0" SourcePath="..\caps.exe.manifest" SelfReg="false"/>
+    <ROW File="cast_benchmarks.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_B~1.MAN|cast_benchmarks.exe.assert.manifest" Attributes="0" SourcePath="..\cast_benchmarks.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cast_benchmarks.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_B~2.MAN|cast_benchmarks.exe.manifest" Attributes="0" SourcePath="..\cast_benchmarks.exe.manifest" SelfReg="false"/>
+    <ROW File="cast_receiver_app.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_R~1.MAN|cast_receiver_app.exe.assert.manifest" Attributes="0" SourcePath="..\cast_receiver_app.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cast_receiver_app.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_R~2.MAN|cast_receiver_app.exe.manifest" Attributes="0" SourcePath="..\cast_receiver_app.exe.manifest" SelfReg="false"/>
+    <ROW File="cast_sender_app.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_S~1.MAN|cast_sender_app.exe.assert.manifest" Attributes="0" SourcePath="..\cast_sender_app.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cast_sender_app.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_S~2.MAN|cast_sender_app.exe.manifest" Attributes="0" SourcePath="..\cast_sender_app.exe.manifest" SelfReg="false"/>
+    <ROW File="cast_simulator.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_S~3.MAN|cast_simulator.exe.assert.manifest" Attributes="0" SourcePath="..\cast_simulator.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cast_simulator.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_S~4.MAN|cast_simulator.exe.manifest" Attributes="0" SourcePath="..\cast_simulator.exe.manifest" SelfReg="false"/>
+    <ROW File="cast_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_U~1.MAN|cast_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\cast_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cast_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CAST_U~2.MAN|cast_unittests.exe.manifest" Attributes="0" SourcePath="..\cast_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="cc_blink_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CC_BLI~1.MAN|cc_blink_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\cc_blink_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cc_blink_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CC_BLI~2.MAN|cc_blink_unittests.exe.manifest" Attributes="0" SourcePath="..\cc_blink_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="cc_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CC_PER~1.MAN|cc_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\cc_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cc_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CC_PER~2.MAN|cc_perftests.exe.manifest" Attributes="0" SourcePath="..\cc_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="cc_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CC_UNI~1.MAN|cc_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\cc_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cc_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CC_UNI~2.MAN|cc_unittests.exe.manifest" Attributes="0" SourcePath="..\cc_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="check_example.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHECK_~1.MAN|check_example.exe.assert.manifest" Attributes="0" SourcePath="..\check_example.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="check_example.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CHECK_~2.MAN|check_example.exe.manifest" Attributes="0" SourcePath="..\check_example.exe.manifest" SelfReg="false"/>
+    <ROW File="chrome.dll" Component_="chrome.dll" FileName="chrome.dll" Attributes="0" SourcePath="..\chrome.dll" SelfReg="false"/>
+    <ROW File="chrome.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~1.MAN|chrome.dll.assert.manifest" Attributes="0" SourcePath="..\chrome.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="chrome.dll.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~2.MAN|chrome.dll.manifest" Attributes="0" SourcePath="..\chrome.dll.manifest" SelfReg="false"/>
+    <ROW File="chrome.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~3.MAN|chrome.exe.assert.manifest" Attributes="0" SourcePath="..\chrome.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="chrome.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~4.MAN|chrome.exe.manifest" Attributes="0" SourcePath="..\chrome.exe.manifest" SelfReg="false"/>
+    <ROW File="chrome.exe.temp" Component_="_STARTGLHROME.bat" FileName="CHROME~1.TEM|chrome.exe.temp" Attributes="0" SourcePath="..\chrome.exe.temp" SelfReg="false"/>
+    <ROW File="chrome_100_percent.pak" Component_="_STARTGLHROME.bat" FileName="CHROME~1.PAK|chrome_100_percent.pak" Attributes="0" SourcePath="..\chrome_100_percent.pak" SelfReg="false"/>
+    <ROW File="chrome_200_percent.pak" Component_="_STARTGLHROME.bat" FileName="CHROME~2.PAK|chrome_200_percent.pak" Attributes="0" SourcePath="..\chrome_200_percent.pak" SelfReg="false"/>
+    <ROW File="chrome_app_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~5.MAN|chrome_app_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\chrome_app_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="chrome_app_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~6.MAN|chrome_app_unittests.exe.manifest" Attributes="0" SourcePath="..\chrome_app_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="chrome_child.dll" Component_="chrome_child.dll" FileName="CHROME~1.DLL|chrome_child.dll" Attributes="0" SourcePath="..\chrome_child.dll" SelfReg="false"/>
+    <ROW File="chrome_child.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~7.MAN|chrome_child.dll.assert.manifest" Attributes="0" SourcePath="..\chrome_child.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="chrome_child.dll.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~8.MAN|chrome_child.dll.manifest" Attributes="0" SourcePath="..\chrome_child.dll.manifest" SelfReg="false"/>
+    <ROW File="chrome_elf.dll" Component_="chrome_elf.dll" FileName="CHROME~2.DLL|chrome_elf.dll" Attributes="0" SourcePath="..\chrome_elf.dll" SelfReg="false"/>
+    <ROW File="chrome_elf.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROME~9.MAN|chrome_elf.dll.assert.manifest" Attributes="0" SourcePath="..\chrome_elf.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="chrome_elf.dll.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~10.MAN|chrome_elf.dll.manifest" Attributes="0" SourcePath="..\chrome_elf.dll.manifest" SelfReg="false"/>
+    <ROW File="chrome_elf_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~11.MAN|chrome_elf_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\chrome_elf_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="chrome_elf_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~12.MAN|chrome_elf_unittests.exe.manifest" Attributes="0" SourcePath="..\chrome_elf_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="chrome_watcher.dll" Component_="chrome_watcher.dll" FileName="CHROME~3.DLL|chrome_watcher.dll" Attributes="0" SourcePath="..\chrome_watcher.dll" SelfReg="false"/>
+    <ROW File="chrome_watcher.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~13.MAN|chrome_watcher.dll.assert.manifest" Attributes="0" SourcePath="..\chrome_watcher.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="chrome_watcher.dll.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~14.MAN|chrome_watcher.dll.manifest" Attributes="0" SourcePath="..\chrome_watcher.dll.manifest" SelfReg="false"/>
+    <ROW File="chromedriver.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~15.MAN|chromedriver.exe.assert.manifest" Attributes="0" SourcePath="..\chromedriver.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="chromedriver.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~16.MAN|chromedriver.exe.manifest" Attributes="0" SourcePath="..\chromedriver.exe.manifest" SelfReg="false"/>
+    <ROW File="chromedriver_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~17.MAN|chromedriver_tests.exe.assert.manifest" Attributes="0" SourcePath="..\chromedriver_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="chromedriver_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~18.MAN|chromedriver_tests.exe.manifest" Attributes="0" SourcePath="..\chromedriver_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="chromedriver_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~19.MAN|chromedriver_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\chromedriver_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="chromedriver_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CHROM~20.MAN|chromedriver_unittests.exe.manifest" Attributes="0" SourcePath="..\chromedriver_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="clear_system_cache.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CLEAR_~1.MAN|clear_system_cache.exe.assert.manifest" Attributes="0" SourcePath="..\clear_system_cache.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="clear_system_cache.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CLEAR_~2.MAN|clear_system_cache.exe.manifest" Attributes="0" SourcePath="..\clear_system_cache.exe.manifest" SelfReg="false"/>
+    <ROW File="clearkeycdm.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CLEARK~1.MAN|clearkeycdm.dll.assert.manifest" Attributes="0" SourcePath="..\clearkeycdm.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="clearkeycdm.dll.manifest" Component_="_STARTGLHROME.bat" FileName="CLEARK~2.MAN|clearkeycdm.dll.manifest" Attributes="0" SourcePath="..\clearkeycdm.dll.manifest" SelfReg="false"/>
+    <ROW File="clearkeycdmadapter.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CLEARK~3.MAN|clearkeycdmadapter.dll.assert.manifest" Attributes="0" SourcePath="..\clearkeycdmadapter.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="clearkeycdmadapter.dll.manifest" Component_="_STARTGLHROME.bat" FileName="CLEARK~4.MAN|clearkeycdmadapter.dll.manifest" Attributes="0" SourcePath="..\clearkeycdmadapter.dll.manifest" SelfReg="false"/>
+    <ROW File="cloud_print_service.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CLOUD_~1.MAN|cloud_print_service.exe.assert.manifest" Attributes="0" SourcePath="..\cloud_print_service.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cloud_print_service.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CLOUD_~2.MAN|cloud_print_service.exe.manifest" Attributes="0" SourcePath="..\cloud_print_service.exe.manifest" SelfReg="false"/>
+    <ROW File="cloud_print_service_config.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CLOUD_~3.MAN|cloud_print_service_config.exe.assert.manifest" Attributes="0" SourcePath="..\cloud_print_service_config.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cloud_print_service_config.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CLOUD_~4.MAN|cloud_print_service_config.exe.manifest" Attributes="0" SourcePath="..\cloud_print_service_config.exe.manifest" SelfReg="false"/>
+    <ROW File="cloud_print_service_setup.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CLOUD_~5.MAN|cloud_print_service_setup.exe.assert.manifest" Attributes="0" SourcePath="..\cloud_print_service_setup.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cloud_print_service_setup.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CLOUD_~6.MAN|cloud_print_service_setup.exe.manifest" Attributes="0" SourcePath="..\cloud_print_service_setup.exe.manifest" SelfReg="false"/>
+    <ROW File="cloud_print_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CLOUD_~7.MAN|cloud_print_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\cloud_print_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="cloud_print_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CLOUD_~8.MAN|cloud_print_unittests.exe.manifest" Attributes="0" SourcePath="..\cloud_print_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="codesighs.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CODESI~1.MAN|codesighs.exe.assert.manifest" Attributes="0" SourcePath="..\codesighs.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="codesighs.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CODESI~2.MAN|codesighs.exe.manifest" Attributes="0" SourcePath="..\codesighs.exe.manifest" SelfReg="false"/>
+    <ROW File="components_browsertests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COMPON~1.MAN|components_browsertests.exe.assert.manifest" Attributes="0" SourcePath="..\components_browsertests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="components_browsertests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COMPON~2.MAN|components_browsertests.exe.manifest" Attributes="0" SourcePath="..\components_browsertests.exe.manifest" SelfReg="false"/>
+    <ROW File="components_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COMPON~3.MAN|components_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\components_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="components_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COMPON~4.MAN|components_perftests.exe.manifest" Attributes="0" SourcePath="..\components_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="components_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COMPON~5.MAN|components_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\components_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="components_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COMPON~6.MAN|components_unittests.exe.manifest" Attributes="0" SourcePath="..\components_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="compositor_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COMPOS~1.MAN|compositor_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\compositor_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="compositor_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COMPOS~2.MAN|compositor_unittests.exe.manifest" Attributes="0" SourcePath="..\compositor_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="content_browsertests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~1.MAN|content_browsertests.exe.assert.manifest" Attributes="0" SourcePath="..\content_browsertests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="content_browsertests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~2.MAN|content_browsertests.exe.manifest" Attributes="0" SourcePath="..\content_browsertests.exe.manifest" SelfReg="false"/>
+    <ROW File="content_gl_benchmark.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~3.MAN|content_gl_benchmark.exe.assert.manifest" Attributes="0" SourcePath="..\content_gl_benchmark.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="content_gl_benchmark.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~4.MAN|content_gl_benchmark.exe.manifest" Attributes="0" SourcePath="..\content_gl_benchmark.exe.manifest" SelfReg="false"/>
+    <ROW File="content_gl_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~5.MAN|content_gl_tests.exe.assert.manifest" Attributes="0" SourcePath="..\content_gl_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="content_gl_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~6.MAN|content_gl_tests.exe.manifest" Attributes="0" SourcePath="..\content_gl_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="content_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~7.MAN|content_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\content_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="content_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~8.MAN|content_perftests.exe.manifest" Attributes="0" SourcePath="..\content_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="content_shell.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CONTEN~9.MAN|content_shell.exe.assert.manifest" Attributes="0" SourcePath="..\content_shell.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="content_shell.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CONTE~10.MAN|content_shell.exe.manifest" Attributes="0" SourcePath="..\content_shell.exe.manifest" SelfReg="false"/>
+    <ROW File="content_shell_crash_service.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CONTE~11.MAN|content_shell_crash_service.exe.assert.manifest" Attributes="0" SourcePath="..\content_shell_crash_service.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="content_shell_crash_service.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CONTE~12.MAN|content_shell_crash_service.exe.manifest" Attributes="0" SourcePath="..\content_shell_crash_service.exe.manifest" SelfReg="false"/>
+    <ROW File="content_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CONTE~13.MAN|content_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\content_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="content_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CONTE~14.MAN|content_unittests.exe.manifest" Attributes="0" SourcePath="..\content_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="courgette.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~1.MAN|courgette.exe.assert.manifest" Attributes="0" SourcePath="..\courgette.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="courgette.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~2.MAN|courgette.exe.manifest" Attributes="0" SourcePath="..\courgette.exe.manifest" SelfReg="false"/>
+    <ROW File="courgette_fuzz.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~3.MAN|courgette_fuzz.exe.assert.manifest" Attributes="0" SourcePath="..\courgette_fuzz.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="courgette_fuzz.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~4.MAN|courgette_fuzz.exe.manifest" Attributes="0" SourcePath="..\courgette_fuzz.exe.manifest" SelfReg="false"/>
+    <ROW File="courgette_minimal_tool.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~5.MAN|courgette_minimal_tool.exe.assert.manifest" Attributes="0" SourcePath="..\courgette_minimal_tool.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="courgette_minimal_tool.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~6.MAN|courgette_minimal_tool.exe.manifest" Attributes="0" SourcePath="..\courgette_minimal_tool.exe.manifest" SelfReg="false"/>
+    <ROW File="courgette_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~7.MAN|courgette_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\courgette_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="courgette_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~8.MAN|courgette_unittests.exe.manifest" Attributes="0" SourcePath="..\courgette_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="courgette64.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="COURGE~9.MAN|courgette64.exe.assert.manifest" Attributes="0" SourcePath="..\courgette64.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="courgette64.exe.manifest" Component_="_STARTGLHROME.bat" FileName="COURG~10.MAN|courgette64.exe.manifest" Attributes="0" SourcePath="..\courgette64.exe.manifest" SelfReg="false"/>
+    <ROW File="crash_cache.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CRASH_~1.MAN|crash_cache.exe.assert.manifest" Attributes="0" SourcePath="..\crash_cache.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="crash_cache.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CRASH_~2.MAN|crash_cache.exe.manifest" Attributes="0" SourcePath="..\crash_cache.exe.manifest" SelfReg="false"/>
+    <ROW File="crash_service.exe" Component_="crash_service.exe" FileName="CRASH_~1.EXE|crash_service.exe" Attributes="0" SourcePath="..\crash_service.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="crash_service.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CRASH_~3.MAN|crash_service.exe.assert.manifest" Attributes="0" SourcePath="..\crash_service.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="crash_service.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CRASH_~4.MAN|crash_service.exe.manifest" Attributes="0" SourcePath="..\crash_service.exe.manifest" SelfReg="false"/>
+    <ROW File="crash_service64.exe" Component_="crash_service64.exe" FileName="CRASH_~2.EXE|crash_service64.exe" Attributes="0" SourcePath="..\crash_service64.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="crash_service64.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CRASH_~5.MAN|crash_service64.exe.assert.manifest" Attributes="0" SourcePath="..\crash_service64.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="crash_service64.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CRASH_~6.MAN|crash_service64.exe.manifest" Attributes="0" SourcePath="..\crash_service64.exe.manifest" SelfReg="false"/>
+    <ROW File="crl_set_dump.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CRL_SE~1.MAN|crl_set_dump.exe.assert.manifest" Attributes="0" SourcePath="..\crl_set_dump.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="crl_set_dump.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CRL_SE~2.MAN|crl_set_dump.exe.manifest" Attributes="0" SourcePath="..\crl_set_dump.exe.manifest" SelfReg="false"/>
+    <ROW File="crypto_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="CRYPTO~1.MAN|crypto_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\crypto_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="crypto_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="CRYPTO~2.MAN|crypto_unittests.exe.manifest" Attributes="0" SourcePath="..\crypto_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="D3DCompiler_47.dll" Component_="D3DCompiler_47.dll" FileName="D3DCOM~1.DLL|D3DCompiler_47.dll" Attributes="0" SourcePath="..\D3DCompiler_47.dll" SelfReg="false"/>
+    <ROW File="d8.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="D8EXEA~1.MAN|d8.exe.assert.manifest" Attributes="0" SourcePath="..\d8.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="d8.exe.manifest" Component_="_STARTGLHROME.bat" FileName="D8EXE~1.MAN|d8.exe.manifest" Attributes="0" SourcePath="..\d8.exe.manifest" SelfReg="false"/>
+    <ROW File="debug.log" Component_="_STARTGLHROME.bat" FileName="debug.log" Attributes="0" SourcePath="..\debug.log" SelfReg="false"/>
+    <ROW File="debug_message.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="DEBUG_~1.MAN|debug_message.exe.assert.manifest" Attributes="0" SourcePath="..\debug_message.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="debug_message.exe.manifest" Component_="_STARTGLHROME.bat" FileName="DEBUG_~2.MAN|debug_message.exe.manifest" Attributes="0" SourcePath="..\debug_message.exe.manifest" SelfReg="false"/>
+    <ROW File="delegate_execute.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="DELEGA~1.MAN|delegate_execute.exe.assert.manifest" Attributes="0" SourcePath="..\delegate_execute.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="delegate_execute.exe.manifest" Component_="_STARTGLHROME.bat" FileName="DELEGA~2.MAN|delegate_execute.exe.manifest" Attributes="0" SourcePath="..\delegate_execute.exe.manifest" SelfReg="false"/>
+    <ROW File="delegate_execute_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="DELEGA~3.MAN|delegate_execute_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\delegate_execute_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="delegate_execute_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="DELEGA~4.MAN|delegate_execute_unittests.exe.manifest" Attributes="0" SourcePath="..\delegate_execute_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="device_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="DEVICE~1.MAN|device_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\device_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="device_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="DEVICE~2.MAN|device_unittests.exe.manifest" Attributes="0" SourcePath="..\device_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="display_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="DISPLA~1.MAN|display_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\display_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="display_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="DISPLA~2.MAN|display_unittests.exe.manifest" Attributes="0" SourcePath="..\display_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="dll_hash_main.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="DLL_HA~1.MAN|dll_hash_main.exe.assert.manifest" Attributes="0" SourcePath="..\dll_hash_main.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="dll_hash_main.exe.manifest" Component_="_STARTGLHROME.bat" FileName="DLL_HA~2.MAN|dll_hash_main.exe.manifest" Attributes="0" SourcePath="..\dll_hash_main.exe.manifest" SelfReg="false"/>
+    <ROW File="dns_fuzz_stub.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="DNS_FU~1.MAN|dns_fuzz_stub.exe.assert.manifest" Attributes="0" SourcePath="..\dns_fuzz_stub.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="dns_fuzz_stub.exe.manifest" Component_="_STARTGLHROME.bat" FileName="DNS_FU~2.MAN|dns_fuzz_stub.exe.manifest" Attributes="0" SourcePath="..\dns_fuzz_stub.exe.manifest" SelfReg="false"/>
+    <ROW File="dump_cache.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="DUMP_C~1.MAN|dump_cache.exe.assert.manifest" Attributes="0" SourcePath="..\dump_cache.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="dump_cache.exe.manifest" Component_="_STARTGLHROME.bat" FileName="DUMP_C~2.MAN|dump_cache.exe.manifest" Attributes="0" SourcePath="..\dump_cache.exe.manifest" SelfReg="false"/>
+    <ROW File="env_chromium_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="ENV_CH~1.MAN|env_chromium_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\env_chromium_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="env_chromium_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="ENV_CH~2.MAN|env_chromium_unittests.exe.manifest" Attributes="0" SourcePath="..\env_chromium_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="events_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="EVENTS~1.MAN|events_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\events_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="events_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="EVENTS~2.MAN|events_unittests.exe.manifest" Attributes="0" SourcePath="..\events_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="extensions_browsertests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="EXTENS~1.MAN|extensions_browsertests.exe.assert.manifest" Attributes="0" SourcePath="..\extensions_browsertests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="extensions_browsertests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="EXTENS~2.MAN|extensions_browsertests.exe.manifest" Attributes="0" SourcePath="..\extensions_browsertests.exe.manifest" SelfReg="false"/>
+    <ROW File="extensions_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="EXTENS~3.MAN|extensions_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\extensions_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="extensions_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="EXTENS~4.MAN|extensions_unittests.exe.manifest" Attributes="0" SourcePath="..\extensions_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="ffmpeg.exe" Component_="ffmpeg.exe" FileName="ffmpeg.exe" Attributes="0" SourcePath="..\ffmpeg.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ffmpeg_regression_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="FFMPEG~1.MAN|ffmpeg_regression_tests.exe.assert.manifest" Attributes="0" SourcePath="..\ffmpeg_regression_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ffmpeg_regression_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="FFMPEG~2.MAN|ffmpeg_regression_tests.exe.manifest" Attributes="0" SourcePath="..\ffmpeg_regression_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="ffmpegsumo.dll" Component_="ffmpegsumo.dll" FileName="FFMPEG~1.DLL|ffmpegsumo.dll" Attributes="0" SourcePath="..\ffmpegsumo.dll" SelfReg="false"/>
+    <ROW File="ffmpegsumo.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="FFMPEG~3.MAN|ffmpegsumo.dll.assert.manifest" Attributes="0" SourcePath="..\ffmpegsumo.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ffmpegsumo.dll.manifest" Component_="_STARTGLHROME.bat" FileName="FFMPEG~4.MAN|ffmpegsumo.dll.manifest" Attributes="0" SourcePath="..\ffmpegsumo.dll.manifest" SelfReg="false"/>
+    <ROW File="filter_fuzz_stub.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="FILTER~1.MAN|filter_fuzz_stub.exe.assert.manifest" Attributes="0" SourcePath="..\filter_fuzz_stub.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="filter_fuzz_stub.exe.manifest" Component_="_STARTGLHROME.bat" FileName="FILTER~2.MAN|filter_fuzz_stub.exe.manifest" Attributes="0" SourcePath="..\filter_fuzz_stub.exe.manifest" SelfReg="false"/>
+    <ROW File="FirstRun" Component_="_STARTGLHROME.bat" FileName="FIRSTR~1|First Run" Attributes="0" SourcePath="..\First Run" SelfReg="false"/>
+    <ROW File="frame_analyzer.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="FRAME_~1.MAN|frame_analyzer.exe.assert.manifest" Attributes="0" SourcePath="..\frame_analyzer.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="frame_analyzer.exe.manifest" Component_="_STARTGLHROME.bat" FileName="FRAME_~2.MAN|frame_analyzer.exe.manifest" Attributes="0" SourcePath="..\frame_analyzer.exe.manifest" SelfReg="false"/>
+    <ROW File="gcapi_dll.dll" Component_="gcapi_dll.dll" FileName="GCAPI_~1.DLL|gcapi_dll.dll" Attributes="0" SourcePath="..\gcapi_dll.dll" SelfReg="false"/>
+    <ROW File="gcapi_dll.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GCAPI_~1.MAN|gcapi_dll.dll.assert.manifest" Attributes="0" SourcePath="..\gcapi_dll.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="gcapi_dll.dll.manifest" Component_="_STARTGLHROME.bat" FileName="GCAPI_~2.MAN|gcapi_dll.dll.manifest" Attributes="0" SourcePath="..\gcapi_dll.dll.manifest" SelfReg="false"/>
+    <ROW File="gcapi_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GCAPI_~3.MAN|gcapi_test.exe.assert.manifest" Attributes="0" SourcePath="..\gcapi_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gcapi_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GCAPI_~4.MAN|gcapi_test.exe.manifest" Attributes="0" SourcePath="..\gcapi_test.exe.manifest" SelfReg="false"/>
+    <ROW File="gcm_unit_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GCM_UN~1.MAN|gcm_unit_tests.exe.assert.manifest" Attributes="0" SourcePath="..\gcm_unit_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gcm_unit_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GCM_UN~2.MAN|gcm_unit_tests.exe.manifest" Attributes="0" SourcePath="..\gcm_unit_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="gcp_portmon.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GCP_PO~1.MAN|gcp_portmon.dll.assert.manifest" Attributes="0" SourcePath="..\gcp_portmon.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="gcp_portmon.dll.manifest" Component_="_STARTGLHROME.bat" FileName="GCP_PO~2.MAN|gcp_portmon.dll.manifest" Attributes="0" SourcePath="..\gcp_portmon.dll.manifest" SelfReg="false"/>
+    <ROW File="gcp_portmon64.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GCP_PO~3.MAN|gcp_portmon64.dll.assert.manifest" Attributes="0" SourcePath="..\gcp_portmon64.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="gcp_portmon64.dll.manifest" Component_="_STARTGLHROME.bat" FileName="GCP_PO~4.MAN|gcp_portmon64.dll.manifest" Attributes="0" SourcePath="..\gcp_portmon64.dll.manifest" SelfReg="false"/>
+    <ROW File="gcp20_device.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GCP20_~1.MAN|gcp20_device.exe.assert.manifest" Attributes="0" SourcePath="..\gcp20_device.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gcp20_device.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GCP20_~2.MAN|gcp20_device.exe.manifest" Attributes="0" SourcePath="..\gcp20_device.exe.manifest" SelfReg="false"/>
+    <ROW File="gcp20_device_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GCP20_~3.MAN|gcp20_device_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\gcp20_device_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gcp20_device_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GCP20_~4.MAN|gcp20_device_unittests.exe.manifest" Attributes="0" SourcePath="..\gcp20_device_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="gdig.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GDIGEX~1.MAN|gdig.exe.assert.manifest" Attributes="0" SourcePath="..\gdig.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gdig.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GDIGEX~2.MAN|gdig.exe.manifest" Attributes="0" SourcePath="..\gdig.exe.manifest" SelfReg="false"/>
+    <ROW File="generate_barcode_video.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GENERA~1.MAN|generate_barcode_video.exe.assert.manifest" Attributes="0" SourcePath="..\generate_barcode_video.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="generate_barcode_video.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GENERA~2.MAN|generate_barcode_video.exe.manifest" Attributes="0" SourcePath="..\generate_barcode_video.exe.manifest" SelfReg="false"/>
+    <ROW File="generate_test_gn_data.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GENERA~3.MAN|generate_test_gn_data.exe.assert.manifest" Attributes="0" SourcePath="..\generate_test_gn_data.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="generate_test_gn_data.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GENERA~4.MAN|generate_test_gn_data.exe.manifest" Attributes="0" SourcePath="..\generate_test_gn_data.exe.manifest" SelfReg="false"/>
+    <ROW File="generate_timecode_audio.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GENERA~5.MAN|generate_timecode_audio.exe.assert.manifest" Attributes="0" SourcePath="..\generate_timecode_audio.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="generate_timecode_audio.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GENERA~6.MAN|generate_timecode_audio.exe.manifest" Attributes="0" SourcePath="..\generate_timecode_audio.exe.manifest" SelfReg="false"/>
+    <ROW File="genmacro.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GENMAC~1.MAN|genmacro.exe.assert.manifest" Attributes="0" SourcePath="..\genmacro.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="genmacro.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GENMAC~2.MAN|genmacro.exe.manifest" Attributes="0" SourcePath="..\genmacro.exe.manifest" SelfReg="false"/>
+    <ROW File="genmodule.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GENMOD~1.MAN|genmodule.exe.assert.manifest" Attributes="0" SourcePath="..\genmodule.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="genmodule.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GENMOD~2.MAN|genmodule.exe.manifest" Attributes="0" SourcePath="..\genmodule.exe.manifest" SelfReg="false"/>
+    <ROW File="genperf.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GENPER~1.MAN|genperf.exe.assert.manifest" Attributes="0" SourcePath="..\genperf.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="genperf.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GENPER~2.MAN|genperf.exe.manifest" Attributes="0" SourcePath="..\genperf.exe.manifest" SelfReg="false"/>
+    <ROW File="genstring.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GENSTR~1.MAN|genstring.exe.assert.manifest" Attributes="0" SourcePath="..\genstring.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="genstring.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GENSTR~2.MAN|genstring.exe.manifest" Attributes="0" SourcePath="..\genstring.exe.manifest" SelfReg="false"/>
+    <ROW File="genversion.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GENVER~1.MAN|genversion.exe.assert.manifest" Attributes="0" SourcePath="..\genversion.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="genversion.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GENVER~2.MAN|genversion.exe.manifest" Attributes="0" SourcePath="..\genversion.exe.manifest" SelfReg="false"/>
+    <ROW File="get_server_time.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GET_SE~1.MAN|get_server_time.exe.assert.manifest" Attributes="0" SourcePath="..\get_server_time.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="get_server_time.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GET_SE~2.MAN|get_server_time.exe.manifest" Attributes="0" SourcePath="..\get_server_time.exe.manifest" SelfReg="false"/>
+    <ROW File="gfx_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GFX_UN~1.MAN|gfx_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\gfx_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gfx_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GFX_UN~2.MAN|gfx_unittests.exe.manifest" Attributes="0" SourcePath="..\gfx_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="gin_shell.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GIN_SH~1.MAN|gin_shell.exe.assert.manifest" Attributes="0" SourcePath="..\gin_shell.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gin_shell.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GIN_SH~2.MAN|gin_shell.exe.manifest" Attributes="0" SourcePath="..\gin_shell.exe.manifest" SelfReg="false"/>
+    <ROW File="gin_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GIN_UN~1.MAN|gin_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\gin_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gin_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GIN_UN~2.MAN|gin_unittests.exe.manifest" Attributes="0" SourcePath="..\gin_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="gl_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GL_TES~1.MAN|gl_tests.exe.assert.manifest" Attributes="0" SourcePath="..\gl_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gl_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GL_TES~2.MAN|gl_tests.exe.manifest" Attributes="0" SourcePath="..\gl_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="gl_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GL_UNI~1.MAN|gl_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\gl_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gl_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GL_UNI~2.MAN|gl_unittests.exe.manifest" Attributes="0" SourcePath="..\gl_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="gles2_conform_support.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GLES2_~1.MAN|gles2_conform_support.exe.assert.manifest" Attributes="0" SourcePath="..\gles2_conform_support.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gles2_conform_support.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GLES2_~2.MAN|gles2_conform_support.exe.manifest" Attributes="0" SourcePath="..\gles2_conform_support.exe.manifest" SelfReg="false"/>
+    <ROW File="gles2_conform_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GLES2_~3.MAN|gles2_conform_test.exe.assert.manifest" Attributes="0" SourcePath="..\gles2_conform_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gles2_conform_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GLES2_~4.MAN|gles2_conform_test.exe.manifest" Attributes="0" SourcePath="..\gles2_conform_test.exe.manifest" SelfReg="false"/>
+    <ROW File="glhrome.exe" Component_="glhrome.exe" FileName="glhrome.exe" Attributes="0" SourcePath="..\glhrome.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="gn.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GNEXEA~1.MAN|gn.exe.assert.manifest" Attributes="0" SourcePath="..\gn.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gn.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GNEXE~1.MAN|gn.exe.manifest" Attributes="0" SourcePath="..\gn.exe.manifest" SelfReg="false"/>
+    <ROW File="gn_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GN_UNI~1.MAN|gn_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\gn_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gn_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GN_UNI~2.MAN|gn_unittests.exe.manifest" Attributes="0" SourcePath="..\gn_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="google_apis_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GOOGLE~1.MAN|google_apis_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\google_apis_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="google_apis_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GOOGLE~2.MAN|google_apis_unittests.exe.manifest" Attributes="0" SourcePath="..\google_apis_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="gpu_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GPU_PE~1.MAN|gpu_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\gpu_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gpu_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GPU_PE~2.MAN|gpu_perftests.exe.manifest" Attributes="0" SourcePath="..\gpu_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="gpu_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="GPU_UN~1.MAN|gpu_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\gpu_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="gpu_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="GPU_UN~2.MAN|gpu_unittests.exe.manifest" Attributes="0" SourcePath="..\gpu_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="hpack_example_generator.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="HPACK_~1.MAN|hpack_example_generator.exe.assert.manifest" Attributes="0" SourcePath="..\hpack_example_generator.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="hpack_example_generator.exe.manifest" Component_="_STARTGLHROME.bat" FileName="HPACK_~2.MAN|hpack_example_generator.exe.manifest" Attributes="0" SourcePath="..\hpack_example_generator.exe.manifest" SelfReg="false"/>
+    <ROW File="hpack_fuzz_mutator.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="HPACK_~3.MAN|hpack_fuzz_mutator.exe.assert.manifest" Attributes="0" SourcePath="..\hpack_fuzz_mutator.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="hpack_fuzz_mutator.exe.manifest" Component_="_STARTGLHROME.bat" FileName="HPACK_~4.MAN|hpack_fuzz_mutator.exe.manifest" Attributes="0" SourcePath="..\hpack_fuzz_mutator.exe.manifest" SelfReg="false"/>
+    <ROW File="hpack_fuzz_wrapper.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="HPACK_~5.MAN|hpack_fuzz_wrapper.exe.assert.manifest" Attributes="0" SourcePath="..\hpack_fuzz_wrapper.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="hpack_fuzz_wrapper.exe.manifest" Component_="_STARTGLHROME.bat" FileName="HPACK_~6.MAN|hpack_fuzz_wrapper.exe.manifest" Attributes="0" SourcePath="..\hpack_fuzz_wrapper.exe.manifest" SelfReg="false"/>
+    <ROW File="icudtl.dat" Component_="_STARTGLHROME.bat" FileName="icudtl.dat" Attributes="0" SourcePath="..\icudtl.dat" SelfReg="false"/>
+    <ROW File="image_diff.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="IMAGE_~1.MAN|image_diff.exe.assert.manifest" Attributes="0" SourcePath="..\image_diff.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="image_diff.exe.manifest" Component_="_STARTGLHROME.bat" FileName="IMAGE_~2.MAN|image_diff.exe.manifest" Attributes="0" SourcePath="..\image_diff.exe.manifest" SelfReg="false"/>
+    <ROW File="image_operations_bench.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="IMAGE_~3.MAN|image_operations_bench.exe.assert.manifest" Attributes="0" SourcePath="..\image_operations_bench.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="image_operations_bench.exe.manifest" Component_="_STARTGLHROME.bat" FileName="IMAGE_~4.MAN|image_operations_bench.exe.manifest" Attributes="0" SourcePath="..\image_operations_bench.exe.manifest" SelfReg="false"/>
+    <ROW File="installer_util_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="INSTAL~1.MAN|installer_util_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\installer_util_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="installer_util_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="INSTAL~2.MAN|installer_util_unittests.exe.manifest" Attributes="0" SourcePath="..\installer_util_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="interactive_ui_tests.exe" Component_="interactive_ui_tests.exe" FileName="INTERA~1.EXE|interactive_ui_tests.exe" Attributes="0" SourcePath="..\interactive_ui_tests.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="interactive_ui_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="INTERA~1.MAN|interactive_ui_tests.exe.assert.manifest" Attributes="0" SourcePath="..\interactive_ui_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="interactive_ui_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="INTERA~2.MAN|interactive_ui_tests.exe.manifest" Attributes="0" SourcePath="..\interactive_ui_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="ipc_mojo_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="IPC_MO~1.MAN|ipc_mojo_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\ipc_mojo_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ipc_mojo_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="IPC_MO~2.MAN|ipc_mojo_perftests.exe.manifest" Attributes="0" SourcePath="..\ipc_mojo_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="ipc_mojo_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="IPC_MO~3.MAN|ipc_mojo_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\ipc_mojo_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ipc_mojo_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="IPC_MO~4.MAN|ipc_mojo_unittests.exe.manifest" Attributes="0" SourcePath="..\ipc_mojo_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="ipc_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="IPC_PE~1.MAN|ipc_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\ipc_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ipc_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="IPC_PE~2.MAN|ipc_perftests.exe.manifest" Attributes="0" SourcePath="..\ipc_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="ipc_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="IPC_TE~1.MAN|ipc_tests.exe.assert.manifest" Attributes="0" SourcePath="..\ipc_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ipc_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="IPC_TE~2.MAN|ipc_tests.exe.manifest" Attributes="0" SourcePath="..\ipc_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="jingle_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="JINGLE~1.MAN|jingle_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\jingle_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="jingle_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="JINGLE~2.MAN|jingle_unittests.exe.manifest" Attributes="0" SourcePath="..\jingle_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="jtl_compiler.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="JTL_CO~1.MAN|jtl_compiler.exe.assert.manifest" Attributes="0" SourcePath="..\jtl_compiler.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="jtl_compiler.exe.manifest" Component_="_STARTGLHROME.bat" FileName="JTL_CO~2.MAN|jtl_compiler.exe.manifest" Attributes="0" SourcePath="..\jtl_compiler.exe.manifest" SelfReg="false"/>
+    <ROW File="keyboard_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="KEYBOA~1.MAN|keyboard_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\keyboard_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="keyboard_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="KEYBOA~2.MAN|keyboard_unittests.exe.manifest" Attributes="0" SourcePath="..\keyboard_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="khronos_glcts_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="KHRONO~1.MAN|khronos_glcts_test.exe.assert.manifest" Attributes="0" SourcePath="..\khronos_glcts_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="khronos_glcts_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="KHRONO~2.MAN|khronos_glcts_test.exe.manifest" Attributes="0" SourcePath="..\khronos_glcts_test.exe.manifest" SelfReg="false"/>
+    <ROW File="layout_test_helper.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="LAYOUT~1.MAN|layout_test_helper.exe.assert.manifest" Attributes="0" SourcePath="..\layout_test_helper.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="layout_test_helper.exe.manifest" Component_="_STARTGLHROME.bat" FileName="LAYOUT~2.MAN|layout_test_helper.exe.manifest" Attributes="0" SourcePath="..\layout_test_helper.exe.manifest" SelfReg="false"/>
+    <ROW File="libaddressinput_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="LIBADD~1.MAN|libaddressinput_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\libaddressinput_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="libaddressinput_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="LIBADD~2.MAN|libaddressinput_unittests.exe.manifest" Attributes="0" SourcePath="..\libaddressinput_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="libEGL.dll" Component_="libEGL.dll" FileName="libEGL.dll" Attributes="0" SourcePath="..\libEGL.dll" SelfReg="false"/>
+    <ROW File="libEGL.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="LIBEGL~1.MAN|libEGL.dll.assert.manifest" Attributes="0" SourcePath="..\libEGL.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="libEGL.dll.manifest" Component_="_STARTGLHROME.bat" FileName="LIBEGL~2.MAN|libEGL.dll.manifest" Attributes="0" SourcePath="..\libEGL.dll.manifest" SelfReg="false"/>
+    <ROW File="libexif.dll" Component_="libexif.dll" FileName="libexif.dll" Attributes="0" SourcePath="..\libexif.dll" SelfReg="false"/>
+    <ROW File="libexif.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="LIBEXI~1.MAN|libexif.dll.assert.manifest" Attributes="0" SourcePath="..\libexif.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="libexif.dll.manifest" Component_="_STARTGLHROME.bat" FileName="LIBEXI~2.MAN|libexif.dll.manifest" Attributes="0" SourcePath="..\libexif.dll.manifest" SelfReg="false"/>
+    <ROW File="libGLESv2.dll" Component_="libGLESv2.dll" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="..\libGLESv2.dll" SelfReg="false"/>
+    <ROW File="libGLESv2.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="LIBGLE~1.MAN|libGLESv2.dll.assert.manifest" Attributes="0" SourcePath="..\libGLESv2.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="libGLESv2.dll.manifest" Component_="_STARTGLHROME.bat" FileName="LIBGLE~2.MAN|libGLESv2.dll.manifest" Attributes="0" SourcePath="..\libGLESv2.dll.manifest" SelfReg="false"/>
+    <ROW File="libphonenumber_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="LIBPHO~1.MAN|libphonenumber_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\libphonenumber_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="libphonenumber_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="LIBPHO~2.MAN|libphonenumber_unittests.exe.manifest" Attributes="0" SourcePath="..\libphonenumber_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="load_library_perf_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="LOAD_L~1.MAN|load_library_perf_tests.exe.assert.manifest" Attributes="0" SourcePath="..\load_library_perf_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="load_library_perf_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="LOAD_L~2.MAN|load_library_perf_tests.exe.manifest" Attributes="0" SourcePath="..\load_library_perf_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="malloc_wrapper.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MALLOC~1.MAN|malloc_wrapper.dll.assert.manifest" Attributes="0" SourcePath="..\malloc_wrapper.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="malloc_wrapper.dll.manifest" Component_="_STARTGLHROME.bat" FileName="MALLOC~2.MAN|malloc_wrapper.dll.manifest" Attributes="0" SourcePath="..\malloc_wrapper.dll.manifest" SelfReg="false"/>
+    <ROW File="maptsvdifftool.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MAPTSV~1.MAN|maptsvdifftool.exe.assert.manifest" Attributes="0" SourcePath="..\maptsvdifftool.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="maptsvdifftool.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MAPTSV~2.MAN|maptsvdifftool.exe.manifest" Attributes="0" SourcePath="..\maptsvdifftool.exe.manifest" SelfReg="false"/>
+    <ROW File="mcs_probe.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MCS_PR~1.MAN|mcs_probe.exe.assert.manifest" Attributes="0" SourcePath="..\mcs_probe.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mcs_probe.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MCS_PR~2.MAN|mcs_probe.exe.manifest" Attributes="0" SourcePath="..\mcs_probe.exe.manifest" SelfReg="false"/>
+    <ROW File="media_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MEDIA_~1.MAN|media_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\media_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="media_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MEDIA_~2.MAN|media_perftests.exe.manifest" Attributes="0" SourcePath="..\media_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="media_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MEDIA_~3.MAN|media_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\media_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="media_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MEDIA_~4.MAN|media_unittests.exe.manifest" Attributes="0" SourcePath="..\media_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="message_center_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MESSAG~1.MAN|message_center_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\message_center_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="message_center_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MESSAG~2.MAN|message_center_unittests.exe.manifest" Attributes="0" SourcePath="..\message_center_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="metro_driver.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="METRO_~1.MAN|metro_driver.dll.assert.manifest" Attributes="0" SourcePath="..\metro_driver.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="metro_driver.dll.manifest" Component_="_STARTGLHROME.bat" FileName="METRO_~2.MAN|metro_driver.dll.manifest" Attributes="0" SourcePath="..\metro_driver.dll.manifest" SelfReg="false"/>
+    <ROW File="midi_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MIDI_U~1.MAN|midi_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\midi_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="midi_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MIDI_U~2.MAN|midi_unittests.exe.manifest" Attributes="0" SourcePath="..\midi_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mini_installer.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MINI_I~1.MAN|mini_installer.exe.assert.manifest" Attributes="0" SourcePath="..\mini_installer.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mini_installer.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MINI_I~2.MAN|mini_installer.exe.manifest" Attributes="0" SourcePath="..\mini_installer.exe.manifest" SelfReg="false"/>
+    <ROW File="mksnapshot.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MKSNAP~1.MAN|mksnapshot.exe.assert.manifest" Attributes="0" SourcePath="..\mksnapshot.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mksnapshot.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MKSNAP~2.MAN|mksnapshot.exe.manifest" Attributes="0" SourcePath="..\mksnapshot.exe.manifest" SelfReg="false"/>
+    <ROW File="mock_nacl_gdb.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOCK_N~1.MAN|mock_nacl_gdb.exe.assert.manifest" Attributes="0" SourcePath="..\mock_nacl_gdb.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mock_nacl_gdb.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOCK_N~2.MAN|mock_nacl_gdb.exe.manifest" Attributes="0" SourcePath="..\mock_nacl_gdb.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_common_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_C~1.MAN|mojo_common_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_common_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_common_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_C~2.MAN|mojo_common_unittests.exe.manifest" Attributes="0" SourcePath="..\mojo_common_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_js_integration_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_J~1.MAN|mojo_js_integration_tests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_js_integration_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_js_integration_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_J~2.MAN|mojo_js_integration_tests.exe.manifest" Attributes="0" SourcePath="..\mojo_js_integration_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_js_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_J~3.MAN|mojo_js_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_js_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_js_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_J~4.MAN|mojo_js_unittests.exe.manifest" Attributes="0" SourcePath="..\mojo_js_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_message_pipe_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_M~1.MAN|mojo_message_pipe_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_message_pipe_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_message_pipe_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_M~2.MAN|mojo_message_pipe_perftests.exe.manifest" Attributes="0" SourcePath="..\mojo_message_pipe_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_application_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~1.MAN|mojo_public_application_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_public_application_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_application_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~2.MAN|mojo_public_application_unittests.exe.manifest" Attributes="0" SourcePath="..\mojo_public_application_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_bindings_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~3.MAN|mojo_public_bindings_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_public_bindings_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_bindings_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~4.MAN|mojo_public_bindings_unittests.exe.manifest" Attributes="0" SourcePath="..\mojo_public_bindings_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_environment_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~5.MAN|mojo_public_environment_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_public_environment_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_environment_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~6.MAN|mojo_public_environment_unittests.exe.manifest" Attributes="0" SourcePath="..\mojo_public_environment_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_system_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~7.MAN|mojo_public_system_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_public_system_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_system_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~8.MAN|mojo_public_system_perftests.exe.manifest" Attributes="0" SourcePath="..\mojo_public_system_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_system_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_P~9.MAN|mojo_public_system_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_public_system_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_system_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_~10.MAN|mojo_public_system_unittests.exe.manifest" Attributes="0" SourcePath="..\mojo_public_system_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_utility_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_~11.MAN|mojo_public_utility_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_public_utility_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_public_utility_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_~12.MAN|mojo_public_utility_unittests.exe.manifest" Attributes="0" SourcePath="..\mojo_public_utility_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_system_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_S~1.MAN|mojo_system_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\mojo_system_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_system_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_S~2.MAN|mojo_system_unittests.exe.manifest" Attributes="0" SourcePath="..\mojo_system_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="mojo_test_support.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_T~1.MAN|mojo_test_support.dll.assert.manifest" Attributes="0" SourcePath="..\mojo_test_support.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="mojo_test_support.dll.manifest" Component_="_STARTGLHROME.bat" FileName="MOJO_T~2.MAN|mojo_test_support.dll.manifest" Attributes="0" SourcePath="..\mojo_test_support.dll.manifest" SelfReg="false"/>
+    <ROW File="monacl_shell.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MONACL~1.MAN|monacl_shell.exe.assert.manifest" Attributes="0" SourcePath="..\monacl_shell.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="monacl_shell.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MONACL~2.MAN|monacl_shell.exe.manifest" Attributes="0" SourcePath="..\monacl_shell.exe.manifest" SelfReg="false"/>
+    <ROW File="msdump2symdb.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MSDUMP~1.MAN|msdump2symdb.exe.assert.manifest" Attributes="0" SourcePath="..\msdump2symdb.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="msdump2symdb.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MSDUMP~2.MAN|msdump2symdb.exe.manifest" Attributes="0" SourcePath="..\msdump2symdb.exe.manifest" SelfReg="false"/>
+    <ROW File="msmap2tsv.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="MSMAP2~1.MAN|msmap2tsv.exe.assert.manifest" Attributes="0" SourcePath="..\msmap2tsv.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="msmap2tsv.exe.manifest" Component_="_STARTGLHROME.bat" FileName="MSMAP2~2.MAN|msmap2tsv.exe.manifest" Attributes="0" SourcePath="..\msmap2tsv.exe.manifest" SelfReg="false"/>
+    <ROW File="nacl_irt_x86_32.nexe" Component_="_STARTGLHROME.bat" FileName="NACL_I~1.NEX|nacl_irt_x86_32.nexe" Attributes="0" SourcePath="..\nacl_irt_x86_32.nexe" SelfReg="false"/>
+    <ROW File="nacl_irt_x86_64.nexe" Component_="_STARTGLHROME.bat" FileName="NACL_I~2.NEX|nacl_irt_x86_64.nexe" Attributes="0" SourcePath="..\nacl_irt_x86_64.nexe" SelfReg="false"/>
+    <ROW File="nacl_loader_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="NACL_L~1.MAN|nacl_loader_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\nacl_loader_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="nacl_loader_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="NACL_L~2.MAN|nacl_loader_unittests.exe.manifest" Attributes="0" SourcePath="..\nacl_loader_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="nacl64.exe" Component_="nacl64.exe" FileName="nacl64.exe" Attributes="0" SourcePath="..\nacl64.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="nacl64.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="NACL64~1.MAN|nacl64.exe.assert.manifest" Attributes="0" SourcePath="..\nacl64.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="nacl64.exe.manifest" Component_="_STARTGLHROME.bat" FileName="NACL64~2.MAN|nacl64.exe.manifest" Attributes="0" SourcePath="..\nacl64.exe.manifest" SelfReg="false"/>
+    <ROW File="natives_blob.bin" Component_="_STARTGLHROME.bat" FileName="NATIVE~1.BIN|natives_blob.bin" Attributes="0" SourcePath="..\natives_blob.bin" SelfReg="false"/>
+    <ROW File="net_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="NET_PE~1.MAN|net_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\net_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="net_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="NET_PE~2.MAN|net_perftests.exe.manifest" Attributes="0" SourcePath="..\net_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="net_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="NET_UN~1.MAN|net_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\net_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="net_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="NET_UN~2.MAN|net_unittests.exe.manifest" Attributes="0" SourcePath="..\net_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="net_watcher.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="NET_WA~1.MAN|net_watcher.exe.assert.manifest" Attributes="0" SourcePath="..\net_watcher.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="net_watcher.exe.manifest" Component_="_STARTGLHROME.bat" FileName="NET_WA~2.MAN|net_watcher.exe.manifest" Attributes="0" SourcePath="..\net_watcher.exe.manifest" SelfReg="false"/>
+    <ROW File="np_test_netscape_plugin.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="NP_TES~1.MAN|np_test_netscape_plugin.dll.assert.manifest" Attributes="0" SourcePath="..\np_test_netscape_plugin.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="np_test_netscape_plugin.dll.manifest" Component_="_STARTGLHROME.bat" FileName="NP_TES~2.MAN|np_test_netscape_plugin.dll.manifest" Attributes="0" SourcePath="..\np_test_netscape_plugin.dll.manifest" SelfReg="false"/>
+    <ROW File="npapi_test_plugin.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="NPAPI_~1.MAN|npapi_test_plugin.dll.assert.manifest" Attributes="0" SourcePath="..\npapi_test_plugin.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="npapi_test_plugin.dll.manifest" Component_="_STARTGLHROME.bat" FileName="NPAPI_~2.MAN|npapi_test_plugin.dll.manifest" Attributes="0" SourcePath="..\npapi_test_plugin.dll.manifest" SelfReg="false"/>
+    <ROW File="osmesa.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="OSMESA~1.MAN|osmesa.dll.assert.manifest" Attributes="0" SourcePath="..\osmesa.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="osmesa.dll.manifest" Component_="_STARTGLHROME.bat" FileName="OSMESA~2.MAN|osmesa.dll.manifest" Attributes="0" SourcePath="..\osmesa.dll.manifest" SelfReg="false"/>
+    <ROW File="pdfium_diff.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PDFIUM~1.MAN|pdfium_diff.exe.assert.manifest" Attributes="0" SourcePath="..\pdfium_diff.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="pdfium_diff.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PDFIUM~2.MAN|pdfium_diff.exe.manifest" Attributes="0" SourcePath="..\pdfium_diff.exe.manifest" SelfReg="false"/>
+    <ROW File="pdfium_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PDFIUM~3.MAN|pdfium_test.exe.assert.manifest" Attributes="0" SourcePath="..\pdfium_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="pdfium_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PDFIUM~4.MAN|pdfium_test.exe.manifest" Attributes="0" SourcePath="..\pdfium_test.exe.manifest" SelfReg="false"/>
+    <ROW File="pe_image_test.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PE_IMA~1.MAN|pe_image_test.dll.assert.manifest" Attributes="0" SourcePath="..\pe_image_test.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="pe_image_test.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PE_IMA~2.MAN|pe_image_test.dll.manifest" Attributes="0" SourcePath="..\pe_image_test.dll.manifest" SelfReg="false"/>
+    <ROW File="peerconnection_server.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PEERCO~1.MAN|peerconnection_server.exe.assert.manifest" Attributes="0" SourcePath="..\peerconnection_server.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="peerconnection_server.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PEERCO~2.MAN|peerconnection_server.exe.manifest" Attributes="0" SourcePath="..\peerconnection_server.exe.manifest" SelfReg="false"/>
+    <ROW File="pepper_hash_for_uma.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PEPPER~1.MAN|pepper_hash_for_uma.exe.assert.manifest" Attributes="0" SourcePath="..\pepper_hash_for_uma.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="pepper_hash_for_uma.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PEPPER~2.MAN|pepper_hash_for_uma.exe.manifest" Attributes="0" SourcePath="..\pepper_hash_for_uma.exe.manifest" SelfReg="false"/>
+    <ROW File="performance_browser_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PERFOR~1.MAN|performance_browser_tests.exe.assert.manifest" Attributes="0" SourcePath="..\performance_browser_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="performance_browser_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PERFOR~2.MAN|performance_browser_tests.exe.manifest" Attributes="0" SourcePath="..\performance_browser_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="pocdll.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="POCDLL~1.MAN|pocdll.dll.assert.manifest" Attributes="0" SourcePath="..\pocdll.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="pocdll.dll.manifest" Component_="_STARTGLHROME.bat" FileName="POCDLL~2.MAN|pocdll.dll.manifest" Attributes="0" SourcePath="..\pocdll.dll.manifest" SelfReg="false"/>
+    <ROW File="power_saver_test_plugin.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="POWER_~1.MAN|power_saver_test_plugin.dll.assert.manifest" Attributes="0" SourcePath="..\power_saver_test_plugin.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="power_saver_test_plugin.dll.manifest" Component_="_STARTGLHROME.bat" FileName="POWER_~2.MAN|power_saver_test_plugin.dll.manifest" Attributes="0" SourcePath="..\power_saver_test_plugin.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_audio.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~1.MAN|ppapi_example_audio.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_audio.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_audio.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~2.MAN|ppapi_example_audio.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_audio.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_audio_input.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~3.MAN|ppapi_example_audio_input.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_audio_input.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_audio_input.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~4.MAN|ppapi_example_audio_input.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_audio_input.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_c_stub.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~5.MAN|ppapi_example_c_stub.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_c_stub.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_c_stub.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~6.MAN|ppapi_example_c_stub.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_c_stub.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_cc_stub.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~7.MAN|ppapi_example_cc_stub.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_cc_stub.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_cc_stub.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~8.MAN|ppapi_example_cc_stub.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_cc_stub.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_compositor.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI_~9.MAN|ppapi_example_compositor.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_compositor.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_compositor.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~10.MAN|ppapi_example_compositor.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_compositor.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_crxfs.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~11.MAN|ppapi_example_crxfs.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_crxfs.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_crxfs.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~12.MAN|ppapi_example_crxfs.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_crxfs.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_enumerate_devices.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~13.MAN|ppapi_example_enumerate_devices.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_enumerate_devices.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_enumerate_devices.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~14.MAN|ppapi_example_enumerate_devices.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_enumerate_devices.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_file_chooser.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~15.MAN|ppapi_example_file_chooser.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_file_chooser.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_file_chooser.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~16.MAN|ppapi_example_file_chooser.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_file_chooser.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_flash_topmost.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~17.MAN|ppapi_example_flash_topmost.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_flash_topmost.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_flash_topmost.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~18.MAN|ppapi_example_flash_topmost.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_flash_topmost.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_gamepad.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~19.MAN|ppapi_example_gamepad.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_gamepad.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_gamepad.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~20.MAN|ppapi_example_gamepad.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_gamepad.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_gles2.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~21.MAN|ppapi_example_gles2.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_gles2.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_gles2.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~22.MAN|ppapi_example_gles2.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_gles2.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_gles2_spinning_cube.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~23.MAN|ppapi_example_gles2_spinning_cube.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_gles2_spinning_cube.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_gles2_spinning_cube.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~24.MAN|ppapi_example_gles2_spinning_cube.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_gles2_spinning_cube.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_graphics_2d.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~25.MAN|ppapi_example_graphics_2d.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_graphics_2d.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_graphics_2d.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~26.MAN|ppapi_example_graphics_2d.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_graphics_2d.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_ime.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~27.MAN|ppapi_example_ime.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_ime.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_ime.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~28.MAN|ppapi_example_ime.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_ime.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_input.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~29.MAN|ppapi_example_input.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_input.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_input.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~30.MAN|ppapi_example_input.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_input.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_media_stream_audio.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~31.MAN|ppapi_example_media_stream_audio.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_media_stream_audio.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_media_stream_audio.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~32.MAN|ppapi_example_media_stream_audio.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_media_stream_audio.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_media_stream_video.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~33.MAN|ppapi_example_media_stream_video.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_media_stream_video.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_media_stream_video.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~34.MAN|ppapi_example_media_stream_video.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_media_stream_video.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_mouse_cursor.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~35.MAN|ppapi_example_mouse_cursor.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_mouse_cursor.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_mouse_cursor.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~36.MAN|ppapi_example_mouse_cursor.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_mouse_cursor.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_mouse_lock.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~37.MAN|ppapi_example_mouse_lock.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_mouse_lock.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_mouse_lock.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~38.MAN|ppapi_example_mouse_lock.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_mouse_lock.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_paint_manager.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~39.MAN|ppapi_example_paint_manager.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_paint_manager.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_paint_manager.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~40.MAN|ppapi_example_paint_manager.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_paint_manager.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_post_message.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~41.MAN|ppapi_example_post_message.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_post_message.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_post_message.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~42.MAN|ppapi_example_post_message.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_post_message.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_printing.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~43.MAN|ppapi_example_printing.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_printing.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_printing.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~44.MAN|ppapi_example_printing.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_printing.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_scaling.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~45.MAN|ppapi_example_scaling.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_scaling.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_scaling.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~46.MAN|ppapi_example_scaling.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_scaling.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_scroll.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~47.MAN|ppapi_example_scroll.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_scroll.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_scroll.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~48.MAN|ppapi_example_scroll.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_scroll.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_simple_font.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~49.MAN|ppapi_example_simple_font.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_simple_font.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_simple_font.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~50.MAN|ppapi_example_simple_font.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_simple_font.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_threading.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~51.MAN|ppapi_example_threading.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_threading.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_threading.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~52.MAN|ppapi_example_threading.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_threading.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_url_loader.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~53.MAN|ppapi_example_url_loader.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_url_loader.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_url_loader.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~54.MAN|ppapi_example_url_loader.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_url_loader.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_url_loader_file.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~55.MAN|ppapi_example_url_loader_file.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_url_loader_file.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_url_loader_file.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~56.MAN|ppapi_example_url_loader_file.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_url_loader_file.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_vc.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~57.MAN|ppapi_example_vc.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_vc.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_vc.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~58.MAN|ppapi_example_vc.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_vc.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_video_decode.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~59.MAN|ppapi_example_video_decode.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_video_decode.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_video_decode.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~60.MAN|ppapi_example_video_decode.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_video_decode.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_video_decode_dev.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~61.MAN|ppapi_example_video_decode_dev.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_video_decode_dev.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_video_decode_dev.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~62.MAN|ppapi_example_video_decode_dev.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_video_decode_dev.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_video_effects.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~63.MAN|ppapi_example_video_effects.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_video_effects.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_video_effects.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~64.MAN|ppapi_example_video_effects.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_video_effects.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_video_encode.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~65.MAN|ppapi_example_video_encode.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_example_video_encode.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_example_video_encode.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~66.MAN|ppapi_example_video_encode.dll.manifest" Attributes="0" SourcePath="..\ppapi_example_video_encode.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~67.MAN|ppapi_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\ppapi_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~68.MAN|ppapi_perftests.exe.manifest" Attributes="0" SourcePath="..\ppapi_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="ppapi_tests.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~69.MAN|ppapi_tests.dll.assert.manifest" Attributes="0" SourcePath="..\ppapi_tests.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_tests.dll.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~70.MAN|ppapi_tests.dll.manifest" Attributes="0" SourcePath="..\ppapi_tests.dll.manifest" SelfReg="false"/>
+    <ROW File="ppapi_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~71.MAN|ppapi_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\ppapi_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ppapi_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PPAPI~72.MAN|ppapi_unittests.exe.manifest" Attributes="0" SourcePath="..\ppapi_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="printing_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PRINTI~1.MAN|printing_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\printing_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="printing_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PRINTI~2.MAN|printing_unittests.exe.manifest" Attributes="0" SourcePath="..\printing_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="protoc.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="PROTOC~1.MAN|protoc.exe.assert.manifest" Attributes="0" SourcePath="..\protoc.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="protoc.exe.manifest" Component_="_STARTGLHROME.bat" FileName="PROTOC~2.MAN|protoc.exe.manifest" Attributes="0" SourcePath="..\protoc.exe.manifest" SelfReg="false"/>
+    <ROW File="quic_client.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="QUIC_C~1.MAN|quic_client.exe.assert.manifest" Attributes="0" SourcePath="..\quic_client.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="quic_client.exe.manifest" Component_="_STARTGLHROME.bat" FileName="QUIC_C~2.MAN|quic_client.exe.manifest" Attributes="0" SourcePath="..\quic_client.exe.manifest" SelfReg="false"/>
+    <ROW File="quic_server.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="QUIC_S~1.MAN|quic_server.exe.assert.manifest" Attributes="0" SourcePath="..\quic_server.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="quic_server.exe.manifest" Component_="_STARTGLHROME.bat" FileName="QUIC_S~2.MAN|quic_server.exe.manifest" Attributes="0" SourcePath="..\quic_server.exe.manifest" SelfReg="false"/>
+    <ROW File="re2c.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="RE2CEX~1.MAN|re2c.exe.assert.manifest" Attributes="0" SourcePath="..\re2c.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="re2c.exe.manifest" Component_="_STARTGLHROME.bat" FileName="RE2CEX~2.MAN|re2c.exe.manifest" Attributes="0" SourcePath="..\re2c.exe.manifest" SelfReg="false"/>
+    <ROW File="remote_assistance_host.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTE~1.MAN|remote_assistance_host.exe.assert.manifest" Attributes="0" SourcePath="..\remote_assistance_host.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remote_assistance_host.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTE~2.MAN|remote_assistance_host.exe.manifest" Attributes="0" SourcePath="..\remote_assistance_host.exe.manifest" SelfReg="false"/>
+    <ROW File="remoting_breakpad_tester.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~1.MAN|remoting_breakpad_tester.exe.assert.manifest" Attributes="0" SourcePath="..\remoting_breakpad_tester.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_breakpad_tester.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~2.MAN|remoting_breakpad_tester.exe.manifest" Attributes="0" SourcePath="..\remoting_breakpad_tester.exe.manifest" SelfReg="false"/>
+    <ROW File="remoting_console.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~3.MAN|remoting_console.exe.assert.manifest" Attributes="0" SourcePath="..\remoting_console.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_console.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~4.MAN|remoting_console.exe.manifest" Attributes="0" SourcePath="..\remoting_console.exe.manifest" SelfReg="false"/>
+    <ROW File="remoting_core.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~5.MAN|remoting_core.dll.assert.manifest" Attributes="0" SourcePath="..\remoting_core.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_core.dll.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~6.MAN|remoting_core.dll.manifest" Attributes="0" SourcePath="..\remoting_core.dll.manifest" SelfReg="false"/>
+    <ROW File="remoting_desktop.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~7.MAN|remoting_desktop.exe.assert.manifest" Attributes="0" SourcePath="..\remoting_desktop.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_desktop.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~8.MAN|remoting_desktop.exe.manifest" Attributes="0" SourcePath="..\remoting_desktop.exe.manifest" SelfReg="false"/>
+    <ROW File="remoting_host.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOTI~9.MAN|remoting_host.exe.assert.manifest" Attributes="0" SourcePath="..\remoting_host.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_host.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~10.MAN|remoting_host.exe.manifest" Attributes="0" SourcePath="..\remoting_host.exe.manifest" SelfReg="false"/>
+    <ROW File="remoting_native_messaging_host.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~11.MAN|remoting_native_messaging_host.exe.assert.manifest" Attributes="0" SourcePath="..\remoting_native_messaging_host.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_native_messaging_host.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~12.MAN|remoting_native_messaging_host.exe.manifest" Attributes="0" SourcePath="..\remoting_native_messaging_host.exe.manifest" SelfReg="false"/>
+    <ROW File="remoting_perftests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~13.MAN|remoting_perftests.exe.assert.manifest" Attributes="0" SourcePath="..\remoting_perftests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_perftests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~14.MAN|remoting_perftests.exe.manifest" Attributes="0" SourcePath="..\remoting_perftests.exe.manifest" SelfReg="false"/>
+    <ROW File="remoting_start_host.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~15.MAN|remoting_start_host.exe.assert.manifest" Attributes="0" SourcePath="..\remoting_start_host.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_start_host.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~16.MAN|remoting_start_host.exe.manifest" Attributes="0" SourcePath="..\remoting_start_host.exe.manifest" SelfReg="false"/>
+    <ROW File="remoting_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~17.MAN|remoting_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\remoting_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="remoting_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="REMOT~18.MAN|remoting_unittests.exe.manifest" Attributes="0" SourcePath="..\remoting_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="resources.pak" Component_="_STARTGLHROME.bat" FileName="RESOUR~1.PAK|resources.pak" Attributes="0" SourcePath="..\resources.pak" SelfReg="false"/>
+    <ROW File="rgba_to_i420_converter.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="RGBA_T~1.MAN|rgba_to_i420_converter.exe.assert.manifest" Attributes="0" SourcePath="..\rgba_to_i420_converter.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="rgba_to_i420_converter.exe.manifest" Component_="_STARTGLHROME.bat" FileName="RGBA_T~2.MAN|rgba_to_i420_converter.exe.manifest" Attributes="0" SourcePath="..\rgba_to_i420_converter.exe.manifest" SelfReg="false"/>
+    <ROW File="rlz.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="RLZDLL~1.MAN|rlz.dll.assert.manifest" Attributes="0" SourcePath="..\rlz.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="rlz.dll.manifest" Component_="_STARTGLHROME.bat" FileName="RLZDLL~2.MAN|rlz.dll.manifest" Attributes="0" SourcePath="..\rlz.dll.manifest" SelfReg="false"/>
+    <ROW File="rlz_id.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="RLZ_ID~1.MAN|rlz_id.exe.assert.manifest" Attributes="0" SourcePath="..\rlz_id.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="rlz_id.exe.manifest" Component_="_STARTGLHROME.bat" FileName="RLZ_ID~2.MAN|rlz_id.exe.manifest" Attributes="0" SourcePath="..\rlz_id.exe.manifest" SelfReg="false"/>
+    <ROW File="rlz_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="RLZ_UN~1.MAN|rlz_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\rlz_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="rlz_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="RLZ_UN~2.MAN|rlz_unittests.exe.manifest" Attributes="0" SourcePath="..\rlz_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="run_sync_testserver.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="RUN_SY~1.MAN|run_sync_testserver.exe.assert.manifest" Attributes="0" SourcePath="..\run_sync_testserver.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="run_sync_testserver.exe.manifest" Component_="_STARTGLHROME.bat" FileName="RUN_SY~2.MAN|run_sync_testserver.exe.manifest" Attributes="0" SourcePath="..\run_sync_testserver.exe.manifest" SelfReg="false"/>
+    <ROW File="run_testserver.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="RUN_TE~1.MAN|run_testserver.exe.assert.manifest" Attributes="0" SourcePath="..\run_testserver.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="run_testserver.exe.manifest" Component_="_STARTGLHROME.bat" FileName="RUN_TE~2.MAN|run_testserver.exe.manifest" Attributes="0" SourcePath="..\run_testserver.exe.manifest" SelfReg="false"/>
+    <ROW File="sandbox_poc.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SANDBO~1.MAN|sandbox_poc.exe.assert.manifest" Attributes="0" SourcePath="..\sandbox_poc.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sandbox_poc.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SANDBO~2.MAN|sandbox_poc.exe.manifest" Attributes="0" SourcePath="..\sandbox_poc.exe.manifest" SelfReg="false"/>
+    <ROW File="sb_sigutil.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SB_SIG~1.MAN|sb_sigutil.exe.assert.manifest" Attributes="0" SourcePath="..\sb_sigutil.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sb_sigutil.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SB_SIG~2.MAN|sb_sigutil.exe.manifest" Attributes="0" SourcePath="..\sb_sigutil.exe.manifest" SelfReg="false"/>
+    <ROW File="sbox_integration_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SBOX_I~1.MAN|sbox_integration_tests.exe.assert.manifest" Attributes="0" SourcePath="..\sbox_integration_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sbox_integration_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SBOX_I~2.MAN|sbox_integration_tests.exe.manifest" Attributes="0" SourcePath="..\sbox_integration_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="sbox_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SBOX_U~1.MAN|sbox_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\sbox_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sbox_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SBOX_U~2.MAN|sbox_unittests.exe.manifest" Attributes="0" SourcePath="..\sbox_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="sbox_validation_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SBOX_V~1.MAN|sbox_validation_tests.exe.assert.manifest" Attributes="0" SourcePath="..\sbox_validation_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sbox_validation_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SBOX_V~2.MAN|sbox_validation_tests.exe.manifest" Attributes="0" SourcePath="..\sbox_validation_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="service_discovery_sniffer.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SERVIC~1.MAN|service_discovery_sniffer.exe.assert.manifest" Attributes="0" SourcePath="..\service_discovery_sniffer.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="service_discovery_sniffer.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SERVIC~2.MAN|service_discovery_sniffer.exe.manifest" Attributes="0" SourcePath="..\service_discovery_sniffer.exe.manifest" SelfReg="false"/>
+    <ROW File="setup.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SETUPE~1.MAN|setup.exe.assert.manifest" Attributes="0" SourcePath="..\setup.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="setup.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SETUPE~2.MAN|setup.exe.manifest" Attributes="0" SourcePath="..\setup.exe.manifest" SelfReg="false"/>
+    <ROW File="setup_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SETUP_~1.MAN|setup_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\setup_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="setup_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SETUP_~2.MAN|setup_unittests.exe.manifest" Attributes="0" SourcePath="..\setup_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="simple_quic_client.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SIMPLE~1.MAN|simple_quic_client.exe.assert.manifest" Attributes="0" SourcePath="..\simple_quic_client.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="simple_quic_client.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SIMPLE~2.MAN|simple_quic_client.exe.manifest" Attributes="0" SourcePath="..\simple_quic_client.exe.manifest" SelfReg="false"/>
+    <ROW File="skia_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SKIA_U~1.MAN|skia_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\skia_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="skia_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SKIA_U~2.MAN|skia_unittests.exe.manifest" Attributes="0" SourcePath="..\skia_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="snapshot_blob.bin" Component_="_STARTGLHROME.bat" FileName="SNAPSH~1.BIN|snapshot_blob.bin" Attributes="0" SourcePath="..\snapshot_blob.bin" SelfReg="false"/>
+    <ROW File="snapshot_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SNAPSH~1.MAN|snapshot_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\snapshot_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="snapshot_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SNAPSH~2.MAN|snapshot_unittests.exe.manifest" Attributes="0" SourcePath="..\snapshot_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="sql_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SQL_UN~1.MAN|sql_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\sql_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sql_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SQL_UN~2.MAN|sql_unittests.exe.manifest" Attributes="0" SourcePath="..\sql_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="static_initializers.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="STATIC~1.MAN|static_initializers.exe.assert.manifest" Attributes="0" SourcePath="..\static_initializers.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="static_initializers.exe.manifest" Component_="_STARTGLHROME.bat" FileName="STATIC~2.MAN|static_initializers.exe.manifest" Attributes="0" SourcePath="..\static_initializers.exe.manifest" SelfReg="false"/>
+    <ROW File="stress_cache.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="STRESS~1.MAN|stress_cache.exe.assert.manifest" Attributes="0" SourcePath="..\stress_cache.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="stress_cache.exe.manifest" Component_="_STARTGLHROME.bat" FileName="STRESS~2.MAN|stress_cache.exe.manifest" Attributes="0" SourcePath="..\stress_cache.exe.manifest" SelfReg="false"/>
+    <ROW File="sync_client.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_C~1.MAN|sync_client.exe.assert.manifest" Attributes="0" SourcePath="..\sync_client.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sync_client.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_C~2.MAN|sync_client.exe.manifest" Attributes="0" SourcePath="..\sync_client.exe.manifest" SelfReg="false"/>
+    <ROW File="sync_endtoend_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_E~1.MAN|sync_endtoend_tests.exe.assert.manifest" Attributes="0" SourcePath="..\sync_endtoend_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sync_endtoend_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_E~2.MAN|sync_endtoend_tests.exe.manifest" Attributes="0" SourcePath="..\sync_endtoend_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="sync_integration_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_I~1.MAN|sync_integration_tests.exe.assert.manifest" Attributes="0" SourcePath="..\sync_integration_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sync_integration_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_I~2.MAN|sync_integration_tests.exe.manifest" Attributes="0" SourcePath="..\sync_integration_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="sync_listen_notifications.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_L~1.MAN|sync_listen_notifications.exe.assert.manifest" Attributes="0" SourcePath="..\sync_listen_notifications.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sync_listen_notifications.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_L~2.MAN|sync_listen_notifications.exe.manifest" Attributes="0" SourcePath="..\sync_listen_notifications.exe.manifest" SelfReg="false"/>
+    <ROW File="sync_performance_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_P~1.MAN|sync_performance_tests.exe.assert.manifest" Attributes="0" SourcePath="..\sync_performance_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sync_performance_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_P~2.MAN|sync_performance_tests.exe.manifest" Attributes="0" SourcePath="..\sync_performance_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="sync_unit_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_U~1.MAN|sync_unit_tests.exe.assert.manifest" Attributes="0" SourcePath="..\sync_unit_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="sync_unit_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="SYNC_U~2.MAN|sync_unit_tests.exe.manifest" Attributes="0" SourcePath="..\sync_unit_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="test_registrar.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="TEST_R~1.MAN|test_registrar.exe.assert.manifest" Attributes="0" SourcePath="..\test_registrar.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="test_registrar.exe.manifest" Component_="_STARTGLHROME.bat" FileName="TEST_R~2.MAN|test_registrar.exe.manifest" Attributes="0" SourcePath="..\test_registrar.exe.manifest" SelfReg="false"/>
+    <ROW File="tld_cleanup.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="TLD_CL~1.MAN|tld_cleanup.exe.assert.manifest" Attributes="0" SourcePath="..\tld_cleanup.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="tld_cleanup.exe.manifest" Component_="_STARTGLHROME.bat" FileName="TLD_CL~2.MAN|tld_cleanup.exe.manifest" Attributes="0" SourcePath="..\tld_cleanup.exe.manifest" SelfReg="false"/>
+    <ROW File="tls_edit.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="TLS_ED~1.MAN|tls_edit.exe.assert.manifest" Attributes="0" SourcePath="..\tls_edit.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="tls_edit.exe.manifest" Component_="_STARTGLHROME.bat" FileName="TLS_ED~2.MAN|tls_edit.exe.manifest" Attributes="0" SourcePath="..\tls_edit.exe.manifest" SelfReg="false"/>
+    <ROW File="udp_proxy.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="UDP_PR~1.MAN|udp_proxy.exe.assert.manifest" Attributes="0" SourcePath="..\udp_proxy.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="udp_proxy.exe.manifest" Component_="_STARTGLHROME.bat" FileName="UDP_PR~2.MAN|udp_proxy.exe.manifest" Attributes="0" SourcePath="..\udp_proxy.exe.manifest" SelfReg="false"/>
+    <ROW File="ui_base_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="UI_BAS~1.MAN|ui_base_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\ui_base_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ui_base_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="UI_BAS~2.MAN|ui_base_unittests.exe.manifest" Attributes="0" SourcePath="..\ui_base_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="ui_touch_selection_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="UI_TOU~1.MAN|ui_touch_selection_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\ui_touch_selection_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="ui_touch_selection_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="UI_TOU~2.MAN|ui_touch_selection_unittests.exe.manifest" Attributes="0" SourcePath="..\ui_touch_selection_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="unit_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="UNIT_T~1.MAN|unit_tests.exe.assert.manifest" Attributes="0" SourcePath="..\unit_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="unit_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="UNIT_T~2.MAN|unit_tests.exe.manifest" Attributes="0" SourcePath="..\unit_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="url_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="URL_UN~1.MAN|url_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\url_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="url_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="URL_UN~2.MAN|url_unittests.exe.manifest" Attributes="0" SourcePath="..\url_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="verifier_test_dll_1.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="VERIFI~1.MAN|verifier_test_dll_1.dll.assert.manifest" Attributes="0" SourcePath="..\verifier_test_dll_1.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="verifier_test_dll_1.dll.manifest" Component_="_STARTGLHROME.bat" FileName="VERIFI~2.MAN|verifier_test_dll_1.dll.manifest" Attributes="0" SourcePath="..\verifier_test_dll_1.dll.manifest" SelfReg="false"/>
+    <ROW File="verifier_test_dll_2.dll.assert.manifest" Component_="_STARTGLHROME.bat" FileName="VERIFI~3.MAN|verifier_test_dll_2.dll.assert.manifest" Attributes="0" SourcePath="..\verifier_test_dll_2.dll.assert.manifest" SelfReg="false"/>
+    <ROW File="verifier_test_dll_2.dll.manifest" Component_="_STARTGLHROME.bat" FileName="VERIFI~4.MAN|verifier_test_dll_2.dll.manifest" Attributes="0" SourcePath="..\verifier_test_dll_2.dll.manifest" SelfReg="false"/>
+    <ROW File="video_decode_accelerator_unittest.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="VIDEO_~1.MAN|video_decode_accelerator_unittest.exe.assert.manifest" Attributes="0" SourcePath="..\video_decode_accelerator_unittest.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="video_decode_accelerator_unittest.exe.manifest" Component_="_STARTGLHROME.bat" FileName="VIDEO_~2.MAN|video_decode_accelerator_unittest.exe.manifest" Attributes="0" SourcePath="..\video_decode_accelerator_unittest.exe.manifest" SelfReg="false"/>
+    <ROW File="views_examples_with_content_exe.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="VIEWS_~1.MAN|views_examples_with_content_exe.exe.assert.manifest" Attributes="0" SourcePath="..\views_examples_with_content_exe.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="views_examples_with_content_exe.exe.manifest" Component_="_STARTGLHROME.bat" FileName="VIEWS_~2.MAN|views_examples_with_content_exe.exe.manifest" Attributes="0" SourcePath="..\views_examples_with_content_exe.exe.manifest" SelfReg="false"/>
+    <ROW File="views_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="VIEWS_~3.MAN|views_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\views_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="views_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="VIEWS_~4.MAN|views_unittests.exe.manifest" Attributes="0" SourcePath="..\views_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="virtual_driver_setup.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="VIRTUA~1.MAN|virtual_driver_setup.exe.assert.manifest" Attributes="0" SourcePath="..\virtual_driver_setup.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="virtual_driver_setup.exe.manifest" Component_="_STARTGLHROME.bat" FileName="VIRTUA~2.MAN|virtual_driver_setup.exe.manifest" Attributes="0" SourcePath="..\virtual_driver_setup.exe.manifest" SelfReg="false"/>
+    <ROW File="webkit_unit_tests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="WEBKIT~1.MAN|webkit_unit_tests.exe.assert.manifest" Attributes="0" SourcePath="..\webkit_unit_tests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="webkit_unit_tests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="WEBKIT~2.MAN|webkit_unit_tests.exe.manifest" Attributes="0" SourcePath="..\webkit_unit_tests.exe.manifest" SelfReg="false"/>
+    <ROW File="wifi_test.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="WIFI_T~1.MAN|wifi_test.exe.assert.manifest" Attributes="0" SourcePath="..\wifi_test.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="wifi_test.exe.manifest" Component_="_STARTGLHROME.bat" FileName="WIFI_T~2.MAN|wifi_test.exe.manifest" Attributes="0" SourcePath="..\wifi_test.exe.manifest" SelfReg="false"/>
+    <ROW File="wm_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="WM_UNI~1.MAN|wm_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\wm_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="wm_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="WM_UNI~2.MAN|wm_unittests.exe.manifest" Attributes="0" SourcePath="..\wm_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="wow_helper.exe" Component_="wow_helper.exe" FileName="WOW_HE~1.EXE|wow_helper.exe" Attributes="0" SourcePath="..\wow_helper.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="wtf_unittests.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="WTF_UN~1.MAN|wtf_unittests.exe.assert.manifest" Attributes="0" SourcePath="..\wtf_unittests.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="wtf_unittests.exe.manifest" Component_="_STARTGLHROME.bat" FileName="WTF_UN~2.MAN|wtf_unittests.exe.manifest" Attributes="0" SourcePath="..\wtf_unittests.exe.manifest" SelfReg="false"/>
+    <ROW File="xinput1_3.dll" Component_="xinput1_3.dll" FileName="XINPUT~1.DLL|xinput1_3.dll" Attributes="0" SourcePath="..\xinput1_3.dll" SelfReg="false"/>
+    <ROW File="yasm.exe.assert.manifest" Component_="_STARTGLHROME.bat" FileName="YASMEX~1.MAN|yasm.exe.assert.manifest" Attributes="0" SourcePath="..\yasm.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="yasm.exe.manifest" Component_="_STARTGLHROME.bat" FileName="YASMEX~2.MAN|yasm.exe.manifest" Attributes="0" SourcePath="..\yasm.exe.manifest" SelfReg="false"/>
+    <ROW File="a.ico" Component_="a.ico" FileName="a.ico" Attributes="0" SourcePath="..\webassets\a.ico" SelfReg="false"/>
+    <ROW File="a.png" Component_="a.ico" FileName="a.png" Attributes="0" SourcePath="..\webassets\a.png" SelfReg="false"/>
+    <ROW File="glhrome.ico" Component_="a.ico" FileName="glhrome.ico" Attributes="0" SourcePath="..\webassets\glhrome.ico" SelfReg="false"/>
+    <ROW File="glhrome.png" Component_="a.ico" FileName="glhrome.png" Attributes="0" SourcePath="..\webassets\glhrome.png" SelfReg="false"/>
+    <ROW File="ar.pak" Component_="ar.pak" FileName="ar.pak" Attributes="0" SourcePath="..\locales\ar.pak" SelfReg="false"/>
+    <ROW File="bg.pak" Component_="ar.pak" FileName="bg.pak" Attributes="0" SourcePath="..\locales\bg.pak" SelfReg="false"/>
+    <ROW File="bn.pak" Component_="ar.pak" FileName="bn.pak" Attributes="0" SourcePath="..\locales\bn.pak" SelfReg="false"/>
+    <ROW File="ca.pak" Component_="ar.pak" FileName="ca.pak" Attributes="0" SourcePath="..\locales\ca.pak" SelfReg="false"/>
+    <ROW File="cs.pak" Component_="ar.pak" FileName="cs.pak" Attributes="0" SourcePath="..\locales\cs.pak" SelfReg="false"/>
+    <ROW File="da.pak" Component_="ar.pak" FileName="da.pak" Attributes="0" SourcePath="..\locales\da.pak" SelfReg="false"/>
+    <ROW File="de.pak" Component_="ar.pak" FileName="de.pak" Attributes="0" SourcePath="..\locales\de.pak" SelfReg="false"/>
+    <ROW File="el.pak" Component_="ar.pak" FileName="el.pak" Attributes="0" SourcePath="..\locales\el.pak" SelfReg="false"/>
+    <ROW File="enGB.pak" Component_="ar.pak" FileName="en-GB.pak" Attributes="0" SourcePath="..\locales\en-GB.pak" SelfReg="false"/>
+    <ROW File="enUS.pak" Component_="ar.pak" FileName="en-US.pak" Attributes="0" SourcePath="..\locales\en-US.pak" SelfReg="false"/>
+    <ROW File="es419.pak" Component_="ar.pak" FileName="es-419.pak" Attributes="0" SourcePath="..\locales\es-419.pak" SelfReg="false"/>
+    <ROW File="es.pak" Component_="ar.pak" FileName="es.pak" Attributes="0" SourcePath="..\locales\es.pak" SelfReg="false"/>
+    <ROW File="et.pak" Component_="ar.pak" FileName="et.pak" Attributes="0" SourcePath="..\locales\et.pak" SelfReg="false"/>
+    <ROW File="fi.pak" Component_="ar.pak" FileName="fi.pak" Attributes="0" SourcePath="..\locales\fi.pak" SelfReg="false"/>
+    <ROW File="fil.pak" Component_="ar.pak" FileName="fil.pak" Attributes="0" SourcePath="..\locales\fil.pak" SelfReg="false"/>
+    <ROW File="fr.pak" Component_="ar.pak" FileName="fr.pak" Attributes="0" SourcePath="..\locales\fr.pak" SelfReg="false"/>
+    <ROW File="gu.pak" Component_="ar.pak" FileName="gu.pak" Attributes="0" SourcePath="..\locales\gu.pak" SelfReg="false"/>
+    <ROW File="he.pak" Component_="ar.pak" FileName="he.pak" Attributes="0" SourcePath="..\locales\he.pak" SelfReg="false"/>
+    <ROW File="hi.pak" Component_="ar.pak" FileName="hi.pak" Attributes="0" SourcePath="..\locales\hi.pak" SelfReg="false"/>
+    <ROW File="hr.pak" Component_="ar.pak" FileName="hr.pak" Attributes="0" SourcePath="..\locales\hr.pak" SelfReg="false"/>
+    <ROW File="hu.pak" Component_="ar.pak" FileName="hu.pak" Attributes="0" SourcePath="..\locales\hu.pak" SelfReg="false"/>
+    <ROW File="id.pak" Component_="ar.pak" FileName="id.pak" Attributes="0" SourcePath="..\locales\id.pak" SelfReg="false"/>
+    <ROW File="it.pak" Component_="ar.pak" FileName="it.pak" Attributes="0" SourcePath="..\locales\it.pak" SelfReg="false"/>
+    <ROW File="ja.pak" Component_="ar.pak" FileName="ja.pak" Attributes="0" SourcePath="..\locales\ja.pak" SelfReg="false"/>
+    <ROW File="kn.pak" Component_="ar.pak" FileName="kn.pak" Attributes="0" SourcePath="..\locales\kn.pak" SelfReg="false"/>
+    <ROW File="ko.pak" Component_="ar.pak" FileName="ko.pak" Attributes="0" SourcePath="..\locales\ko.pak" SelfReg="false"/>
+    <ROW File="lt.pak" Component_="ar.pak" FileName="lt.pak" Attributes="0" SourcePath="..\locales\lt.pak" SelfReg="false"/>
+    <ROW File="lv.pak" Component_="ar.pak" FileName="lv.pak" Attributes="0" SourcePath="..\locales\lv.pak" SelfReg="false"/>
+    <ROW File="ml.pak" Component_="ar.pak" FileName="ml.pak" Attributes="0" SourcePath="..\locales\ml.pak" SelfReg="false"/>
+    <ROW File="mr.pak" Component_="ar.pak" FileName="mr.pak" Attributes="0" SourcePath="..\locales\mr.pak" SelfReg="false"/>
+    <ROW File="ms.pak" Component_="ar.pak" FileName="ms.pak" Attributes="0" SourcePath="..\locales\ms.pak" SelfReg="false"/>
+    <ROW File="nb.pak" Component_="ar.pak" FileName="nb.pak" Attributes="0" SourcePath="..\locales\nb.pak" SelfReg="false"/>
+    <ROW File="nl.pak" Component_="ar.pak" FileName="nl.pak" Attributes="0" SourcePath="..\locales\nl.pak" SelfReg="false"/>
+    <ROW File="pl.pak" Component_="ar.pak" FileName="pl.pak" Attributes="0" SourcePath="..\locales\pl.pak" SelfReg="false"/>
+    <ROW File="ptBR.pak" Component_="ar.pak" FileName="pt-BR.pak" Attributes="0" SourcePath="..\locales\pt-BR.pak" SelfReg="false"/>
+    <ROW File="ptPT.pak" Component_="ar.pak" FileName="pt-PT.pak" Attributes="0" SourcePath="..\locales\pt-PT.pak" SelfReg="false"/>
+    <ROW File="ro.pak" Component_="ar.pak" FileName="ro.pak" Attributes="0" SourcePath="..\locales\ro.pak" SelfReg="false"/>
+    <ROW File="ru.pak" Component_="ar.pak" FileName="ru.pak" Attributes="0" SourcePath="..\locales\ru.pak" SelfReg="false"/>
+    <ROW File="sk.pak" Component_="ar.pak" FileName="sk.pak" Attributes="0" SourcePath="..\locales\sk.pak" SelfReg="false"/>
+    <ROW File="sl.pak" Component_="ar.pak" FileName="sl.pak" Attributes="0" SourcePath="..\locales\sl.pak" SelfReg="false"/>
+    <ROW File="sr.pak" Component_="ar.pak" FileName="sr.pak" Attributes="0" SourcePath="..\locales\sr.pak" SelfReg="false"/>
+    <ROW File="sv.pak" Component_="ar.pak" FileName="sv.pak" Attributes="0" SourcePath="..\locales\sv.pak" SelfReg="false"/>
+    <ROW File="ta.pak" Component_="ar.pak" FileName="ta.pak" Attributes="0" SourcePath="..\locales\ta.pak" SelfReg="false"/>
+    <ROW File="te.pak" Component_="ar.pak" FileName="te.pak" Attributes="0" SourcePath="..\locales\te.pak" SelfReg="false"/>
+    <ROW File="th.pak" Component_="ar.pak" FileName="th.pak" Attributes="0" SourcePath="..\locales\th.pak" SelfReg="false"/>
+    <ROW File="tr.pak" Component_="ar.pak" FileName="tr.pak" Attributes="0" SourcePath="..\locales\tr.pak" SelfReg="false"/>
+    <ROW File="uk.pak" Component_="ar.pak" FileName="uk.pak" Attributes="0" SourcePath="..\locales\uk.pak" SelfReg="false"/>
+    <ROW File="vi.pak" Component_="ar.pak" FileName="vi.pak" Attributes="0" SourcePath="..\locales\vi.pak" SelfReg="false"/>
+    <ROW File="zhCN.pak" Component_="ar.pak" FileName="zh-CN.pak" Attributes="0" SourcePath="..\locales\zh-CN.pak" SelfReg="false"/>
+    <ROW File="zhTW.pak" Component_="ar.pak" FileName="zh-TW.pak" Attributes="0" SourcePath="..\locales\zh-TW.pak" SelfReg="false"/>
+    <ROW File="mrow.txt" Component_="_STARTGLHROME.bat" FileName="mrow.txt" Attributes="0" SourcePath="..\mrow.txt" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="[|AI_AIP_FOLDER][|AI_AIP_FILENAME]-SetupFiles" PackageFileName="[|AI_AIP_FILENAME]" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder]\goog\glhrome"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]" MultiBuildTarget="DefaultBuild:[ProgramMenuFolder]\Goog Glhrome"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="_STARTGLHROME.bat"/>
+    <ROW Feature_="MainFeature" Component_="chrome.dll"/>
+    <ROW Feature_="MainFeature" Component_="chrome_child.dll"/>
+    <ROW Feature_="MainFeature" Component_="chrome_elf.dll"/>
+    <ROW Feature_="MainFeature" Component_="chrome_watcher.dll"/>
+    <ROW Feature_="MainFeature" Component_="crash_service.exe"/>
+    <ROW Feature_="MainFeature" Component_="crash_service64.exe"/>
+    <ROW Feature_="MainFeature" Component_="D3DCompiler_47.dll"/>
+    <ROW Feature_="MainFeature" Component_="ffmpeg.exe"/>
+    <ROW Feature_="MainFeature" Component_="ffmpegsumo.dll"/>
+    <ROW Feature_="MainFeature" Component_="gcapi_dll.dll"/>
+    <ROW Feature_="MainFeature" Component_="glhrome.exe"/>
+    <ROW Feature_="MainFeature" Component_="interactive_ui_tests.exe"/>
+    <ROW Feature_="MainFeature" Component_="libEGL.dll"/>
+    <ROW Feature_="MainFeature" Component_="libexif.dll"/>
+    <ROW Feature_="MainFeature" Component_="libGLESv2.dll"/>
+    <ROW Feature_="MainFeature" Component_="nacl64.exe"/>
+    <ROW Feature_="MainFeature" Component_="wow_helper.exe"/>
+    <ROW Feature_="MainFeature" Component_="xinput1_3.dll"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="a.ico"/>
+    <ROW Feature_="MainFeature" Component_="ar.pak"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="glhrome_1.exe" SourcePath="..\..\gab644site\goog\glhrome.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_INTERNET_CONNECTION" Description="[ProductName] requires an active Internet connection for installation. Please check your network configuration and proxy settings." DescriptionLocId="AI.LaunchCondition.Internet" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="glhrome" Directory_="SHORTCUTDIR" Name="glhrome" Component_="glhrome.exe" Target="[#glhrome.exe]" Arguments="--ignore-certificate-errors --allow-insecure-localhost --test-type" Description="Access the Internet" Hotkey="0" Icon_="glhrome_1.exe" IconIndex="0" ShowCmd="1" WkDir="glhrome_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
