@@ -1,1 +1,4 @@
 *.log
+/installer/glhrome-backups
+/installer/glhrome-cache
+/installer/glhrome-SetupFiles

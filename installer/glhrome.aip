@@ -15,10 +15,10 @@
     <ROW Property="ARPURLINFOABOUT" Value="https://gab644.github.io/GAB644/goog/glhrome.html"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="The Goog Company"/>
-    <ROW Property="ProductCode" Value="1033:{E3E9E943-9C9D-4863-9B1E-9DAF7CBC2312} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{8D1240B2-97D5-45AE-A5C9-097D2A51F10E} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Goog Glhrome"/>
-    <ROW Property="ProductVersion" Value="1.0.2" Options="32"/>
+    <ROW Property="ProductVersion" Value="1.0.3" Options="32"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
     <ROW Property="UpgradeCode" Value="{C288DC5C-D8D7-45E6-9AE0-07982B950056}"/>
@@ -45,28 +45,28 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="APPDIR" ComponentId="{8D726569-3994-45F5-9887-42A9B884027F}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="D3DCompiler_47.dll" ComponentId="{D16CD662-30EA-4943-AD44-411F031AEA68}" Directory_="glhrome_Dir" Attributes="0" KeyPath="D3DCompiler_47.dll"/>
+    <ROW Component="D3DCompiler_47.dll" ComponentId="{47E0D653-4BB0-4E0B-B54E-7E57E5A0A859}" Directory_="glhrome_Dir" Attributes="0" KeyPath="D3DCompiler_47.dll"/>
     <ROW Component="ProductInformation" ComponentId="{66CDDD0B-E79C-40EA-B7CD-1E8A1CA1208B}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
-    <ROW Component="SHORTCUTDIR" ComponentId="{4C0D449E-FB6D-4D5D-95D6-CB50F1156264}" Directory_="SHORTCUTDIR" Attributes="0"/>
-    <ROW Component="_STARTGLHROME.bat" ComponentId="{07C7DBDD-8E2D-46F5-9BC8-AED15D603530}" Directory_="glhrome_Dir" Attributes="0" KeyPath="_STARTGLHROME.bat" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{C87BC256-75CD-4730-BF26-26E45936FBB2}" Directory_="SHORTCUTDIR" Attributes="0"/>
     <ROW Component="a.ico" ComponentId="{0FECBBA9-86EE-4429-923D-41CAA0E60C97}" Directory_="webassets_Dir" Attributes="0" KeyPath="a.ico" Type="0"/>
     <ROW Component="ar.pak" ComponentId="{A8DB2AEB-28C3-42A1-9B31-42FA4B4CF610}" Directory_="locales_Dir" Attributes="0" KeyPath="ar.pak" Type="0"/>
-    <ROW Component="chrome.dll" ComponentId="{AA4CF7C7-96AB-4F64-8CBE-5964C9F5ADDD}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome.dll"/>
-    <ROW Component="chrome_child.dll" ComponentId="{A1915B9C-29E7-4C6F-96AC-088FBC26CB34}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_child.dll"/>
-    <ROW Component="chrome_elf.dll" ComponentId="{4C9DD183-0D3F-41B5-B1A9-478F4A7F90BF}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_elf.dll"/>
-    <ROW Component="chrome_watcher.dll" ComponentId="{5B0B8CB2-D294-49D2-AF8B-812692E55DE0}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_watcher.dll"/>
-    <ROW Component="crash_service.exe" ComponentId="{EE364554-E6B1-4B87-A6AC-4364FE3EF220}" Directory_="glhrome_Dir" Attributes="0" KeyPath="crash_service.exe"/>
-    <ROW Component="crash_service64.exe" ComponentId="{2B788053-AFBB-44E9-8CC9-805B5216C004}" Directory_="glhrome_Dir" Attributes="256" KeyPath="crash_service64.exe"/>
-    <ROW Component="ffmpegsumo.dll" ComponentId="{EB7BF251-8C6C-49BF-9116-B07C8F3440C2}" Directory_="glhrome_Dir" Attributes="0" KeyPath="ffmpegsumo.dll"/>
-    <ROW Component="gcapi_dll.dll" ComponentId="{08A6271C-ADE7-4C66-AB39-A5ACFB9570D3}" Directory_="glhrome_Dir" Attributes="0" KeyPath="gcapi_dll.dll"/>
-    <ROW Component="glhrome.exe" ComponentId="{4B64090F-FA5C-4DC7-87E0-62EE16F00E85}" Directory_="glhrome_Dir" Attributes="0" KeyPath="glhrome.exe"/>
-    <ROW Component="interactive_ui_tests.exe" ComponentId="{A2A5A193-9014-4E54-9E60-536A7BC8470B}" Directory_="glhrome_Dir" Attributes="0" KeyPath="interactive_ui_tests.exe"/>
-    <ROW Component="libEGL.dll" ComponentId="{FC34FE86-CF5D-4744-850F-2958E55B2676}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libEGL.dll"/>
-    <ROW Component="libGLESv2.dll" ComponentId="{85AD99DE-86BD-405E-AB0A-0F936D9C1FDD}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libGLESv2.dll"/>
-    <ROW Component="libexif.dll" ComponentId="{DD3ED60E-AD95-4645-B63E-22043AE54883}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libexif.dll"/>
-    <ROW Component="nacl64.exe" ComponentId="{947E0769-C485-4C4B-BDE7-A4CF37294DCF}" Directory_="glhrome_Dir" Attributes="256" KeyPath="nacl64.exe"/>
-    <ROW Component="wow_helper.exe" ComponentId="{99340DD8-9260-44D0-8E98-988DE74ADE05}" Directory_="glhrome_Dir" Attributes="256" KeyPath="wow_helper.exe"/>
-    <ROW Component="xinput1_3.dll" ComponentId="{0D184E34-561C-4698-B1BD-C6A8081BB12C}" Directory_="glhrome_Dir" Attributes="0" KeyPath="xinput1_3.dll"/>
+    <ROW Component="chrome.dll" ComponentId="{521E65FD-5BB0-4237-8AF9-12121A56ED63}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome.dll"/>
+    <ROW Component="chrome_child.dll" ComponentId="{B9BF8AC4-0055-4F17-8511-2FC879C5AD1D}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_child.dll"/>
+    <ROW Component="chrome_elf.dll" ComponentId="{C34C548A-7869-4059-87F6-A85D99328632}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_elf.dll"/>
+    <ROW Component="chrome_watcher.dll" ComponentId="{025B6FFD-73B5-4C88-BBB4-427AE71A44B5}" Directory_="glhrome_Dir" Attributes="0" KeyPath="chrome_watcher.dll"/>
+    <ROW Component="crash_service.exe" ComponentId="{67D96FA8-B088-46C7-B7BF-6D82AE96251B}" Directory_="glhrome_Dir" Attributes="0" KeyPath="crash_service.exe"/>
+    <ROW Component="crash_service64.exe" ComponentId="{A6C97A72-191F-45E6-A6B9-F6B1ECE626F8}" Directory_="glhrome_Dir" Attributes="256" KeyPath="crash_service64.exe"/>
+    <ROW Component="ffmpegsumo.dll" ComponentId="{357DA88F-958C-43C8-B990-E2540DDC3572}" Directory_="glhrome_Dir" Attributes="0" KeyPath="ffmpegsumo.dll"/>
+    <ROW Component="gcapi_dll.dll" ComponentId="{54819110-4C3E-43CE-B9B2-3AF91D4DEA42}" Directory_="glhrome_Dir" Attributes="0" KeyPath="gcapi_dll.dll"/>
+    <ROW Component="gitignore" ComponentId="{2A84DFFC-4816-48D7-BB62-7F13BD629DF5}" Directory_="glhrome_Dir" Attributes="0" KeyPath="gitignore" Type="0"/>
+    <ROW Component="glhrome.exe" ComponentId="{A3543D41-DF03-4EFD-80FC-ECB257571AAF}" Directory_="glhrome_Dir" Attributes="0" KeyPath="glhrome.exe"/>
+    <ROW Component="interactive_ui_tests.exe" ComponentId="{2C2432AF-CBD4-421F-A406-98E04040BBF2}" Directory_="glhrome_Dir" Attributes="0" KeyPath="interactive_ui_tests.exe"/>
+    <ROW Component="libEGL.dll" ComponentId="{5BD293D7-8589-43A9-B366-CC1ACFD89CB4}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libEGL.dll"/>
+    <ROW Component="libGLESv2.dll" ComponentId="{BCDD1BDB-B397-45AA-ABE8-C3F90FFD5618}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libGLESv2.dll"/>
+    <ROW Component="libexif.dll" ComponentId="{0D405204-13A3-4183-9492-9B8730F15545}" Directory_="glhrome_Dir" Attributes="0" KeyPath="libexif.dll"/>
+    <ROW Component="nacl64.exe" ComponentId="{98A84865-49B8-48BF-A339-DF95442B2F1D}" Directory_="glhrome_Dir" Attributes="256" KeyPath="nacl64.exe"/>
+    <ROW Component="wow_helper.exe" ComponentId="{1E8FD15C-F838-4724-86A5-8C5122A07699}" Directory_="glhrome_Dir" Attributes="256" KeyPath="wow_helper.exe"/>
+    <ROW Component="xinput1_3.dll" ComponentId="{1B727931-5088-4AFB-9E5C-B8BA7F1BBE96}" Directory_="glhrome_Dir" Attributes="0" KeyPath="xinput1_3.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
@@ -127,36 +127,37 @@
     <ROW File="vi.pak" Component_="ar.pak" FileName="vi.pak" Attributes="0" SourcePath="..\locales\vi.pak" SelfReg="false"/>
     <ROW File="zhCN.pak" Component_="ar.pak" FileName="zh-CN.pak" Attributes="0" SourcePath="..\locales\zh-CN.pak" SelfReg="false"/>
     <ROW File="zhTW.pak" Component_="ar.pak" FileName="zh-TW.pak" Attributes="0" SourcePath="..\locales\zh-TW.pak" SelfReg="false"/>
-    <ROW File="_STARTGLHROME.bat" Component_="_STARTGLHROME.bat" FileName="_START~1.BAT|_STARTGLHROME.bat" Attributes="0" SourcePath="..\_STARTGLHROME.bat" SelfReg="false"/>
+    <ROW File="gitignore" Component_="gitignore" FileName="GITIGN~1|.gitignore" Attributes="0" SourcePath="..\.gitignore" SelfReg="false"/>
+    <ROW File="_STARTGLHROME.bat" Component_="gitignore" FileName="_START~1.BAT|_STARTGLHROME.bat" Attributes="0" SourcePath="..\_STARTGLHROME.bat" SelfReg="false"/>
     <ROW File="chrome.dll" Component_="chrome.dll" FileName="chrome.dll" Attributes="0" SourcePath="..\chrome.dll" SelfReg="false"/>
-    <ROW File="chrome.exe.temp" Component_="_STARTGLHROME.bat" FileName="CHROME~1.TEM|chrome.exe.temp" Attributes="0" SourcePath="..\chrome.exe.temp" SelfReg="false"/>
-    <ROW File="chrome_100_percent.pak" Component_="_STARTGLHROME.bat" FileName="CHROME~1.PAK|chrome_100_percent.pak" Attributes="0" SourcePath="..\chrome_100_percent.pak" SelfReg="false"/>
-    <ROW File="chrome_200_percent.pak" Component_="_STARTGLHROME.bat" FileName="CHROME~2.PAK|chrome_200_percent.pak" Attributes="0" SourcePath="..\chrome_200_percent.pak" SelfReg="false"/>
+    <ROW File="chrome.exe.assert.manifest" Component_="gitignore" FileName="CHROME~1.MAN|chrome.exe.assert.manifest" Attributes="0" SourcePath="..\chrome.exe.assert.manifest" SelfReg="false"/>
+    <ROW File="chrome.exe.manifest" Component_="gitignore" FileName="CHROME~2.MAN|chrome.exe.manifest" Attributes="0" SourcePath="..\chrome.exe.manifest" SelfReg="false"/>
+    <ROW File="chrome_100_percent.pak" Component_="gitignore" FileName="CHROME~1.PAK|chrome_100_percent.pak" Attributes="0" SourcePath="..\chrome_100_percent.pak" SelfReg="false"/>
+    <ROW File="chrome_200_percent.pak" Component_="gitignore" FileName="CHROME~2.PAK|chrome_200_percent.pak" Attributes="0" SourcePath="..\chrome_200_percent.pak" SelfReg="false"/>
     <ROW File="chrome_child.dll" Component_="chrome_child.dll" FileName="CHROME~1.DLL|chrome_child.dll" Attributes="0" SourcePath="..\chrome_child.dll" SelfReg="false"/>
     <ROW File="chrome_elf.dll" Component_="chrome_elf.dll" FileName="CHROME~2.DLL|chrome_elf.dll" Attributes="0" SourcePath="..\chrome_elf.dll" SelfReg="false"/>
     <ROW File="chrome_watcher.dll" Component_="chrome_watcher.dll" FileName="CHROME~3.DLL|chrome_watcher.dll" Attributes="0" SourcePath="..\chrome_watcher.dll" SelfReg="false"/>
     <ROW File="crash_service.exe" Component_="crash_service.exe" FileName="CRASH_~1.EXE|crash_service.exe" Attributes="0" SourcePath="..\crash_service.exe" SelfReg="false" DigSign="true"/>
     <ROW File="crash_service64.exe" Component_="crash_service64.exe" FileName="CRASH_~2.EXE|crash_service64.exe" Attributes="0" SourcePath="..\crash_service64.exe" SelfReg="false" DigSign="true"/>
     <ROW File="D3DCompiler_47.dll" Component_="D3DCompiler_47.dll" FileName="D3DCOM~1.DLL|D3DCompiler_47.dll" Attributes="0" SourcePath="..\D3DCompiler_47.dll" SelfReg="false"/>
-    <ROW File="debug.log" Component_="_STARTGLHROME.bat" FileName="debug.log" Attributes="0" SourcePath="..\debug.log" SelfReg="false"/>
     <ROW File="ffmpegsumo.dll" Component_="ffmpegsumo.dll" FileName="FFMPEG~1.DLL|ffmpegsumo.dll" Attributes="0" SourcePath="..\ffmpegsumo.dll" SelfReg="false"/>
-    <ROW File="FirstRun" Component_="_STARTGLHROME.bat" FileName="FIRSTR~1|First Run" Attributes="0" SourcePath="..\First Run" SelfReg="false"/>
+    <ROW File="FirstRun" Component_="gitignore" FileName="FIRSTR~1|First Run" Attributes="0" SourcePath="..\First Run" SelfReg="false"/>
     <ROW File="gcapi_dll.dll" Component_="gcapi_dll.dll" FileName="GCAPI_~1.DLL|gcapi_dll.dll" Attributes="0" SourcePath="..\gcapi_dll.dll" SelfReg="false"/>
     <ROW File="glhrome.exe" Component_="glhrome.exe" FileName="glhrome.exe" Attributes="0" SourcePath="..\glhrome.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="icudtl.dat" Component_="_STARTGLHROME.bat" FileName="icudtl.dat" Attributes="0" SourcePath="..\icudtl.dat" SelfReg="false"/>
+    <ROW File="icudtl.dat" Component_="gitignore" FileName="icudtl.dat" Attributes="0" SourcePath="..\icudtl.dat" SelfReg="false"/>
+    <ROW File="interactive_ui_tests.exe" Component_="interactive_ui_tests.exe" FileName="INTERA~1.EXE|interactive_ui_tests.exe" Attributes="0" SourcePath="..\interactive_ui_tests.exe" SelfReg="false" DigSign="true"/>
     <ROW File="libEGL.dll" Component_="libEGL.dll" FileName="libEGL.dll" Attributes="0" SourcePath="..\libEGL.dll" SelfReg="false"/>
     <ROW File="libexif.dll" Component_="libexif.dll" FileName="libexif.dll" Attributes="0" SourcePath="..\libexif.dll" SelfReg="false"/>
     <ROW File="libGLESv2.dll" Component_="libGLESv2.dll" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="..\libGLESv2.dll" SelfReg="false"/>
-    <ROW File="mrow.txt" Component_="_STARTGLHROME.bat" FileName="mrow.txt" Attributes="0" SourcePath="..\mrow.txt" SelfReg="false"/>
-    <ROW File="nacl_irt_x86_32.nexe" Component_="_STARTGLHROME.bat" FileName="NACL_I~1.NEX|nacl_irt_x86_32.nexe" Attributes="0" SourcePath="..\nacl_irt_x86_32.nexe" SelfReg="false"/>
-    <ROW File="nacl_irt_x86_64.nexe" Component_="_STARTGLHROME.bat" FileName="NACL_I~2.NEX|nacl_irt_x86_64.nexe" Attributes="0" SourcePath="..\nacl_irt_x86_64.nexe" SelfReg="false"/>
+    <ROW File="mrow.txt" Component_="gitignore" FileName="mrow.txt" Attributes="0" SourcePath="..\mrow.txt" SelfReg="false"/>
+    <ROW File="nacl_irt_x86_32.nexe" Component_="gitignore" FileName="NACL_I~1.NEX|nacl_irt_x86_32.nexe" Attributes="0" SourcePath="..\nacl_irt_x86_32.nexe" SelfReg="false"/>
+    <ROW File="nacl_irt_x86_64.nexe" Component_="gitignore" FileName="NACL_I~2.NEX|nacl_irt_x86_64.nexe" Attributes="0" SourcePath="..\nacl_irt_x86_64.nexe" SelfReg="false"/>
     <ROW File="nacl64.exe" Component_="nacl64.exe" FileName="nacl64.exe" Attributes="0" SourcePath="..\nacl64.exe" SelfReg="false" DigSign="true"/>
-    <ROW File="natives_blob.bin" Component_="_STARTGLHROME.bat" FileName="NATIVE~1.BIN|natives_blob.bin" Attributes="0" SourcePath="..\natives_blob.bin" SelfReg="false"/>
-    <ROW File="resources.pak" Component_="_STARTGLHROME.bat" FileName="RESOUR~1.PAK|resources.pak" Attributes="0" SourcePath="..\resources.pak" SelfReg="false"/>
-    <ROW File="snapshot_blob.bin" Component_="_STARTGLHROME.bat" FileName="SNAPSH~1.BIN|snapshot_blob.bin" Attributes="0" SourcePath="..\snapshot_blob.bin" SelfReg="false"/>
+    <ROW File="natives_blob.bin" Component_="gitignore" FileName="NATIVE~1.BIN|natives_blob.bin" Attributes="0" SourcePath="..\natives_blob.bin" SelfReg="false"/>
+    <ROW File="resources.pak" Component_="gitignore" FileName="RESOUR~1.PAK|resources.pak" Attributes="0" SourcePath="..\resources.pak" SelfReg="false"/>
+    <ROW File="snapshot_blob.bin" Component_="gitignore" FileName="SNAPSH~1.BIN|snapshot_blob.bin" Attributes="0" SourcePath="..\snapshot_blob.bin" SelfReg="false"/>
     <ROW File="wow_helper.exe" Component_="wow_helper.exe" FileName="WOW_HE~1.EXE|wow_helper.exe" Attributes="0" SourcePath="..\wow_helper.exe" SelfReg="false" DigSign="true"/>
     <ROW File="xinput1_3.dll" Component_="xinput1_3.dll" FileName="XINPUT~1.DLL|xinput1_3.dll" Attributes="0" SourcePath="..\xinput1_3.dll" SelfReg="false"/>
-    <ROW File="interactive_ui_tests.exe" Component_="interactive_ui_tests.exe" FileName="INTERA~1.EXE|interactive_ui_tests.exe" Attributes="0" SourcePath="..\interactive_ui_tests.exe" SelfReg="false" DigSign="true"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="[|AI_AIP_FOLDER][|AI_AIP_FILENAME]-SetupFiles" PackageFileName="[|AI_AIP_FILENAME]" Languages="en" InstallationType="4" UseLargeSchema="true"/>
@@ -231,7 +232,7 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
     <ROW Feature_="MainFeature" Component_="APPDIR"/>
     <ROW Feature_="MainFeature" Component_="ProductInformation"/>
-    <ROW Feature_="MainFeature" Component_="_STARTGLHROME.bat"/>
+    <ROW Feature_="MainFeature" Component_="gitignore"/>
     <ROW Feature_="MainFeature" Component_="chrome.dll"/>
     <ROW Feature_="MainFeature" Component_="chrome_child.dll"/>
     <ROW Feature_="MainFeature" Component_="chrome_elf.dll"/>
@@ -242,16 +243,16 @@
     <ROW Feature_="MainFeature" Component_="ffmpegsumo.dll"/>
     <ROW Feature_="MainFeature" Component_="gcapi_dll.dll"/>
     <ROW Feature_="MainFeature" Component_="glhrome.exe"/>
+    <ROW Feature_="MainFeature" Component_="interactive_ui_tests.exe"/>
+    <ROW Feature_="MainFeature" Component_="a.ico"/>
+    <ROW Feature_="MainFeature" Component_="ar.pak"/>
     <ROW Feature_="MainFeature" Component_="libEGL.dll"/>
     <ROW Feature_="MainFeature" Component_="libexif.dll"/>
     <ROW Feature_="MainFeature" Component_="libGLESv2.dll"/>
-    <ROW Feature_="MainFeature" Component_="a.ico"/>
-    <ROW Feature_="MainFeature" Component_="ar.pak"/>
     <ROW Feature_="MainFeature" Component_="nacl64.exe"/>
     <ROW Feature_="MainFeature" Component_="wow_helper.exe"/>
     <ROW Feature_="MainFeature" Component_="xinput1_3.dll"/>
     <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
-    <ROW Feature_="MainFeature" Component_="interactive_ui_tests.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
     <ROW Name="glhrome_1.exe" SourcePath="..\..\gab644site\goog\glhrome.ico" Index="0"/>
@@ -286,7 +287,7 @@
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
-    <ROW Shortcut="glhrome" Directory_="SHORTCUTDIR" Name="GOOGGL~1|Goog Glhrome" Component_="glhrome.exe" Target="[#glhrome.exe]" Arguments="--disable-gpu --disable-gpu-compositing --ignore-certificate-errors --allow-insecure-localhost --test-type" Description="Access the Internet" Hotkey="0" Icon_="glhrome_1.exe" IconIndex="0" ShowCmd="1" WkDir="glhrome_Dir"/>
+    <ROW Shortcut="glhrome" Directory_="SHORTCUTDIR" Name="GOOGGL~1|Goog Glhrome" Component_="glhrome.exe" Target="[#glhrome.exe]" Arguments="--disable-gpu --disable-gpu-compositing --ignore-certificate-errors --allow-insecure-localhost --disable-features=ExtensionManifestV2Unsupported,ExtensionManifestV2Disabled --test-type" Description="Access the Internet" Hotkey="0" Icon_="glhrome_1.exe" IconIndex="0" ShowCmd="1" WkDir="glhrome_Dir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>
