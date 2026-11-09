@@ -2,9 +2,9 @@
 <br><p>Glhrome is a fork of chromium from 2014 to 2015 but modified a little.</p>
 
 <h2>Features</h2>
-<li>Includes newer certificates (ignores all of the erros but still counts.)</li>
+<li>Includes newer certificates (technically ignores all of the certificate errors)</li>
 <li>Brand SPANKING new media codecs.</li>
-<p>thats all i could list out.</p>
+<p>thats all i could list out, sadly.</p>
 
 <h1>Q&A</h1>
 
