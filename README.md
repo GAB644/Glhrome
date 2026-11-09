@@ -18,7 +18,7 @@
 <p>yeah</p>
 
 <h2>Why is it called Glhrome?</h2>
-<p>i dont know its the first thing that came to mind. now that im thinking about it, sounds like a name</p>
+<p>i dont know its the first thing that came to mind. now that im thinking about it, sounds like a persons name</p>
 
 <h2>Can i steal this code?</h2>
 <p><b>yep</b>. no credit needed i guess, maybe like change the homework a little bit so it isn't the same type of thing y'know?</p>
