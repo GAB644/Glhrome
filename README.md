@@ -29,4 +29,4 @@
 
 <h2>Is this web browser goonable?</h2>
 <p>what??
-i mean <b>yeah</b>, but why would you wanna do that? i mean theres no trackers or none of those tracker things from what i know of. but also doubt that google is even tracking 2014 chrome clients.</p>
+i mean <b>yeah</b>, but why would you wanna do that? i mean theres none of those tracker things from what i know of. but also doubt that google is even tracking 2014 chrome clients.</p>
