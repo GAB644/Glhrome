@@ -4,6 +4,7 @@
 <h2>Features</h2>
 <li>Includes newer certificates (technically ignores all of the certificate errors)</li>
 <li>Brand SPANKING new media codecs.</li>
+<li>[INSTALL WITH CAUTION] install new extensions</li>
 <p>thats all i could list out, sadly.</p>
 
 <h1>Q&A</h1>
