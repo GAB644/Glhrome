@@ -7,6 +7,16 @@
 <li>[INSTALL WITH CAUTION] install new extensions</li>
 <p>thats all i could list out, sadly.</p>
 
+<h1>Ran on</h1>
+<li>Windows 7</li>
+<img height=400px src="webassets/screenshots/win7.png">
+<li>Windows 10 (1511)</li>
+<img height=400px src="webassets/screenshots/win10.png">
+<li>Windows 11 (EWWWWWWWWWWWWWWWWWW)</li>
+<img height=400px src="webassets/screenshots/win11.png">
+<p>you would think i was lying that this is 11 if i didnt bring up the winver window.</p>
+
+
 <h1>Q&A</h1>
 
 <h2>Should i switch to it?</h2>
