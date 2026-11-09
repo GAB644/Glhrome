@@ -16,3 +16,7 @@
 
 <h2>Why is it called Glhrome?</h2>
 <p>i dont know its the first thing that came to mind. now that im thinking about it, sounds like a name</p>
+
+<h2>is this web browser goonable?</h2>
+<p>what??
+i mean yeah, but why would you wanna do that? i mean theres no trackers or none of those tracker things from what i know of. it is chromium so it should have some privacy stuff. right? but also doubt that google is even tracking this.</p>
