@@ -8,7 +8,7 @@
 <p>thats all i could list out, sadly.</p>
 
 <h1>Ran on</h1>
-<li>Windows XP with <a href="https://github.com/shorthorn-project/one-core-api-binaries">OneCoreAPI</a></li>
+<li>Windows XP (x64 bit) with <a href="https://github.com/shorthorn-project/one-core-api-binaries">OneCoreAPI</a></li>
 <img height=400px src="webassets/screenshots/winXP.png">
 <li>Windows 7</li>
 <img height=400px src="webassets/screenshots/win7.png">
