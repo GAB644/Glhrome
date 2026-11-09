@@ -14,9 +14,18 @@
 <h2>Mobile version when?</h2>
 <p>someday when i get time on my hands.</p>
 
+<h2>Can i larp 2014-2015 in this browser?</h2>
+<p>yeah</p>
+
 <h2>Why is it called Glhrome?</h2>
 <p>i dont know its the first thing that came to mind. now that im thinking about it, sounds like a name</p>
 
-<h2>is this web browser goonable?</h2>
+<h2>Can i steal this code?</h2>
+<p><b>yep</b>. no credit needed i guess, maybe like change the homework a little bit so it isn't the same type of thing y'know?</p>
+
+<h2>How did you make this?</h2>
+<p>for the client itself i used resource hacker, and as for the features i just used fflags/arguments to make this, but i did update the codec dll file. (maybe i should update the other dll's as well)</p>
+
+<h2>Is this web browser goonable?</h2>
 <p>what??
-i mean yeah, but why would you wanna do that? i mean theres no trackers or none of those tracker things from what i know of. it is chromium so it should have some privacy stuff. right? but also doubt that google is even tracking this.</p>
+i mean <b>yeah</b>, but why would you wanna do that? i mean theres no trackers or none of those tracker things from what i know of. but also doubt that google is even tracking 2014 chrome clients.</p>
